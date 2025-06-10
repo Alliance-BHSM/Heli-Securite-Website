@@ -5,11 +5,11 @@
       "CTA": "BOOK A FLIGHT"
     },
     "our-flights": {
-      "title": "Fly with <span>MONACAIR</span>",
+      "title": "Fly with <span>Héli Sécurité</span>",
       "subtitle": "OUR FLIGHTS",
       "private": {
         "title": "Private Flights",
-        "description": "Enjoy an exclusive and tailor-made service with our private flights. Monacair offers you a luxurious, fast and comfortable travel experience, adapted to your needs. Reach your destination with complete peace of mind, with premium service and total flexibility"
+        "description": "Enjoy an exclusive and tailor-made service with our private flights. Héli Sécurité offers you a luxurious, fast and comfortable travel experience, adapted to your needs. Reach your destination with complete peace of mind, with premium service and total flexibility"
       },
       "pano": {
         "title": "Panoramic Flights",
@@ -17,11 +17,11 @@
       },
       "regular": {
         "title": "Regular Line",
-        "description": "Travel quickly and comfortably thanks to our regular lines. Monacair guarantees you frequent, punctual and elegant connections, notably between Monaco and Nice airport in just 7 minutes. Enjoy a premium service for a stress-free journey and peaceful arrival"
+        "description": "Travel quickly and comfortably thanks to our regular lines. Héli Sécurité guarantees you frequent, punctual and elegant connections, notably between Monaco and Nice airport in just 7 minutes. Enjoy a premium service for a stress-free journey and peaceful arrival"
       },
       "jet": {
         "title": "Private Jet",
-        "description": "Travel without limits with our tailor-made private jet service. Monacair offers you an exclusive experience, combining luxury, comfort and total flexibility. Take off at the time of your choice and reach any destination in the world with unmatched discretion and efficiency"
+        "description": "Travel without limits with our tailor-made private jet service. Héli Sécurité offers you an exclusive experience, combining luxury, comfort and total flexibility. Take off at the time of your choice and reach any destination in the world with unmatched discretion and efficiency"
       }
     },
     "destinations": {
@@ -125,7 +125,7 @@
   "Destinations": {
     "hero": {
       "title": "Destinations of Excellence",
-      "subtitle": "Book your personalized charter flight<br></br>on the Riviera and in the Alps with<br></br>Monacair",
+      "subtitle": "Book your personalized charter flight<br></br>on the Riviera and in the Alps with<br></br>Héli Sécurité",
       "CTA": "BOOK A FLIGHT"
     },
     "description": {
@@ -147,78 +147,78 @@
       },
       "bases": {
         "title": "Departures from several <span>PRESTIGIOUS</span> bases",
-        "description": "Monacair offers you an exclusive helicopter charter experience to travel quickly and comfortably on the French Riviera, the Alps and beyond. Enjoy a tailor-made service with departures from our numerous bases, including Saint-Tropez, Monaco, Cannes, Courchevel, Geneva, Nice, and many others"
+        "description": "Héli Sécurité offers you an exclusive helicopter charter experience to travel quickly and comfortably on the French Riviera, the Alps and beyond. Enjoy a tailor-made service with departures from our numerous bases, including Saint-Tropez, Monaco, Cannes, Courchevel, Geneva, Nice, and many others"
       }
     },
     "AttractSection": {
       "title": "Your Journey Starts Here",
-      "subtitle": "Contact Monacair to benefit from a premium service, from booking your helicopter or private jet to your arrival at destination, we take care of every detail to offer you an unforgettable flight experience",
+      "subtitle": "Contact Héli Sécurité to benefit from a premium service, from booking your helicopter or private jet to your arrival at destination, we take care of every detail to offer you an unforgettable flight experience",
       "CTA": "CONTACT US"
     }
   },
   "Events": {
     "hero": {
-      "title": "Experience Great Events<br></br>with Monacair",
+      "title": "Experience Great Events<br></br>with Héli Sécurité",
       "subtitle": "Access prestigious events by<br></br>helicopter - A VIP experience from<br></br>start to finish",
       "CTA": "BOOK A FLIGHT"
     },
     "AttractSection": {
       "title": "Your Journey Starts Here",
-      "subtitle": "Contact Monacair to benefit from an end-to-end premium service: from booking your helicopter or private jet to your arrival at destination, we take care of every detail to offer you an unforgettable flight experience",
+      "subtitle": "Contact Héli Sécurité to benefit from an end-to-end premium service: from booking your helicopter or private jet to your arrival at destination, we take care of every detail to offer you an unforgettable flight experience",
       "CTA": "CONTACT US"
     }
   },
   "AboutUs": {
     "hero": {
       "title": "Who Are We?",
-      "subtitle": "Discover the story and services of Monacair",
+      "subtitle": "Discover the story and services of Héli Sécurité",
       "buttonText": "Learn More"
     },
     "our-history": {
-      "foundation": "Monacair was founded in 1988 by Stefano Casiraghi.",
-      "services-intro": "Monacair offers a wide range of services in the helicopter field:",
+      "foundation": "Héli Sécurité was founded in 1988 by Stefano Casiraghi.",
+      "services-intro": "Héli Sécurité offers a wide range of services in the helicopter field:",
       "services-list": {
         "management": "Helicopter management, including consulting, accommodation, pilots, refueling and maintenance.",
         "charter": "Private charter flights to all destinations."
       },
       "official-provider": "Since 1999, the company has been Official Supplier to H.S.H. the Sovereign Prince of Monaco, Albert II.",
-      "regular-service": "On January 1, 2016, the Monegasque Government designated Monacair as the sole operator of the regular transfer service between Nice Côte d'Azur Airport and Monaco.",
-      "image-alt": "Monacair helicopter"
+      "regular-service": "On January 1, 2016, the Monegasque Government designated Héli Sécurité as the sole operator of the regular transfer service between Nice Côte d'Azur Airport and Monaco.",
+      "image-alt": "Héli Sécurité helicopter"
     },
     "monacair-leader": {
-      "title": "Monacair, the leading helicopter airline in France",
-      "operational-bases": "Monacair has several operational bases that allow it to offer exceptional services to its passengers: Monaco - Cannes, in Annecy to serve the French and Swiss Alps, and Grimaud, in the immediate vicinity of Saint-Tropez, for private and regular flights dedicated to tourists and business travelers to all destinations on the French Riviera, Provence, Corsica and Italy.",
-      "team-goal": "The entire MONACAIR team has one objective: deliver high-quality service, regardless of the moment of the journey.",
-      "services": "The MONACAIR Group has deployed a range of services to facilitate the daily life of its clients, ranging from simple transfers between two destinations to pilot training.",
+      "title": "Héli Sécurité, the leading helicopter airline in France",
+      "operational-bases": "Héli Sécurité has several operational bases that allow it to offer exceptional services to its passengers: Monaco - Cannes, in Annecy to serve the French and Swiss Alps, and Grimaud, in the immediate vicinity of Saint-Tropez, for private and regular flights dedicated to tourists and business travelers to all destinations on the French Riviera, Provence, Corsica and Italy.",
+      "team-goal": "The entire Héli Sécurité team has one objective: deliver high-quality service, regardless of the moment of the journey.",
+      "services": "The Héli Sécurité Group has deployed a range of services to facilitate the daily life of its clients, ranging from simple transfers between two destinations to pilot training.",
       "maintenance": "This quality of service is made possible by the reliability of the helicopters, whose maintenance and upkeep are managed internally in the workshops of its subsidiary Rotor Team.",
-      "modern-fleet": "It is by operating the latest generation aircraft whose comfort and materials rival the most modern that MONACAIR has been able to build customer loyalty among a demanding clientele.",
-      "trust": "Luxury-level service, exceptional responsiveness and highly secure flights have enabled Monacair and its subsidiaries Heli Sécurité and Rotor Team to gain and maintain the trust of their clients. This trust and loyalty are the keys to Héli Sécurité's sustainability."
+      "modern-fleet": "It is by operating the latest generation aircraft whose comfort and materials rival the most modern that Héli Sécurité has been able to build customer loyalty among a demanding clientele.",
+      "trust": "Luxury-level service, exceptional responsiveness and highly secure flights have enabled Monacair and its subsidiaries Héli Sécurité and Rotor Team to gain and maintain the trust of their clients. This trust and loyalty are the keys to Héli Sécurité's sustainability."
     },
     "our-services": {
       "title": "Our Services",
-      "regular-line": "Since January 2016, Monacair has been the official and unique Monegasque operator of the Regular Line between Monaco and Nice Côte d'Azur International Airport.",
+      "regular-line": "Since January 2016, Héli Sécurité has been the official and unique Monegasque operator of the Regular Line between Monaco and Nice Côte d'Azur International Airport.",
       "daily-flights": "The company operates more than 40 daily flights, scheduled every 15 minutes. Based at Monaco Heliport and in all terminals of Nice Côte d'Azur Airport.",
       "services-list": {
         "passenger": "Passenger handling, including boarding/disembarking and baggage management.",
         "crew": "Handling of non-based private helicopter crews.",
         "maintenance": "Helicopter maintenance."
       },
-      "fleet": "In September 2015, shortly after Monacair won the tender from the Monegasque Government, an order for six brand new single-engine H130 helicopters, equipped with enlarged luggage compartments, was placed. Delivery was received between December 2015 and the end of April 2016. These helicopters are air-conditioned and are mainly used for regular line transfers: Monaco-Nice and Nice-Monaco.",
-      "image-alt": "Monacair H130 helicopter"
+      "fleet": "In September 2015, shortly after Héli Sécurité won the tender from the Monegasque Government, an order for six brand new single-engine H130 helicopters, equipped with enlarged luggage compartments, was placed. Delivery was received between December 2015 and the end of April 2016. These helicopters are air-conditioned and are mainly used for regular line transfers: Monaco-Nice and Nice-Monaco.",
+      "image-alt": "Héli Sécurité H130 helicopter"
     },
     "alliance": {
       "title": "Alliance Blade, Monacair and Héli Sécurité",
       "subtitle": "3 renowned companies for a unique service.",
       "description": {
-        "intro": "The Heli Securite Blade Monacair alliance offers you a tailor-made flight experience, combining flexibility, comfort and safety.",
+        "intro": "The Heli Securite Blade Héli Sécurité alliance offers you a tailor-made flight experience, combining flexibility, comfort and safety.",
         "destinations": "Fly aboard one of our high-performance, latest-generation helicopters for a transfer to or from all French, Corsican, Italian, Swiss airports but also to all your winter destinations.",
         "alps": "Head to the Alps and its snow-capped peaks. Put on your skis and enjoy the most beautiful ski slopes in the world, enjoy outdoor activities, discover the rich culture & gastronomy of the Alps."
       },
       "cta": "Learn more about the ALLIANCE",
-      "logo-alt": "Monacair logo"
+      "logo-alt": "Héli Sécurité logo"
     },
     "cta-section": {
-      "title": "Ready to Fly with Monacair?",
+      "title": "Ready to Fly with Héli Sécurité?",
       "description": "Discover the excellence of helicopter transport with our experienced team and modern fleet.",
       "book-flight": "Book a Flight",
       "contact-us": "Contact Us"
@@ -427,7 +427,7 @@
       },
       "cta": "Book your private charter",
       "images": {
-        "main": "Monacair private helicopter",
+        "main": "Héli Sécurité private helicopter",
         "interior": "Interior view of the helicopter"
       }
     },
@@ -436,7 +436,7 @@
         "title": "Regular Line Reservation",
         "subtitle": "Book your helicopter transfer on our regular line.",
         "buttonText": "BOOK A FLIGHT",
-        "imageAlt": "Monacair flight reservation"
+        "imageAlt": "Héli Sécurité flight reservation"
       },
       "steps": {
         "flightDetails": "Flight details",
@@ -635,7 +635,7 @@
     },
     "hero": {
       "title": "Book a flight",
-      "subtitle": "Discover the excellence of air travel with Monacair",
+      "subtitle": "Discover the excellence of air travel with Héli Sécurité",
       "buttonText": "Book now"
     },
     "booking-form": {
@@ -688,7 +688,7 @@
     },
     "regular-line": {
       "title": "Regular Line",
-      "description": "Your exclusive connection between Nice Airport and Monaco in just 7 minutes. Travel quickly and comfortably with Monacair and reach Monaco in record time.",
+      "description": "Your exclusive connection between Nice Airport and Monaco in just 7 minutes. Travel quickly and comfortably with Héli Sécurité and reach Monaco in record time.",
       "flight-time": {
         "label": "Flight time:",
         "value": "Only 7 minutes"
@@ -706,7 +706,7 @@
         "value": "Shared shuttle service with driver in Monaco to your final destination. Possibility to book a private driver on request."
       },
       "book-now": "Book now",
-      "image-alt": "Monacair helicopter for regular line"
+      "image-alt": "Héli Sécurité helicopter for regular line"
     },
     "vip-service": {
       "title": "THE",
@@ -715,15 +715,15 @@
       "description": "For an even smoother and more exclusive experience, we offer a Meet & Greet service, allowing you VIP reception at the foot of your commercial aircraft and personalized accompaniment to your helicopter.",
       "lounges": {
         "title": "The Lounges",
-        "description": "Monacair and BLADE provide our clients with lounges at T1 and T2 in Nice as well as in Monaco and Saint-Tropez. Hot drinks and water at discretion."
+        "description": "Héli Sécurité and BLADE provide our clients with lounges at T1 and T2 in Nice as well as in Monaco and Saint-Tropez. Hot drinks and water at discretion."
       },
       "options": {
         "title": "The Options",
-        "description": "Monacair offers different options such as personalized Meet & Greet, private driver, experiences, personalized requests etc..."
+        "description": "Héli Sécurité offers different options such as personalized Meet & Greet, private driver, experiences, personalized requests etc..."
       },
       "drivers": {
         "title": "Vehicles with drivers",
-        "description": "Monacair has a fleet of latest generation electric vans to take you to your final destination in the Principality."
+        "description": "Héli Sécurité has a fleet of latest generation electric vans to take you to your final destination in the Principality."
       },
       "features": {
         "personalized": "Personalized service",
@@ -734,25 +734,25 @@
     },
     "private-flights": {
       "title": "Private Flights",
-      "description": "Enjoy an exclusive and tailor-made service with our private flights. Monacair offers you a luxurious, fast and comfortable travel experience, adapted to your needs.",
+      "description": "Enjoy an exclusive and tailor-made service with our private flights. Héli Sécurité offers you a luxurious, fast and comfortable travel experience, adapted to your needs.",
       "flexibility": {
         "title": "Total flexibility",
         "description": "Customized flights according to your needs, schedules and destinations."
       },
       "service": {
         "title": "Exceptional Service",
-        "description": "Enjoy the excellence of Monacair service at every step of your journey."
+        "description": "Enjoy the excellence of Héli Sécurité service at every step of your journey."
       },
       "confidentiality": {
         "title": "Discretion and Confidentiality",
         "description": "A tailor-made service, with the utmost respect for your privacy."
       },
       "book-now": "Book now",
-      "image-alt": "Monacair private helicopter"
+      "image-alt": "Héli Sécurité private helicopter"
     },
     "destinations": {
       "title": "Exclusive Destinations and Events",
-      "description": "Monacair transports you to all your dream destinations, whether for international events, business destinations or exclusive locations in Europe and beyond.",
+      "description": "Héli Sécurité transports you to all your dream destinations, whether for international events, business destinations or exclusive locations in Europe and beyond.",
       "events": {
         "grand-prix": "Monaco Grand Prix",
         "yacht-show": "Monaco Yacht Show",
@@ -774,7 +774,7 @@
     },
     "jet-prive": {
       "title": "Private Jet",
-      "description": "Enjoy an exclusive and tailor-made service with our private flights. Monacair offers you a luxurious, fast and comfortable travel experience, adapted to your needs.",
+      "description": "Enjoy an exclusive and tailor-made service with our private flights. Héli Sécurité offers you a luxurious, fast and comfortable travel experience, adapted to your needs.",
       "personalized": {
         "title": "Personalized flights",
         "description": "Choose your schedules and itinerary according to your needs."
@@ -788,7 +788,7 @@
         "description": "Modern and fully equipped jets to guarantee your well-being throughout the flight."
       },
       "book-now": "Book a private jet",
-      "image-alt": "Monacair private jet"
+      "image-alt": "Héli Sécurité private jet"
     },
     "panoramic-flights": {
       "title": "Panoramic Flights",
@@ -818,7 +818,7 @@
     },
     "our-destinations": {
       "title": "Our destinations",
-      "description": "Discover the exclusive destinations accessible with Monacair. Our helicopters and private jets take you wherever you want in southern France, Italy, Switzerland and beyond.",
+      "description": "Discover the exclusive destinations accessible with Héli Sécurité. Our helicopters and private jets take you wherever you want in southern France, Italy, Switzerland and beyond.",
       "cities": {
         "monaco": "Monaco",
         "nice": "Nice",
@@ -844,7 +844,7 @@
         },
         "email": {
           "title": "Email",
-          "address": "info@monacair.mc"
+          "address": "info@Héli Sécurité.mc"
         },
         "hours": {
           "title": "Opening hours",
@@ -919,7 +919,7 @@
       "cta": {
         "paragraph1": "Ready to live an unforgettable experience? Book now your panoramic helicopter flight departing from Nice and discover the splendor of the Riviera from the sky.",
         "paragraph2": "For more information or to make a reservation, contact us by phone or email.",
-        "paragraph3": "Don't miss this unique opportunity to fly over one of the most beautiful regions in the world with Monacair.",
+        "paragraph3": "Don't miss this unique opportunity to fly over one of the most beautiful regions in the world with Héli Sécurité.",
         "button": "Book a flight"
       }
     },
@@ -928,7 +928,7 @@
         "title": "Panoramic Flight Reservation",
         "subtitle": "Discover the French Riviera from the sky with our panoramic helicopter flights.",
         "buttonText": "BOOK A FLIGHT",
-        "imageAlt": "Panoramic helicopter flight Monacair"
+        "imageAlt": "Panoramic helicopter flight Héli Sécurité"
       },
       "flightDetails": {
         "title": "Panoramic Flight Details",
@@ -1043,7 +1043,7 @@
     },
     "intro": {
       "title": "Excellence and Safety",
-      "description": "Monacair has a modern fleet of helicopters, regularly maintained and updated to guarantee your safety and comfort. Our aircraft are piloted by experienced professionals and meet the strictest safety standards.",
+      "description": "Héli Sécurité has a modern fleet of helicopters, regularly maintained and updated to guarantee your safety and comfort. Our aircraft are piloted by experienced professionals and meet the strictest safety standards.",
       "cards": {
         "safety": {
           "title": "Maximum Safety",
@@ -1255,12 +1255,12 @@
       "cta": "DISCOVER"
     },
     "intro": {
-      "title": "Exceptional moments with Monacair",
-      "description": "Monacair offers you much more than helicopter flights. Discover our exclusive experiences combining gastronomy, sport and culture for an unforgettable stay on the French Riviera.",
+      "title": "Exceptional moments with Héli Sécurité",
+      "description": "Héli Sécurité offers you much more than helicopter flights. Discover our exclusive experiences combining gastronomy, sport and culture for an unforgettable stay on the French Riviera.",
       "cards": {
         "exclusive": {
           "title": "Exclusive Experiences",
-          "description": "Unique and privileged moments, accessible only with Monacair."
+          "description": "Unique and privileged moments, accessible only with Héli Sécurité."
         },
         "memories": {
           "title": "Unforgettable Memories",
@@ -1322,8 +1322,8 @@
       },
       "link": "See all our gastronomic experiences",
       "intro": {
-        "title": "The Art of Gastronomy with Monacair",
-        "description": "Monacair invites you to discover the culinary treasures of the French Riviera through exclusive gastronomic experiences. From haute starred cuisine to authentic local flavors, let our experts guide you on an unforgettable taste journey.",
+        "title": "The Art of Gastronomy with Héli Sécurité",
+        "description": "Héli Sécurité invites you to discover the culinary treasures of the French Riviera through exclusive gastronomic experiences. From haute starred cuisine to authentic local flavors, let our experts guide you on an unforgettable taste journey.",
         "features": {
           "starred": {
             "title": "Starred Restaurants",
@@ -1403,7 +1403,7 @@
       },
       "cta": {
         "title": "Ready to Experience an Unforgettable Gastronomic Adventure?",
-        "description": "Book now your exclusive gastronomic experience with Monacair and let yourself be transported to exceptional flavors.",
+        "description": "Book now your exclusive gastronomic experience with Héli Sécurité and let yourself be transported to exceptional flavors.",
         "bookButton": "Book now",
         "contactButton": "Contact us"
       },
@@ -1534,7 +1534,7 @@
           "none": "No transfer"
         },
         "checkAvailability": "Check availability",
-        "contactInfo": "For more information or to make a personalized reservation, contact us by phone at +377 97 97 39 00 or by email at booking@monacair.mc."
+        "contactInfo": "For more information or to make a personalized reservation, contact us by phone at +377 97 97 39 00 or by email at booking@Héli Sécurité.mc."
       },
       "testimonials": {
         "title": "What our clients say",
@@ -1640,8 +1640,8 @@
       },
       "link": "See all our lifestyle experiences",
       "intro": {
-        "title": "The Art of Lifestyle with Monacair",
-        "description": "Monacair invites you to discover the art of living on the French Riviera through exclusive lifestyle experiences. From luxury shopping to private events, let our experts guide you to an exceptional lifestyle.",
+        "title": "The Art of Lifestyle with Héli Sécurité",
+        "description": "Héli Sécurité invites you to discover the art of living on the French Riviera through exclusive lifestyle experiences. From luxury shopping to private events, let our experts guide you to an exceptional lifestyle.",
         "features": {
           "luxury": {
             "title": "Luxury Shopping",
@@ -1664,7 +1664,7 @@
       },
       "cta": {
         "title": "Ready to Experience an Unforgettable Lifestyle Adventure?",
-        "description": "Book now your exclusive lifestyle experience with Monacair and let yourself be transported to an exceptional art of living.",
+        "description": "Book now your exclusive lifestyle experience with Héli Sécurité and let yourself be transported to an exceptional art of living.",
         "bookButton": "Book now",
         "contactButton": "Contact us"
       },
@@ -1795,7 +1795,7 @@
           "none": "No transfer"
         },
         "checkAvailability": "Check availability",
-        "contactInfo": "For more information or to make a personalized reservation, contact us by phone at +377 97 97 39 00 or by email at booking@monacair.mc."
+        "contactInfo": "For more information or to make a personalized reservation, contact us by phone at +377 97 97 39 00 or by email at booking@Héli Sécurité.mc."
       },
       "testimonials": {
         "title": "What our clients say",
@@ -1905,17 +1905,17 @@
   "PrivateJet": {
     "page": {
       "title": "Private Jets",
-      "subtitle": "Monacair offers you a high-end private jet service, completely tailor-made, for all your destinations",
+      "subtitle": "Héli Sécurité offers you a high-end private jet service, completely tailor-made, for all your destinations",
       "cta": "BOOK",
       "AttractSection": {
         "title": "Your Journey Starts Here",
-        "subtitle": "Contact Monacair to benefit from a premium service, from booking your helicopter or private jet to your arrival at destination, we take care of every detail to offer you an unforgettable flight experience",
+        "subtitle": "Contact Héli Sécurité to benefit from a premium service, from booking your helicopter or private jet to your arrival at destination, we take care of every detail to offer you an unforgettable flight experience",
         "CTA": "CONTACT US"
       }
     },
     "customJets": {
       "title": "TAILOR-MADE Private Jets",
-      "description": "At Monacair, we know that each client has unique requirements. That's why we offer tailor-made private jets, perfectly adapted to your needs, schedules and preferences.",
+      "description": "At Héli Sécurité, we know that each client has unique requirements. That's why we offer tailor-made private jets, perfectly adapted to your needs, schedules and preferences.",
       "features": {
         "personalized": {
           "title": "PERSONALIZED Flights",
@@ -1937,7 +1937,7 @@
     },
     "destinations": {
       "title": "EXCLUSIVE Destinations and Events",
-      "description": "Monacair transports you to all your dream destinations, whether for international events, business destinations or exclusive locations in Europe and beyond:",
+      "description": "Héli Sécurité transports you to all your dream destinations, whether for international events, business destinations or exclusive locations in Europe and beyond:",
       "categories": {
         "events": {
           "title": "INTERNATIONAL Events",
@@ -1975,7 +1975,7 @@
       "contact_button": "Contact us"
     },
     "whyChoose": {
-      "title": "Why Choose MONACAIR?",
+      "title": "Why Choose Héli Sécurité?",
       "reasons": {
         "flexibility": {
           "title": "Total Flexibility",
@@ -1983,7 +1983,7 @@
         },
         "service": {
           "title": "EXCEPTIONAL Service",
-          "description": "Enjoy the excellence of Monacair service at every step of your journey."
+          "description": "Enjoy the excellence of Héli Sécurité service at every step of your journey."
         },
         "jets": {
           "title": "MODERN Jets",
@@ -2000,14 +2000,14 @@
       }
     },
     "travelWith": {
-      "title": "Travel With Monacair: A HIGH-END Service",
-      "description": "Book your private jet with Monacair and discover the luxury of tailor-made air transport. Whether for a prestigious event or a private trip, we offer you an exclusive and personalized service.",
+      "title": "Travel With Héli Sécurité: A HIGH-END Service",
+      "description": "Book your private jet with Héli Sécurité and discover the luxury of tailor-made air transport. Whether for a prestigious event or a private trip, we offer you an exclusive and personalized service.",
       "about": {
-        "title": "About Monacair",
-        "description": "Monacair is the leader in private helicopter and jet services on the French Riviera. We are committed to offering our clients luxury transport experiences, with particular attention to safety, discretion and comfort. Thanks to a modern fleet and impeccable service, each flight becomes an unforgettable moment.",
+        "title": "About Héli Sécurité",
+        "description": "Héli Sécurité is the leader in private helicopter and jet services on the French Riviera. We are committed to offering our clients luxury transport experiences, with particular attention to safety, discretion and comfort. Thanks to a modern fleet and impeccable service, each flight becomes an unforgettable moment.",
         "link": "Learn more about us"
       },
-      "cta_text": "Book your private flight today and experience an exceptional journey with Monacair.",
+      "cta_text": "Book your private flight today and experience an exceptional journey with Héli Sécurité.",
       "book_button": "Book now",
       "contact_button": "Contact us",
       "badge": {
@@ -2019,14 +2019,14 @@
   "Management": {
     "hero": {
       "title": "Our Services",
-      "subtitle": "The management service offered by MONACAIR has been designed to offer you total expertise, to save you time, money and spare you hassles.",
-      "description": "Thanks to this service, you enjoy an optimal and enriching experience with your helicopter, maintained according to the strictest standards. MONACAIR handles all administrative and operational aspects related to helicopter ownership, allowing you to fully enjoy your asset with complete freedom and flexibility.",
-      "trustDescription": "Thanks to its neutral management, rigorous financial control and scrupulous respect for aircraft safety and maintenance standards, MONACAIR ensures you complete peace of mind.",
+      "subtitle": "The management service offered by Héli Sécurité has been designed to offer you total expertise, to save you time, money and spare you hassles.",
+      "description": "Thanks to this service, you enjoy an optimal and enriching experience with your helicopter, maintained according to the strictest standards. Héli Sécurité handles all administrative and operational aspects related to helicopter ownership, allowing you to fully enjoy your asset with complete freedom and flexibility.",
+      "trustDescription": "Thanks to its neutral management, rigorous financial control and scrupulous respect for aircraft safety and maintenance standards, Héli Sécurité ensures you complete peace of mind.",
       "CTA": "CONTACT US"
     },
     "costControl": {
       "title": "Cost Control",
-      "description": "MONACAIR ensures you 100% total financial transparency. Its operation is based on cost pass-through – you receive a copy of each invoice for expenses related to your helicopter, with personalized reports according to your needs.",
+      "description": "Héli Sécurité ensures you 100% total financial transparency. Its operation is based on cost pass-through – you receive a copy of each invoice for expenses related to your helicopter, with personalized reports according to your needs.",
       "benefits": [
         "Complete control of maintenance activities",
         "Tailor-made, priority service at the best rate",
@@ -2036,7 +2036,7 @@
     },
     "helicopterSales": {
       "title": "Helicopter Purchase / Sales",
-      "buyDescription": "If you are planning to purchase a helicopter, MONACAIR accompanies you at every step of your process and helps you choose the aircraft perfectly adapted to your needs. Our experience of over 30 years and market expertise allow us to optimize your purchase process, by handling market research, offer selection and negotiation to guarantee you a helicopter equipped with all essential options.",
+      "buyDescription": "If you are planning to purchase a helicopter, Héli Sécurité accompanies you at every step of your process and helps you choose the aircraft perfectly adapted to your needs. Our experience of over 30 years and market expertise allow us to optimize your purchase process, by handling market research, offer selection and negotiation to guarantee you a helicopter equipped with all essential options.",
       "inspectionDescription": "As part of our service, we perform pre-purchase controls and inspections for helicopters from brands such as Airbus Helicopter, Bell, Robinson, Guimbal... to ensure the quality of each aircraft. We negotiate the best purchase conditions for you and offer you meticulous follow-up, guaranteeing a helicopter that meets your expectations.",
       "sellDescription": "Finally, our trading activity includes aircraft sales. If you are considering selling your helicopter, do not hesitate to contact us to benefit from our complete support and expertise to achieve a sale under the best conditions."
     },
@@ -2047,12 +2047,12 @@
     "maintenance": {
       "title": "Maintenance",
       "description": "We also ensure the maintenance of your aircraft in our hangars, to guarantee that it is always ready to take off safely and reliably.",
-      "certificationDescription": "MONACAIR offers helicopter maintenance services within our subsidiary, Rotor Team, EASA 145 certified (No. FR.145.0517).",
+      "certificationDescription": "Héli Sécurité offers helicopter maintenance services within our subsidiary, Rotor Team, EASA 145 certified (No. FR.145.0517).",
       "locationsDescription": "Our facilities and workshops located in Grimaud, Saint-Tropez and Cannes, as well as in Annecy and Courchevel, offer you the flexibility you can expect."
     },
     "charter": {
       "title": "Charter",
-      "description": "If you wish to make your investment profitable, we also offer you the possibility to manage the commercialization of your helicopter. We operate private flights year-round in Southern France and the Alps, allowing you to benefit from our client portfolio of the Alliance Monacair Blade Heli Sécurité."
+      "description": "If you wish to make your investment profitable, we also offer you the possibility to manage the commercialization of your helicopter. We operate private flights year-round in Southern France and the Alps, allowing you to benefit from our client portfolio of the Alliance Blade Monacair Héli Sécurité."
     },
     "ctaSection": {
       "title": "Interested in Our Management Service?",
@@ -2061,12 +2061,12 @@
     }
   },
   "privacyPolicy": {
-    "title": "MONACAIR Privacy Policy",
+    "title": "Héli Sécurité Privacy Policy",
     "lastUpdate": "Last updated: 17/03",
 
     "introduction": {
       "title": "Introduction",
-      "description": "This Privacy Policy aims to inform users of the website www.monacair.mc about how MONACAIR S.A.M. collects, uses, stores, and protects their personal data.",
+      "description": "This Privacy Policy aims to inform users of the website www.Héli Sécurité.mc about how Héli Sécurité S.A.M. collects, uses, stores, and protects their personal data.",
       "complianceTitle": "Regulatory compliance",
       "complianceSubtitle": "This policy complies with:",
       "rgpd": "The General Data Protection Regulation (GDPR) No. 2016/679",
@@ -2076,12 +2076,12 @@
 
     "dataController": {
       "title": "Data Controller Identity",
-      "companyName": "MONACAIR S.A.M.",
+      "companyName": "Héli Sécurité S.A.M.",
       "address": "Registered office: Monaco Heliport, Avenue des Ligures, 98000 Monaco",
       "phone": "Phone: +377 97 97 39 00",
-      "email": "Email: contact@monacair.mc",
+      "email": "Email: contact@Héli Sécurité.mc",
       "dpoTitle": "Data Protection Officer (DPO)",
-      "dpoEmail": "Email: dpo@monacair.mc"
+      "dpoEmail": "Email: dpo@Héli Sécurité.mc"
     },
 
     "dataCollected": {
@@ -2123,7 +2123,7 @@
     "recipients": {
       "title": "Data Recipients",
       "accessTitle": "Data access",
-      "internal": "MONACAIR internal services",
+      "internal": "Héli Sécurité internal services",
       "partnersDescription": "Partner service providers necessary for proper service execution:",
       "partner1": "Payment service providers",
       "partner2": "Hosting providers",
@@ -2143,7 +2143,7 @@
 
     "security": {
       "title": "Data Security",
-      "description": "MONACAIR implements appropriate technical and organizational measures to protect your data against:",
+      "description": "Héli Sécurité implements appropriate technical and organizational measures to protect your data against:",
       "protection1": "Any unauthorized access",
       "protection2": "Data loss",
       "protection3": "Alteration",
@@ -2161,7 +2161,7 @@
       "right5": "Right to restriction of processing",
       "right6": "Right to data portability",
       "exerciseTitle": "How to exercise your rights",
-      "contact": "Contact: dpo@monacair.mc",
+      "contact": "Contact: dpo@Héli Sécurité.mc",
       "delay": "Response time: Maximum 1 month",
       "recourseTitle": "Appeal",
       "recourseDescription": "You have the possibility to file a complaint with the Commission for the Control of Personal Information (CCIN) of Monaco."
@@ -2180,14 +2180,14 @@
 
     "modifications": {
       "title": "Policy Modifications",
-      "description": "MONACAIR reserves the right to modify this Policy at any time. Any substantial modification will be notified to you via the site."
+      "description": "Héli Sécurité reserves the right to modify this Policy at any time. Any substantial modification will be notified to you via the site."
     },
 
     "contact": {
       "title": "Contact",
       "description": "For any questions regarding this Policy or the exercise of your rights",
       "dpoTitle": "Data Protection Officer",
-      "dpoEmail": "Email: dpo@monacair.mc"
+      "dpoEmail": "Email: dpo@Héli Sécurité.mc"
     },
 
     "footer": "This privacy policy guarantees the protection of your personal data in compliance with applicable legislation."
@@ -2197,10 +2197,10 @@
 
     "publisher": {
       "title": "Site Publisher",
-      "companyName": "MONACAIR S.A.M.",
+      "companyName": "Héli Sécurité S.A.M.",
       "address": "Registered office: Monaco Heliport, Avenue des Ligures, 98000 Monaco",
       "phone": "Phone: +377 97 97 39 00",
-      "email": "E-mail: contact@monacair.mc",
+      "email": "E-mail: contact@Héli Sécurité.mc",
       "rcs": "Monaco RCS: 87S02334",
       "vat": "Intra-community VAT number: FR62000005966",
       "director": "Publication Director: Ms. Elodie Mekhmoukh as Marketing Director"
@@ -2216,33 +2216,33 @@
 
     "intellectualProperty": {
       "title": "Intellectual Property",
-      "description": "All content present on the website www.monacair.mc, including, but not limited to, texts, images, graphics, logo, icons, sounds, software, are protected by applicable intellectual property laws and are the exclusive property of MONACAIR or its partners.",
-      "prohibition": "Any reproduction, representation, modification, publication, adaptation of all or part of the site elements, regardless of the means or process used, is prohibited, except with prior written authorization from MONACAIR."
+      "description": "All content present on the website www.Héli Sécurité.mc, including, but not limited to, texts, images, graphics, logo, icons, sounds, software, are protected by applicable intellectual property laws and are the exclusive property of Héli Sécurité or its partners.",
+      "prohibition": "Any reproduction, representation, modification, publication, adaptation of all or part of the site elements, regardless of the means or process used, is prohibited, except with prior written authorization from Héli Sécurité."
     },
 
     "personalData": {
       "title": "Personal Data",
-      "introduction": "In accordance with applicable regulations (notably the General Data Protection Regulation - GDPR - and applicable Monégasque legislation), MONACAIR is committed to guaranteeing the confidentiality and security of your personal data.",
+      "introduction": "In accordance with applicable regulations (notably the General Data Protection Regulation - GDPR - and applicable Monégasque legislation), Héli Sécurité is committed to guaranteeing the confidentiality and security of your personal data.",
       "responsibleTitle": "Data Controller:",
-      "responsible": "MONACAIR S.A.M.",
-      "dpoContact": "DPO Contact: dpo@monacair.mc",
+      "responsible": "Héli Sécurité S.A.M.",
+      "dpoContact": "DPO Contact: dpo@Héli Sécurité.mc",
       "purposesTitle": "Processing purposes:",
       "purposes": "Data collected on the site is used primarily for booking management, customer follow-up, commercial communications, and service improvement.",
       "rightsTitle": "User rights:",
-      "rights": "You have the right to access, rectify, delete, limit processing, object, and port your data. To exercise these rights, please contact us at dpo@monacair.mc.",
+      "rights": "You have the right to access, rectify, delete, limit processing, object, and port your data. To exercise these rights, please contact us at dpo@Héli Sécurité.mc.",
       "cookiesTitle": "Cookies:",
       "cookies": "The site uses cookies for functionality, statistics, and user experience improvement purposes. You can manage your preferences via the cookie management banner."
     },
 
     "responsibility": {
       "title": "Responsibility",
-      "disclaimer": "MONACAIR makes every effort to ensure the accuracy and updating of information published on its site. However, it cannot be held responsible for omissions, inaccuracies, or deficiencies in updating.",
+      "disclaimer": "Héli Sécurité makes every effort to ensure the accuracy and updating of information published on its site. However, it cannot be held responsible for omissions, inaccuracies, or deficiencies in updating.",
       "userResponsibility": "The user acknowledges using the site information under their exclusive responsibility."
     },
 
     "hyperlinks": {
       "title": "Hyperlinks",
-      "description": "The site may contain links to other sites. MONACAIR disclaims any responsibility regarding the content, privacy policy, or practices of these third-party sites."
+      "description": "The site may contain links to other sites. Héli Sécurité disclaims any responsibility regarding the content, privacy policy, or practices of these third-party sites."
     },
 
     "applicableLaw": {
@@ -2251,7 +2251,7 @@
     }
   },
   "cookiePolicy": {
-    "title": "Cookie Policy for Monacair.mc",
+    "title": "Cookie Policy for Héli Sécurité.mc",
     "lastUpdate": "Last updated: 17/03/2025",
 
     "whatIsCookie": {
@@ -2261,7 +2261,7 @@
 
     "purposes": {
       "title": "Purpose of cookies used",
-      "description": "The website www.monacair.mc uses different types of cookies for the following purposes:",
+      "description": "The website www.Héli Sécurité.mc uses different types of cookies for the following purposes:",
       "necessary": {
         "title": "Strictly necessary cookies",
         "description": "These cookies are essential for the proper functioning of the site (e.g., memorizing language choices, access to secure areas). They do not require user consent."
@@ -2278,7 +2278,7 @@
 
     "management": {
       "title": "Cookie Management",
-      "bannerDescription": "During your first visit to monacair.mc, a banner informs you about cookie usage and allows you to:",
+      "bannerDescription": "During your first visit to Héli Sécurité.mc, a banner informs you about cookie usage and allows you to:",
       "option1": "Accept all cookies",
       "option2": "Refuse non-necessary cookies",
       "option3": "Customize your choices (activation/deactivation by category)",
@@ -2300,7 +2300,7 @@
       "title": "Contact",
       "description": "For any questions regarding this policy or cookie usage:",
       "dpoTitle": "Data Protection Officer (DPO)",
-      "email": "Email: dpo@monacair.mc"
+      "email": "Email: dpo@Héli Sécurité.mc"
     }
   }
 }

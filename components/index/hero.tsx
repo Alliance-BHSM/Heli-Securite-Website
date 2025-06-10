@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import Logo from '@/public/logos/white.png'
+import Logo from '@/public/logos/primary.png'
 import { Button } from '@/components/ui/button'
 import { Link } from '@/i18n/navigation'
 

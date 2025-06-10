@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { Phone, Menu, X, MoveDown } from 'lucide-react'
-import Logo from '@/public/logos/primary.png'
+import Logo from '@/public/logos/LogoOld.png'
 import Flamme from '@/public/logos/flamme.png'
 import Pano from '@/public/images/index/panoramique.webp'
 import Private from '@/public/images/index/private.webp'
@@ -59,10 +59,10 @@ export default function Navbar({
   return (
     <nav className={'top-5 fixed left-0 right-0 z-50'}>
       {/* Desktop navbar */}
-      <div className={'bg-white hidden lg:block rounded-xl top-5 shadow-md lg:mx-20 xl:mx-40 h-18'}>
+      <div className={'bg-black text-white hidden lg:block rounded-xl top-5 shadow-md lg:mx-20 xl:mx-40 h-18'}>
         <div className={'flex h-full items-center justify-between px-5'}>
           <Link href={'/'}>
-            <Image src={Flamme} alt={'logo'} width={40} height={50} />
+            <Image src={Flamme} alt={'logo'} width={80} height={80} />
           </Link>
           <menu
             className={
@@ -115,7 +115,7 @@ export default function Navbar({
       </div>
 
       {/* Mobile navbar */}
-      <div className={'bg-white rounded-lg shadow-2xl mx-5 h-16 lg:hidden'}>
+      <div className={'bg-black text-white rounded-lg shadow-2xl mx-5 h-16 lg:hidden'}>
         <div className={'flex h-full items-center justify-between px-4'}>
           <button onClick={toggleMobileMenu} className="p-2">
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -136,7 +136,7 @@ export default function Navbar({
 
       {/* Mobile menu dropdown */}
       <div
-        className={`bg-white mx-5 shadow-2xl fixed rounded-b-xl -translate-y-2 left-0 right-0 overflow-hidden z-40 transition-all duration-1000 ease-in-out ${isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'} lg:hidden`}
+        className={`bg-black text-white mx-5 shadow-2xl fixed rounded-b-xl -translate-y-2 left-0 right-0 overflow-hidden z-40 transition-all duration-1000 ease-in-out ${isMobileMenuOpen ? 'max-h-screen' : 'max-h-0'} lg:hidden`}
       >
         <div className="p-5 flex flex-col gap-2 font-brother">
           <Link href="/flights" onClick={toggleMobileMenu} className="py-1 border-b">
@@ -284,7 +284,7 @@ export default function Navbar({
 
       {/* Dropdown panel for Booking with animation */}
       <div
-        className={`absolute overflow-hidden rounded-b-2xl transition-all duration-500 ease-in-out left-0 right-0 bg-white shadow-md -translate-y-3 z-40 lg:mx-20 xl:mx-40 ${
+        className={`absolute overflow-hidden rounded-b-2xl transition-all duration-500 ease-in-out left-0 right-0 bg-black text-white shadow-md -translate-y-3 z-40 lg:mx-20 xl:mx-40 ${
           isBookingOpen ? 'max-h-[600px]' : 'max-h-0'
         }`}
       >
@@ -380,7 +380,7 @@ export default function Navbar({
 
       {/* Dropdown panel for Destinations with animation */}
       <div
-        className={`absolute overflow-hidden rounded-b-2xl transition-all duration-500 ease-in-out left-0 right-0 bg-white shadow-md -translate-y-3 z-40 lg:mx-20 xl:mx-40 ${
+        className={`absolute overflow-hidden rounded-b-2xl transition-all duration-500 ease-in-out left-0 right-0 bg-black text-white shadow-md -translate-y-3 z-40 lg:mx-20 xl:mx-40 ${
           isDestinationsOpen ? 'max-h-[600px]' : 'max-h-0'
         }`}
       >
@@ -425,7 +425,7 @@ export default function Navbar({
 
       {/* Dropdown panel for Events with animation */}
       <div
-        className={`absolute overflow-hidden rounded-b-2xl transition-all duration-500 ease-in-out left-0 right-0 bg-white shadow-md -translate-y-3 z-40 lg:mx-20 xl:mx-40 ${
+        className={`absolute overflow-hidden rounded-b-2xl transition-all duration-500 ease-in-out left-0 right-0 bg-black text-white shadow-md -translate-y-3 z-40 lg:mx-20 xl:mx-40 ${
           isEventsOpen ? 'max-h-[600px]' : 'max-h-0'
         }`}
       >

@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button'
 const Experience = () => {
   const t = useTranslations('Index.experience')
   return (
-    <section className={'px-6 sm:px-10 md:px-20 lg:px-40 py-10 md:py-20 bg-primary rounded-t-4xl'}>
+    <section className={'px-6 sm:px-10 md:px-20 lg:px-40 py-10 md:py-20 bg-black rounded-t-4xl'}>
       <div className={'flex flex-col md:flex-row justify-between items-start md:items-center'}>
         <h1 className={'font-brother font-normal text-3xl md:text-5xl text-secondary mb-6 md:mb-0'}>
           {t.rich('title', {

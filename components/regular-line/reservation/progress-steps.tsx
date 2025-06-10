@@ -20,10 +20,10 @@ export default function ProgressSteps({ currentStep, steps }: ProgressStepsProps
         {displaySteps.map((step, index) => (
           <React.Fragment key={index}>
             <div
-              className={`flex flex-col items-center ${currentStep >= index + 1 ? 'text-redmonacair' : 'text-gray-400'}`}
+              className={`flex flex-col items-center ${currentStep >= index + 1 ? 'text-primary-button' : 'text-gray-400'}`}
             >
               <div
-                className={`w-10 h-10 rounded-full flex items-center justify-center mb-2 ${currentStep >= index + 1 ? 'bg-redmonacair text-white' : 'bg-gray-200 text-gray-500'}`}
+                className={`w-10 h-10 rounded-full flex items-center justify-center mb-2 ${currentStep >= index + 1 ? 'bg-primary-button text-white' : 'bg-gray-200 text-gray-500'}`}
               >
                 {index + 1}
               </div>
@@ -32,7 +32,7 @@ export default function ProgressSteps({ currentStep, steps }: ProgressStepsProps
 
             {index < displaySteps.length - 1 && (
               <div
-                className={`flex-1 h-1 mx-2 ${currentStep > index + 1 ? 'bg-redmonacair' : 'bg-gray-200'}`}
+                className={`flex-1 h-1 mx-2 ${currentStep > index + 1 ? 'bg-primary-button' : 'bg-gray-200'}`}
               ></div>
             )}
           </React.Fragment>

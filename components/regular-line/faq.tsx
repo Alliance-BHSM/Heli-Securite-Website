@@ -9,10 +9,10 @@ export default function FAQ() {
     <section className="py-12 sm:py-16">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 font-brother text-royalblue">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 font-brother text-primary">
             {t('title')}
           </h2>
-          <p className="text-base sm:text-lg max-w-2xl mx-auto font-brother text-royalblue">
+          <p className="text-base sm:text-lg max-w-2xl mx-auto font-brother text-primary">
             {t('subtitle')}
           </p>
         </div>
@@ -22,10 +22,10 @@ export default function FAQ() {
             faqs.map((faq, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
                 <div className="p-4 sm:p-6 border-l-2 sm:border-l-4 border-redmonacair">
-                  <h3 className="text-lg sm:text-xl font-bold mb-2 font-brother text-royalblue">
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 font-brother text-primary">
                     {faq.question}
                   </h3>
-                  <p className="text-sm sm:text-base font-brother text-royalblue">{faq.answer}</p>
+                  <p className="text-sm sm:text-base font-brother text-primary">{faq.answer}</p>
                 </div>
               </div>
             ))}

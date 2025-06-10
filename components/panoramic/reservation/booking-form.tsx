@@ -412,7 +412,7 @@ export default function BookingForm({
 
                 <button
                   type="submit"
-                  className="w-full bg-royalblue hover:bg-redmonacair text-white py-3 px-6 rounded-lg font-medium"
+                  className="w-full bg-primary hover:bg-primary-button text-white py-3 px-6 rounded-lg font-medium"
                   disabled={!acceptTerms}
                 >
                   {t('termsValidation.submit')}

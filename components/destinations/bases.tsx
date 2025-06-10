@@ -11,7 +11,7 @@ const Bases = () => {
     >
       <h1 className={'font-brother text-3xl sm:text-4xl md:text-5xl text-center'}>
         {t.rich('title', {
-          span: (chunks) => <span className={'font-caslon text-redmonacair'}>{chunks}</span>,
+          span: (chunks) => <span className={'font-caslon text-primary-button'}>{chunks}</span>,
         })}
       </h1>
       <h3 className={'font-brother text-sm sm:text-base md:text-lg text-center py-3'}>

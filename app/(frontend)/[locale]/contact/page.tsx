@@ -11,7 +11,7 @@ export default function ContactPage() {
       <Hero
         title={t.rich('title', {
           span: (chunks) => (
-            <span className="font-caslon text-redmonacair">
+            <span className="font-caslon text-primary-button">
               {chunks}
               <br />
             </span>

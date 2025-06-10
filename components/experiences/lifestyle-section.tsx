@@ -29,12 +29,10 @@ export default async function LifestyleSection() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
           <div className="max-w-2xl">
-            <div className="inline-block mb-4 bg-[color:var(--color-redmonacair)]/10 px-4 py-2 rounded-full">
+            <div className="inline-block mb-4 bg-primary-button/10 px-4 py-2 rounded-full">
               <div className="flex items-center">
-                <Trophy className="h-5 w-5 text-[color:var(--color-redmonacair)] mr-2" />
-                <span className="text-[color:var(--color-redmonacair)] font-medium">
-                  {t('badge')}
-                </span>
+                <Trophy className="h-5 w-5 text-primary-button mr-2" />
+                <span className="text-primary-button font-medium">{t('badge')}</span>
               </div>
             </div>
 
@@ -44,7 +42,7 @@ export default async function LifestyleSection() {
 
           <Link
             href="/experiences/lifestyle"
-            className="inline-flex items-center text-[color:var(--color-redmonacair)] font-medium hover:underline mt-4 md:mt-0"
+            className="inline-flex items-center text-primary-button font-medium hover:underline mt-4 md:mt-0"
           >
             {t('link')}
             <ChevronRight className="h-4 w-4 ml-1" />
@@ -81,7 +79,7 @@ export default async function LifestyleSection() {
                       )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                       <div className="p-4 text-white">
-                        <span className="bg-[color:var(--color-redmonacair)]/80 text-white text-sm px-2 py-1 rounded">
+                        <span className="bg-primary-button/80 text-white text-sm px-2 py-1 rounded">
                           {experience.category}
                         </span>
                       </div>
@@ -115,10 +113,10 @@ export default async function LifestyleSection() {
                         )}
                     </div>
                     <Button
-                      className="w-full bg-[color:var(--color-redmonacair)] hover:bg-[color:var(--color-redmonacair)]/90 text-white"
-                      asChild
+                      size="lg"
+                      className="w-full bg-primary-button hover:bg-primary-button/90 text-white"
                     >
-                      <Link href="experiences/lifestyle">{t('experiences.cta')}</Link>
+                      {t('experiences.cta')}
                     </Button>
                   </div>
                 </div>

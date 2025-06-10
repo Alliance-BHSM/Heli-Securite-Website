@@ -143,7 +143,7 @@ export default async function LegalMentionsPage() {
 
             <div className="bg-red-50 border-l-4 border-red-400 p-4">
               <div className="flex">
-                <span className="text-red-600 mr-3">⚠️</span>
+                <span className="text-primary-button mr-3">⚠️</span>
                 <p className="text-red-800 font-medium">{t('intellectualProperty.prohibition')}</p>
               </div>
             </div>
@@ -243,7 +243,7 @@ export default async function LegalMentionsPage() {
 
             <div className="bg-red-50 border-l-4 border-red-400 p-4">
               <div className="flex items-start">
-                <span className="text-red-600 mr-3 text-xl">⚖️</span>
+                <span className="text-primary-button mr-3 text-xl">⚖️</span>
                 <p className="text-gray-700 leading-relaxed font-medium">
                   {t('applicableLaw.description')}
                 </p>

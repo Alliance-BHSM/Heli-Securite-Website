@@ -58,7 +58,7 @@ const Listing = ({
         <div className="flex justify-end mb-3">
           <button
             onClick={() => setSelectedRegion(null)}
-            className="text-xs font-brother text-royalblue hover:underline"
+            className="text-xs font-brother text-primary hover:underline"
           >
             Show all destinations
           </button>

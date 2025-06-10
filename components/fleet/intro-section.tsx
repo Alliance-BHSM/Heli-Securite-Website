@@ -15,24 +15,24 @@ export default function IntroSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 h-full">
-            <div className="w-16 h-16 bg-[color:var(--color-redmonacair)]/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-              <Shield className="h-8 w-8 text-[color:var(--color-redmonacair)]" />
+            <div className="w-16 h-16 bg-primary-button/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <Shield className="h-8 w-8 text-primary-button" />
             </div>
             <h3 className="text-xl font-bold text-center mb-4">{t('cards.safety.title')}</h3>
             <p className="text-center text-gray-600">{t('cards.safety.description')}</p>
           </div>
 
           <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 h-full">
-            <div className="w-16 h-16 bg-[color:var(--color-redmonacair)]/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-              <Sparkles className="h-8 w-8 text-[color:var(--color-redmonacair)]" />
+            <div className="w-16 h-16 bg-primary-button/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <Sparkles className="h-8 w-8 text-primary-button" />
             </div>
             <h3 className="text-xl font-bold text-center mb-4">{t('cards.comfort.title')}</h3>
             <p className="text-center text-gray-600">{t('cards.comfort.description')}</p>
           </div>
 
           <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 h-full">
-            <div className="w-16 h-16 bg-[color:var(--color-redmonacair)]/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-              <Award className="h-8 w-8 text-[color:var(--color-redmonacair)]" />
+            <div className="w-16 h-16 bg-primary-button/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <Award className="h-8 w-8 text-primary-button" />
             </div>
             <h3 className="text-xl font-bold text-center mb-4">{t('cards.technology.title')}</h3>
             <p className="text-center text-gray-600">{t('cards.technology.description')}</p>

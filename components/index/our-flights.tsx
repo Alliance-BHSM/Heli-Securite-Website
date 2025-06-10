@@ -16,7 +16,7 @@ const OurFlights = async () => {
         <h2 className={'font-brother font-normal text-3xl md:text-5xl'}>
           {t.rich('title', {
             span: (chunks) => (
-              <span className={'font-caslon text-redmonacair'}>
+              <span className={'font-caslon text-primary-button'}>
                 {chunks}
                 <br />
               </span>

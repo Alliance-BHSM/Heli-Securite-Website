@@ -142,7 +142,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
   }
 
   return (
-    <section className="bg-royalblue py-16" id="booking-form">
+    <section className="bg-tertiary py-16" id="booking-form">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center font-brother text-white">
@@ -174,7 +174,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                 <div className="space-y-4">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="w-full">
-                      <label className="block text-sm font-medium text-royalblue mb-2">
+                      <label className="block text-sm font-medium text-primary mb-2">
                         {getLabel('fields.name', 'Nom complet')} *
                       </label>
                       <Input
@@ -189,7 +189,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                         placeholder={getLabel('placeholders.name', 'Votre nom complet')}
                       />
                       {errors.name && (
-                        <p className="text-red-500 text-sm mt-1 flex items-center gap-1">
+                        <p className="text-primary-button text-sm mt-1 flex items-center gap-1">
                           <AlertCircle className="h-4 w-4" />
                           {errors.name}
                         </p>
@@ -197,7 +197,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                     </div>
 
                     <div className="w-full">
-                      <label className="block text-sm font-medium text-royalblue mb-2">
+                      <label className="block text-sm font-medium text-primary mb-2">
                         {getLabel('fields.phone', 'Téléphone')} *
                       </label>
                       <Input
@@ -212,7 +212,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                         placeholder={getLabel('placeholders.phone', '+33 1 23 45 67 89')}
                       />
                       {errors.phone && (
-                        <p className="text-red-500 text-sm mt-1 flex items-center gap-1">
+                        <p className="text-primary-button text-sm mt-1 flex items-center gap-1">
                           <AlertCircle className="h-4 w-4" />
                           {errors.phone}
                         </p>
@@ -221,7 +221,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                   </div>
 
                   <div className="w-full">
-                    <label className="block text-sm font-medium text-royalblue mb-2">
+                    <label className="block text-sm font-medium text-primary mb-2">
                       {getLabel('fields.email', 'Email')} *
                     </label>
                     <Input
@@ -236,7 +236,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                       placeholder={getLabel('placeholders.email', 'votre.email@exemple.com')}
                     />
                     {errors.email && (
-                      <p className="text-red-500 text-sm mt-1 flex items-center gap-1">
+                      <p className="text-primary-button text-sm mt-1 flex items-center gap-1">
                         <AlertCircle className="h-4 w-4" />
                         {errors.email}
                       </p>
@@ -245,7 +245,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="w-full">
-                      <label className="block text-sm font-medium text-royalblue mb-2">
+                      <label className="block text-sm font-medium text-primary mb-2">
                         {getLabel('fields.experience', 'Expérience')} *
                       </label>
                       <Select value={selectedExperienceId} onValueChange={handleExperienceChange}>
@@ -271,7 +271,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                         </SelectContent>
                       </Select>
                       {errors.experience && (
-                        <p className="text-red-500 text-sm mt-1 flex items-center gap-1">
+                        <p className="text-primary-button text-sm mt-1 flex items-center gap-1">
                           <AlertCircle className="h-4 w-4" />
                           {errors.experience}
                         </p>
@@ -279,7 +279,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                     </div>
 
                     <div className="w-full">
-                      <label className="block text-sm font-medium text-royalblue mb-2">
+                      <label className="block text-sm font-medium text-primary mb-2">
                         {getLabel('fields.date', 'Date souhaitée')} *
                       </label>
                       <Input
@@ -294,7 +294,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                         )}
                       />
                       {errors.date && (
-                        <p className="text-red-500 text-sm mt-1 flex items-center gap-1">
+                        <p className="text-primary-button text-sm mt-1 flex items-center gap-1">
                           <AlertCircle className="h-4 w-4" />
                           {errors.date}
                         </p>
@@ -302,7 +302,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                     </div>
 
                     <div className="w-full">
-                      <label className="block text-sm font-medium text-royalblue mb-2">
+                      <label className="block text-sm font-medium text-primary mb-2">
                         {getLabel('fields.passengers', 'Nombre de personnes')} *
                       </label>
                       <Select value={passengers} onValueChange={setPassengers}>
@@ -329,13 +329,13 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                         checked={isCompany}
                         onCheckedChange={(checked) => setIsCompany(!!checked)}
                       />
-                      <label htmlFor="isCompany" className="text-sm font-medium text-royalblue">
+                      <label htmlFor="isCompany" className="text-sm font-medium text-primary">
                         {getLabel('fields.companyLabel', 'Réservation entreprise')}
                       </label>
                     </div>
                     {isCompany && (
                       <div className="w-full">
-                        <label className="block text-sm font-medium text-royalblue mb-2">
+                        <label className="block text-sm font-medium text-primary mb-2">
                           Nom de l&apos;entreprise *
                         </label>
                         <Input
@@ -353,7 +353,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                           )}
                         />
                         {errors.companyName && (
-                          <p className="text-red-500 text-sm mt-1 flex items-center gap-1">
+                          <p className="text-primary-button text-sm mt-1 flex items-center gap-1">
                             <AlertCircle className="h-4 w-4" />
                             {errors.companyName}
                           </p>
@@ -365,7 +365,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                   <div className="pt-4">
                     <Button
                       type="submit"
-                      className="w-full bg-redmonacair hover:bg-redmonacair/90 text-white py-3 px-6 rounded-lg font-medium text-lg transition-colors duration-200"
+                      className="w-full bg-primary-button hover:bg-primary-button/90 text-white py-3 px-6 rounded-lg font-medium text-lg transition-colors duration-200"
                       size="lg"
                     >
                       {getLabel('submit', 'Réserver maintenant')}

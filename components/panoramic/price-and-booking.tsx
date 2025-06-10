@@ -28,10 +28,10 @@ export const PriceAndBooking = ({
   const startDestination = canShowBookingButton ? (panoramicFlight.start as Destination) : null
 
   return (
-    <div className="bg-[color:var(--color-royalblue)]/80 rounded-2xl p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between min-h-[160px] sm:min-h-[180px]">
+    <div className="bg-primary/80 rounded-2xl p-3 sm:p-4 lg:p-5 flex-1 flex flex-col justify-between min-h-[160px] sm:min-h-[180px]">
       <div className="flex flex-col items-center justify-center h-[calc(100%-3.5rem)] flex-grow">
         <div className="flex flex-col items-center">
-          <span className="text-[color:var(--color-redmonacair)] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-brother text-center">
+          <span className="text-primary-button text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold font-brother text-center">
             {price ? `${price}€` : t('price')}
           </span>
           <span className="text-white text-base sm:text-lg lg:text-xl font-brother text-center">
@@ -62,7 +62,7 @@ export const PriceAndBooking = ({
         >
           <Button
             variant={'red'}
-            className="text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full text-base sm:text-lg lg:text-xl font-medium w-full bg-[color:var(--color-redmonacair)] hover:bg-[color:var(--color-redmonacair)]/90 transition-colors font-brother uppercase"
+            className="text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full text-base sm:text-lg lg:text-xl font-medium w-full bg-primary-button hover:bg-primary-button/90 transition-colors font-brother uppercase"
           >
             {t('bookButton')}
           </Button>

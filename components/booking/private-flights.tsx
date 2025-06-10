@@ -17,19 +17,19 @@ const PrivateFlights: React.FC = () => {
         key: 'flexibility',
         title: t('private-flights.flexibility.title'),
         description: t('private-flights.flexibility.description'),
-        icon: <ArrowUp className="h-5 w-5 text-redmonacair" />,
+        icon: <ArrowUp className="h-5 w-5 text-primary-button" />,
       },
       {
         key: 'service',
         title: t('private-flights.service.title'),
         description: t('private-flights.service.description'),
-        icon: <Award className="h-5 w-5 text-redmonacair" />,
+        icon: <Award className="h-5 w-5 text-primary-button" />,
       },
       {
         key: 'confidentiality',
         title: t('private-flights.confidentiality.title'),
         description: t('private-flights.confidentiality.description'),
-        icon: <Lock className="h-5 w-5 text-redmonacair" />,
+        icon: <Lock className="h-5 w-5 text-primary-button" />,
       },
     ],
     [t],
@@ -59,7 +59,7 @@ const PrivateFlights: React.FC = () => {
                     className="bg-gray-50 p-4 rounded-lg border border-gray-200 flex flex-col justify-between"
                   >
                     <div className="flex items-center mb-3">
-                      <div className="w-10 h-10 aspect-square rounded-full bg-redmonacair/10 flex items-center justify-center mr-3">
+                      <div className="w-10 h-10 aspect-square rounded-full bg-primary-button/10 flex items-center justify-center mr-3">
                         {icon}
                       </div>
                       <h3 className="text-base font-bold text-gray-900">{title}</h3>

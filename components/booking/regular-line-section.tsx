@@ -20,13 +20,13 @@ const RegularLineSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="w-full lg:w-1/2">
-            <h2 className="text-3xl sm:text-4xl font-bold font-brother mb-6 text-royalblue">
+            <h2 className="text-3xl sm:text-4xl font-bold font-brother mb-6 text-primary">
               {t('regular-line.title')}
             </h2>
             <p className="mb-8 text-gray-700">{t('regular-line.description')}</p>
             <div className="mb-8 space-y-5">
               <div className="flex items-center">
-                <div className="w-10 h-10 aspect-square rounded-full bg-redmonacair flex items-center justify-center mr-4">
+                <div className="w-10 h-10 aspect-square rounded-full bg-primary-button flex items-center justify-center mr-4">
                   <Clock className="h-5 w-5 text-white" />
                 </div>
                 <div>
@@ -35,7 +35,7 @@ const RegularLineSection: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="w-10 h-10 aspect-square rounded-full bg-redmonacair flex items-center justify-center mr-4">
+                <div className="w-10 h-10 aspect-square rounded-full bg-primary-button flex items-center justify-center mr-4">
                   <Euro className="h-5 w-5 text-white" />
                 </div>
                 <div>
@@ -44,7 +44,7 @@ const RegularLineSection: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="w-10 h-10 aspect-square rounded-full bg-redmonacair flex items-center justify-center mr-4">
+                <div className="w-10 h-10 aspect-square rounded-full bg-primary-button flex items-center justify-center mr-4">
                   <Calendar className="h-5 w-5 text-white" />
                 </div>
                 <div>
@@ -53,7 +53,7 @@ const RegularLineSection: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="w-10 h-10 aspect-square rounded-full bg-redmonacair flex items-center justify-center mr-4">
+                <div className="w-10 h-10 aspect-square rounded-full bg-primary-button flex items-center justify-center mr-4">
                   <Bus className="h-5 w-5 text-white" />
                 </div>
                 <div>

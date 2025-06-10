@@ -28,8 +28,8 @@ export default function IntroSection() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 h-full">
-            <div className="w-16 h-16 bg-[color:var(--color-redmonacair)]/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-              <Crown className="h-8 w-8 text-[color:var(--color-redmonacair)]" />
+            <div className="w-16 h-16 bg-primary-button/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <Crown className="h-8 w-8 text-primary-button" />
             </div>
             <h3 className="text-xl font-bold text-center mb-4">
               {t('intro.features.luxury.title')}
@@ -38,8 +38,8 @@ export default function IntroSection() {
           </div>
 
           <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 h-full">
-            <div className="w-16 h-16 bg-[color:var(--color-redmonacair)]/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-              <Sparkles className="h-8 w-8 text-[color:var(--color-redmonacair)]" />
+            <div className="w-16 h-16 bg-primary-button/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <Sparkles className="h-8 w-8 text-primary-button" />
             </div>
             <h3 className="text-xl font-bold text-center mb-4">
               {t('intro.features.exclusive.title')}
@@ -48,8 +48,8 @@ export default function IntroSection() {
           </div>
 
           <div className="bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 h-full">
-            <div className="w-16 h-16 bg-[color:var(--color-redmonacair)]/10 rounded-full flex items-center justify-center mb-6 mx-auto">
-              <Gem className="h-8 w-8 text-[color:var(--color-redmonacair)]" />
+            <div className="w-16 h-16 bg-primary-button/10 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <Gem className="h-8 w-8 text-primary-button" />
             </div>
             <h3 className="text-xl font-bold text-center mb-4">
               {t('intro.features.premium.title')}

@@ -25,10 +25,10 @@ export default async function CultureSection() {
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mb-12">
-          <div className="inline-block mb-4 bg-[color:var(--color-redmonacair)]/10 px-4 py-2 rounded-full">
+          <div className="inline-block mb-4 bg-primary-button/10 px-4 py-2 rounded-full">
             <div className="flex items-center">
-              <Landmark className="h-5 w-5 text-[color:var(--color-redmonacair)] mr-2" />
-              <span className="text-[color:var(--color-redmonacair)] font-medium">
+              <Landmark className="h-5 w-5 text-primary-button mr-2" />
+              <span className="text-primary-button font-medium">
                 {t('badge')}
               </span>
             </div>
@@ -71,7 +71,7 @@ export default async function CultureSection() {
                   {experience.description}
                 </p>
                 <Button
-                  className="bg-[color:var(--color-redmonacair)] hover:bg-[color:var(--color-redmonacair)]/90 text-white"
+                  className="bg-primary-button hover:bg-primary-button/90 text-white"
                   asChild
                 >
                   <Link href="#booking-form">En savoir plus</Link>
@@ -84,7 +84,7 @@ export default async function CultureSection() {
         <div className="text-center">
           <Link
             href="/experiences/culture"
-            className="inline-flex items-center text-[color:var(--color-redmonacair)] font-medium hover:underline"
+            className="inline-flex items-center text-primary-button font-medium hover:underline"
           >
             {t('link')}
             <ChevronRight className="h-4 w-4 ml-1" />

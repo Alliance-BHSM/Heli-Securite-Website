@@ -19,7 +19,7 @@ const Description = () => {
         <h1 className={'font-brother font-normal text-3xl sm:text-4xl md:text-5xl'}>
           {t.rich('title', {
             span: (chunks) => (
-              <span className={'font-caslon text-redmonacair'}>
+              <span className={'font-caslon text-primary-button'}>
                 <br />
                 {chunks}
               </span>

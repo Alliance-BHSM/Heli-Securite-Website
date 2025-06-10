@@ -27,7 +27,7 @@ export const PassengerSelector: React.FC<PassengerSelectorProps> = ({
 
   return (
     <div className={`w-full ${className}`}>
-      <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 font-brother text-royalblue">
+      <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 font-brother text-primary">
         {label || t('form.passengers.label')}
       </label>
       <TravelersDropdown

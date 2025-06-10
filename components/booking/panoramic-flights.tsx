@@ -60,7 +60,7 @@ const PanoramicFlights: React.FC<PanoramicFlightsProps> = ({ panoramicFlights })
   }, [scrollToBookingForm])
 
   return (
-    <section className="min-h-screen bg-royalblue text-white py-16" id={'panoramic-flights'}>
+    <section className="min-h-screen bg-primary text-white py-16" id={'panoramic-flights'}>
       <div className="container mx-auto px-4 max-w-6xl">
         <h1 className="text-5xl md:text-6xl font-bold font-brother text-center mb-8">
           {t('panoramic-flights.title')}

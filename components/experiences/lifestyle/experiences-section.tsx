@@ -44,13 +44,13 @@ export default async function ExperiencesSection() {
           {experiences.map((experience, index) => (
             <div key={experience.id} className="grid md:grid-cols-2 gap-8 items-center">
               <div className={index % 2 === 1 ? 'order-2 md:order-1' : ''}>
-                <span className="inline-block bg-[color:var(--color-redmonacair)] text-white text-sm px-3 py-1 rounded-full mb-4">
+                <span className="inline-block bg-primary-button text-white text-sm px-3 py-1 rounded-full mb-4">
                   {experience.category}
                 </span>
 
                 <div className="md:hidden mb-6">
                   <div className="relative">
-                    <div className="absolute inset-0 bg-[color:var(--color-redmonacair)]/10 rounded-lg transform rotate-3"></div>
+                    <div className="absolute inset-0 bg-primary-button/10 rounded-lg transform rotate-3"></div>
                     <div className="relative transform -rotate-3 rounded-lg overflow-hidden shadow-xl">
                       {experience.image &&
                         typeof experience.image !== 'string' &&
@@ -95,7 +95,7 @@ export default async function ExperiencesSection() {
               <div
                 className={`relative hidden md:block ${index % 2 === 1 ? 'order-1 md:order-2' : ''}`}
               >
-                <div className="absolute inset-0 bg-[color:var(--color-redmonacair)]/10 rounded-lg transform rotate-3"></div>
+                <div className="absolute inset-0 bg-primary-button/10 rounded-lg transform rotate-3"></div>
                 <div className="relative transform -rotate-3 rounded-lg overflow-hidden shadow-xl">
                   {experience.image &&
                     typeof experience.image !== 'string' &&

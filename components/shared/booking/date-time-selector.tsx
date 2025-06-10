@@ -49,7 +49,7 @@ export const DateTimeSelector: React.FC<DateTimeSelectorProps> = ({
   return (
     <>
       <div className={`w-full ${dateClassName}`}>
-        <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 font-brother text-royalblue">
+        <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 font-brother text-primary">
           {dateLabel || defaultDateLabel}
         </label>
         <Input
@@ -61,7 +61,7 @@ export const DateTimeSelector: React.FC<DateTimeSelectorProps> = ({
         />
       </div>
       <div className={`w-full ${timeClassName}`}>
-        <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 font-brother text-royalblue">
+        <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 font-brother text-primary">
           {timeLabel || defaultTimeLabel}
         </label>
         <Select value={time} onValueChange={onTimeChange}>

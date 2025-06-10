@@ -14,7 +14,7 @@ export default function CustomerSupport() {
         <div className="flex items-start">
           <div className="flex-shrink-0 mr-4">
             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-              <Info className="h-5 w-5 text-royalblue" />
+              <Info className="h-5 w-5 text-primary" />
             </div>
           </div>
           <div>
@@ -22,11 +22,11 @@ export default function CustomerSupport() {
             <p className="text-sm text-gray-600 mb-4">{t('customerSupport.description')}</p>
             <div className="space-y-2">
               <div className="flex items-center text-sm">
-                <Phone className="h-4 w-4 mr-2 text-royalblue" />
+                <Phone className="h-4 w-4 mr-2 text-primary" />
                 <span>+377 97 97 39 00</span>
               </div>
               <div className="flex items-center text-sm">
-                <Mail className="h-4 w-4 mr-2 text-royalblue" />
+                <Mail className="h-4 w-4 mr-2 text-primary" />
                 <span>booking@monacair.mc</span>
               </div>
             </div>

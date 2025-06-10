@@ -216,7 +216,7 @@ export default async function CookiesPage() {
 
             <div className="bg-red-50 border-l-4 border-red-400 p-4">
               <div className="flex items-start">
-                <span className="text-red-600 mr-3">⚠️</span>
+                <span className="text-primary-button mr-3">⚠️</span>
                 <p className="text-red-800 font-medium">{t('management.warning')}</p>
               </div>
             </div>

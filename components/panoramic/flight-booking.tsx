@@ -39,7 +39,7 @@ export default function FlightBooking({
   if (!panoramicFlight) {
     return (
       <div className="container mx-auto px-4 sm:px-8 lg:px-16 xl:px-24">
-        <div className="bg-[color:var(--color-royalblue)] rounded-3xl p-4 sm:p-6 lg:p-8 text-white text-center">
+        <div className="bg-primary rounded-3xl p-4 sm:p-6 lg:p-8 text-white text-center">
           <p className="text-base sm:text-lg">{t('noFlightSelected')}</p>
         </div>
       </div>
@@ -52,7 +52,7 @@ export default function FlightBooking({
   if (!hasSharedOption && !hasPrivateOption) {
     return (
       <div className="container mx-auto px-4 sm:px-8 lg:px-16 xl:px-24">
-        <div className="bg-[color:var(--color-royalblue)] rounded-3xl p-4 sm:p-6 lg:p-8 text-white text-center">
+        <div className="bg-primary rounded-3xl p-4 sm:p-6 lg:p-8 text-white text-center">
           <p className="text-base sm:text-lg">{t('noFlightOptions')}</p>
         </div>
       </div>
@@ -61,7 +61,7 @@ export default function FlightBooking({
 
   return (
     <div className="container mx-auto px-4 sm:px-8 lg:px-16 xl:px-24">
-      <div className="bg-[color:var(--color-royalblue)] rounded-3xl p-3 sm:p-4 lg:p-6 flex flex-col lg:flex-row gap-3 sm:gap-4 lg:gap-6">
+      <div className="bg-primary rounded-3xl p-3 sm:p-4 lg:p-6 flex flex-col lg:flex-row gap-3 sm:gap-4 lg:gap-6">
         <FlightTypeSelector
           flightType={flightType}
           onFlightTypeChange={(value) => setFlightType(value as 'shared' | 'private')}

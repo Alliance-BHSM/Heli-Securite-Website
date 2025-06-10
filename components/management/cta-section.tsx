@@ -17,7 +17,7 @@ export default function CTASection() {
           {t('description')}
         </p>
         <Link href="/contact">
-          <Button variant="red" className="font-brother text-white">
+          <Button variant="primary" className="font-brother text-white">
             {t('CTA')}
           </Button>
         </Link>

@@ -13,7 +13,7 @@ const ExclusiveDestinations = () => {
         <div className="flex flex-col items-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-brother font-medium text-black mb-6 text-center">
             {t.rich('title', {
-              span: (chunks) => <span className="font-caslon text-redmonacair">{chunks}</span>,
+              span: (chunks) => <span className="font-caslon text-primary-button">{chunks}</span>,
             })}
           </h2>
           <p className="text-base md:text-lg text-center max-w-3xl text-gray-700 font-brother">
@@ -36,22 +36,22 @@ const ExclusiveDestinations = () => {
                 <h3 className="text-2xl font-brother font-medium text-white mb-3">
                   {t.rich('categories.events.title', {
                     span: (chunks) => (
-                      <span className="font-caslon text-redmonacair">{chunks}</span>
+                      <span className="font-caslon text-primary-button">{chunks}</span>
                     ),
                   })}
                 </h3>
                 <p className="text-white/90 text-sm mb-4">{t('categories.events.description')}</p>
                 <ul className="space-y-2">
                   <li className="flex items-center text-white">
-                    <CheckCircle className="w-5 h-5 mr-2 text-redmonacair flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 mr-2 text-primary-button flex-shrink-0" />
                     {t('categories.events.examples.first')}
                   </li>
                   <li className="flex items-center text-white">
-                    <CheckCircle className="w-5 h-5 mr-2 text-redmonacair flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 mr-2 text-primary-button flex-shrink-0" />
                     {t('categories.events.examples.second')}
                   </li>
                   <li className="flex items-center text-white">
-                    <CheckCircle className="w-5 h-5 mr-2 text-redmonacair flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 mr-2 text-primary-button flex-shrink-0" />
                     {t('categories.events.examples.third')}
                   </li>
                 </ul>
@@ -73,22 +73,22 @@ const ExclusiveDestinations = () => {
                 <h3 className="text-2xl font-brother font-medium text-white mb-3">
                   {t.rich('categories.luxury.title', {
                     span: (chunks) => (
-                      <span className="font-caslon text-redmonacair">{chunks}</span>
+                      <span className="font-caslon text-primary-button">{chunks}</span>
                     ),
                   })}
                 </h3>
                 <p className="text-white/90 text-sm mb-4">{t('categories.luxury.description')}</p>
                 <ul className="space-y-2">
                   <li className="flex items-center text-white">
-                    <CheckCircle className="w-5 h-5 mr-2 text-redmonacair flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 mr-2 text-primary-button flex-shrink-0" />
                     {t('categories.luxury.examples.first')}
                   </li>
                   <li className="flex items-center text-white">
-                    <CheckCircle className="w-5 h-5 mr-2 text-redmonacair flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 mr-2 text-primary-button flex-shrink-0" />
                     {t('categories.luxury.examples.second')}
                   </li>
                   <li className="flex items-center text-white">
-                    <CheckCircle className="w-5 h-5 mr-2 text-redmonacair flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 mr-2 text-primary-button flex-shrink-0" />
                     {t('categories.luxury.examples.third')}
                   </li>
                 </ul>
@@ -110,22 +110,22 @@ const ExclusiveDestinations = () => {
                 <h3 className="text-2xl font-brother font-medium text-white mb-3">
                   {t.rich('categories.business.title', {
                     span: (chunks) => (
-                      <span className="font-caslon text-redmonacair">{chunks}</span>
+                      <span className="font-caslon text-primary-button">{chunks}</span>
                     ),
                   })}
                 </h3>
                 <p className="text-white/90 text-sm mb-4">{t('categories.business.description')}</p>
                 <ul className="space-y-2">
                   <li className="flex items-center text-white">
-                    <CheckCircle className="w-5 h-5 mr-2 text-redmonacair flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 mr-2 text-primary-button flex-shrink-0" />
                     {t('categories.business.examples.first')}
                   </li>
                   <li className="flex items-center text-white">
-                    <CheckCircle className="w-5 h-5 mr-2 text-redmonacair flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 mr-2 text-primary-button flex-shrink-0" />
                     {t('categories.business.examples.second')}
                   </li>
                   <li className="flex items-center text-white">
-                    <CheckCircle className="w-5 h-5 mr-2 text-redmonacair flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 mr-2 text-primary-button flex-shrink-0" />
                     {t('categories.business.examples.third')}
                   </li>
                 </ul>

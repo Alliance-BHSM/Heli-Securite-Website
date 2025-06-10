@@ -42,16 +42,16 @@ const DetailsPage: React.FC<DestinationProps> = ({ destination }) => {
         )}
       </div>
       <div className="mt-10 md:mt-20 flex flex-col items-center justify-center">
-        <h3 className="font-caslon text-redmonacair text-3xl sm:text-4xl md:text-6xl mb-6 sm:mb-8">
+        <h3 className="font-caslon text-primary-button text-3xl sm:text-4xl md:text-6xl mb-6 sm:mb-8">
           {destination.custom_text}
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {destination.advantages.map((advantage, index) => (
             <div
               key={advantage.id || index}
-              className="bg-royalblue rounded-lg p-4 sm:p-6 shadow-md flex flex-col justify-center items-center"
+              className="bg-primary rounded-lg p-4 sm:p-6 shadow-md flex flex-col justify-center items-center"
             >
-              <h4 className="font-brother text-redmonacair text-lg sm:text-2xl mb-2 sm:mb-3 text-center">
+              <h4 className="font-brother text-primary-button text-lg sm:text-2xl mb-2 sm:mb-3 text-center">
                 {advantage.title}
               </h4>
               <p className="text-center text-white font-brother text-sm sm:text-base">

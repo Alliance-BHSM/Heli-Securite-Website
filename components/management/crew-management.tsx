@@ -49,8 +49,8 @@ export default function CrewManagement() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center mb-12">
-          <div className="w-16 h-16 rounded-full bg-[color:var(--color-redmonacair)]/10 flex items-center justify-center mb-6">
-            <Users className="h-8 w-8 text-[color:var(--color-redmonacair)]" />
+          <div className="w-16 h-16 rounded-full bg-primary-button/10 flex items-center justify-center mb-6">
+            <Users className="h-8 w-8 text-primary-button" />
           </div>
           <h2 className="text-3xl font-bold text-black mb-4 font-brother">{t('title')}</h2>
           <div className="max-w-3xl">

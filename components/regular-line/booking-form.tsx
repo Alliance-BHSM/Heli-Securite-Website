@@ -77,7 +77,7 @@ export default function BookingForm({
 
   return (
     <section className="py-8 sm:py-12 md:py-16 relative">
-      <div className="absolute inset-0 bg-royalblue transform -skew-y-3 origin-top-right z-0"></div>
+      <div className="absolute inset-0 bg-primary transform -skew-y-3 origin-top-right z-0"></div>
       <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-4 sm:pt-6 md:pt-12">
         <div className="max-w-4xl mx-auto text-white">
           <div className="text-center mb-6 sm:mb-8">
@@ -89,7 +89,7 @@ export default function BookingForm({
 
           <div className="bg-white text-gray-900 rounded-xl overflow-hidden shadow-xl">
             <div className="p-4 sm:p-6 md:p-8">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 md:mb-6 font-brother text-royalblue">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4 md:mb-6 font-brother text-primary">
                 {t('form.title')}
               </h3>
               <div className="grid gap-3 sm:gap-4 md:gap-6">
@@ -139,7 +139,7 @@ export default function BookingForm({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 mt-2">
                   <div className="flex items-center justify-between px-4 py-3 bg-gray-50 rounded-md">
                     <div className="space-y-0.5">
-                      <h4 className="font-medium text-sm font-brother text-royalblue">
+                      <h4 className="font-medium text-sm font-brother text-primary">
                         {isReturn ? t('form.flight-type.return') : t('form.flight-type.one-way')}
                       </h4>
                     </div>
@@ -155,7 +155,7 @@ export default function BookingForm({
                     <div>
                       <label
                         htmlFor="flex"
-                        className="font-medium text-sm font-brother text-royalblue cursor-pointer"
+                        className="font-medium text-sm font-brother text-primary cursor-pointer"
                       >
                         {t('form.flex.label')}
                       </label>
@@ -167,7 +167,7 @@ export default function BookingForm({
                 <Link href={getBookingUrl()} className="inline-block w-full">
                   <Button
                     size="lg"
-                    className="bg-redmonacair hover:bg-redmonacair/90 text-white font-brother w-full mt-2 sm:mt-4 h-12"
+                    className="bg-primary-button hover:bg-primary-button/90 text-white font-brother w-full mt-2 sm:mt-4 h-12"
                     disabled={loading || !departure || !arrival}
                   >
                     {t('form.bookNow')}

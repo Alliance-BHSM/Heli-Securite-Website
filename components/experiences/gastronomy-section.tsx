@@ -23,15 +23,13 @@ export default async function GastronomySection() {
 
   return (
     <section className="py-20 relative overflow-hidden bg-gray-50" id="gastronomy-section">
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[color:var(--color-redmonacair)]/5 to-transparent z-0"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary-button/5 to-transparent z-0"></div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl mb-12">
-          <div className="inline-block mb-4 bg-[color:var(--color-redmonacair)]/10 px-4 py-2 rounded-full">
+          <div className="inline-block mb-4 bg-primary-button/10 px-4 py-2 rounded-full">
             <div className="flex items-center">
-              <Utensils className="h-5 w-5 text-[color:var(--color-redmonacair)] mr-2" />
-              <span className="text-[color:var(--color-redmonacair)] font-medium">
-                {t('badge')}
-              </span>
+              <Utensils className="h-5 w-5 text-primary-button mr-2" />
+              <span className="text-primary-button font-medium">{t('badge')}</span>
             </div>
           </div>
 
@@ -70,10 +68,10 @@ export default async function GastronomySection() {
                 </h3>
                 <p className="mb-4 line-clamp-3">{experience.description}</p>
                 <Button
-                  className="bg-[color:var(--color-redmonacair)] hover:bg-[color:var(--color-redmonacair)]/90 text-white"
-                  asChild
+                  size="lg"
+                  className="bg-primary-button hover:bg-primary-button/90 text-white"
                 >
-                  <Link href="/experiences/gastronomie">{t('experiences.cta')}</Link>
+                  {t('cta')}
                 </Button>
               </div>
             </div>
@@ -83,7 +81,7 @@ export default async function GastronomySection() {
         <div className="text-center">
           <Link
             href="/experiences/gastronomie"
-            className="inline-flex items-center text-[color:var(--color-redmonacair)] font-medium hover:underline"
+            className="inline-flex items-center text-primary-button font-medium hover:underline"
           >
             {t('link')}
             <ChevronRight className="h-4 w-4 ml-1" />

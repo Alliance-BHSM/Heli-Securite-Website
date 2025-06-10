@@ -22,7 +22,7 @@ export default async function LocaleLayout({
   const payload = await getPayloadClient()
 
   return (
-    <html lang={locale} className={'bg-royalblue'}>
+    <html lang={locale} className={'bg-primary'}>
       <body className={'scroll-smooth'}>
         <NextIntlClientProvider>
           <Suspense>

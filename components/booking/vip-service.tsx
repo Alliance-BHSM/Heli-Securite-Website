@@ -7,10 +7,10 @@ const VipService = () => {
   return (
     <section className="py-16 bg-white">
       <div className="flex justify-center px-4 sm:px-6 lg:px-8">
-        <div className="bg-royalblue rounded-2xl shadow-lg p-8 sm:p-12 max-w-full w-full text-white">
+        <div className="bg-tertiary rounded-2xl shadow-lg p-8 sm:p-12 max-w-full w-full text-black">
           <h2 className="text-3xl sm:text-4xl font-bold font-brother mb-2">
             {t('vip-service.title')}{' '}
-            <span className="text-redmonacair">{t('vip-service.title-highlight')}</span>{' '}
+            <span className="text-primary">{t('vip-service.title-highlight')}</span>{' '}
             {t('vip-service.title-end')}
           </h2>
 

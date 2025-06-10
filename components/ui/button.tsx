@@ -9,10 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        red: 'bg-redmonacair font-brother border-black border text-white shadow-xs hover:bg-royalblue cursor-pointer',
-        blue: 'bg-royalblue font-brother text-white shadow-xs hover:bg-redmonacair cursor-pointer',
-        black: 'bg-black font-brother text-white shadow-xs hover:bg-redmonacair cursor-pointer',
-        white: 'bg-white font-brother text-black shadow-xs hover:bg-redmonacair cursor-pointer',
+        primary:
+          'bg-primary-button font-brother text-white shadow-xs hover:bg-primary-button/90 cursor-pointer',
+        secondary:
+          'bg-white font-brother text-primary shadow-xs hover:bg-secondary-button/90 cursor-pointer',
+        black:
+          'bg-primary font-brother text-secondary shadow-xs hover:bg-primary/90 cursor-pointer',
+        white: 'bg-secondary font-brother text-primary shadow-xs hover:bg-tertiary cursor-pointer',
+        red: 'bg-primary-button font-brother text-white shadow-xs hover:bg-primary-button/90 cursor-pointer',
+        blue: 'bg-primary-button font-brother text-white shadow-xs hover:bg-primary-button/90 cursor-pointer',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',
@@ -22,7 +27,7 @@ const buttonVariants = cva(
       },
     },
     defaultVariants: {
-      variant: 'red',
+      variant: 'primary',
       size: 'lg',
     },
   },

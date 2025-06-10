@@ -39,7 +39,7 @@ export const DestinationSelector: React.FC<DestinationSelectorProps> = ({
   return (
     <div className={`grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 ${className}`}>
       <div className="w-full">
-        <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 font-brother text-royalblue">
+        <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 font-brother text-primary">
           {departureLabel || t('form.departure.label')}
         </label>
         <Select value={departure} onValueChange={onDepartureChange}>
@@ -66,7 +66,7 @@ export const DestinationSelector: React.FC<DestinationSelectorProps> = ({
         </Select>
       </div>
       <div className="w-full">
-        <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 font-brother text-royalblue">
+        <label className="block text-xs sm:text-sm font-medium mb-1 sm:mb-2 font-brother text-primary">
           {arrivalLabel || t('form.arrival.label')}
         </label>
         <Select value={arrival} onValueChange={onArrivalChange}>

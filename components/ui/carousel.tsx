@@ -178,7 +178,7 @@ function CarouselPrevious({
       onClick={scrollPrev}
       {...props}
     >
-      <CircleArrowLeft className={'size-8 md:size-12 text-redmonacair'} />
+      <CircleArrowLeft className={'size-8 md:size-12 text-primary-button'} />
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -226,7 +226,7 @@ function CarouselNext({
       onClick={scrollNext}
       {...props}
     >
-      <CircleArrowRight className={'size-8 md:size-12 text-redmonacair'} />
+      <CircleArrowRight className={'size-8 md:size-12 text-primary-button'} />
       <span className="sr-only">Next slide</span>
     </Button>
   )

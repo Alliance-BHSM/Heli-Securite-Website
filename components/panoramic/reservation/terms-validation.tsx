@@ -42,7 +42,7 @@ export default function TermsValidation({
               {t('termsValidation.acceptTerms')}
             </label>
             <p className="text-sm text-muted-foreground">
-              <Link href="#" className="text-royalblue hover:underline">
+              <Link href="#" className="text-primary hover:underline">
                 {t('termsValidation.viewTerms')}
               </Link>
             </p>
@@ -58,7 +58,7 @@ export default function TermsValidation({
 
         <Button
           type="submit"
-          className="w-full bg-royalblue hover:bg-redmonacair text-white"
+          className="w-full bg-primary hover:bg-primary-button text-white"
           disabled={!acceptTerms}
           onClick={onSubmit}
         >

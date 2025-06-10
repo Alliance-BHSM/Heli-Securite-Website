@@ -18,7 +18,7 @@ const Destinations: React.FC = () => {
       <div className="container mx-auto w-full px-4 sm:px-6 lg:px-8">
         <div className="relative mx-auto rounded-2xl overflow-hidden shadow-lg">
           <Image src="/images/index/hero.webp" alt="" fill className="object-cover" />
-          <div className="absolute inset-0 bg-royalblue/80" />
+          <div className="absolute inset-0 bg-primary/80" />
           <div className="relative px-6 py-10 text-start">
             <h2 className="text-2xl font-bold font-brother text-white mb-4">
               {t('destinations.title')}

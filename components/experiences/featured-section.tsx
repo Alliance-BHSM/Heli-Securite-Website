@@ -19,27 +19,27 @@ export default function FeaturedSection() {
         <div className="space-y-16">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <span className="inline-block bg-[color:var(--color-redmonacair)] text-white text-sm px-3 py-1 rounded-full mb-4">
+              <span className="inline-block bg-primary-button text-white text-sm px-3 py-1 rounded-full mb-4">
                 {t('experiences.dinner.badge')}
               </span>
               <h3 className="text-2xl font-bold mb-4">{t('experiences.dinner.title')}</h3>
               <p className="mb-6">{t('experiences.dinner.description')}</p>
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="flex items-center text-sm">
-                  <Clock className="h-4 w-4 text-[color:var(--color-redmonacair)] mr-1" />
+                  <Clock className="h-4 w-4 text-primary-button mr-1" />
                   <span>Durée: {t('experiences.dinner.duration')}</span>
                 </div>
                 <div className="flex items-center text-sm">
-                  <Users className="h-4 w-4 text-[color:var(--color-redmonacair)] mr-1" />
+                  <Users className="h-4 w-4 text-primary-button mr-1" />
                   <span>{t('experiences.dinner.people')}</span>
                 </div>
                 <div className="flex items-center text-sm">
-                  <Calendar className="h-4 w-4 text-[color:var(--color-redmonacair)] mr-1" />
+                  <Calendar className="h-4 w-4 text-primary-button mr-1" />
                   <span>{t('experiences.dinner.date')}</span>
                 </div>
               </div>
               <Button
-                className="bg-[color:var(--color-redmonacair)] hover:bg-[color:var(--color-redmonacair)]/90 text-white"
+                className="bg-primary-button hover:bg-primary-button/90 text-white"
                 asChild
               >
                 <Link href="#booking-form">
@@ -71,27 +71,27 @@ export default function FeaturedSection() {
             </div>
 
             <div className="order-1 md:order-2">
-              <span className="inline-block bg-[color:var(--color-redmonacair)] text-white text-sm px-3 py-1 rounded-full mb-4">
+              <span className="inline-block bg-primary-button text-white text-sm px-3 py-1 rounded-full mb-4">
                 {t('experiences.grandprix.badge')}
               </span>
               <h3 className="text-2xl font-bold mb-4">{t('experiences.grandprix.title')}</h3>
               <p className="mb-6">{t('experiences.grandprix.description')}</p>
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="flex items-center text-sm">
-                  <Clock className="h-4 w-4 text-[color:var(--color-redmonacair)] mr-1" />
+                  <Clock className="h-4 w-4 text-primary-button mr-1" />
                   <span>Durée: {t('experiences.grandprix.duration')}</span>
                 </div>
                 <div className="flex items-center text-sm">
-                  <Users className="h-4 w-4 text-[color:var(--color-redmonacair)] mr-1" />
+                  <Users className="h-4 w-4 text-primary-button mr-1" />
                   <span>{t('experiences.grandprix.people')}</span>
                 </div>
                 <div className="flex items-center text-sm">
-                  <Calendar className="h-4 w-4 text-[color:var(--color-redmonacair)] mr-1" />
+                  <Calendar className="h-4 w-4 text-primary-button mr-1" />
                   <span>{t('experiences.grandprix.date')}</span>
                 </div>
               </div>
               <Button
-                className="bg-[color:var(--color-redmonacair)] hover:bg-[color:var(--color-redmonacair)]/90 text-white"
+                className="bg-primary-button hover:bg-primary-button/90 text-white"
                 asChild
               >
                 <Link href="#booking-form">
@@ -103,27 +103,27 @@ export default function FeaturedSection() {
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <span className="inline-block bg-[color:var(--color-redmonacair)] text-white text-sm px-3 py-1 rounded-full mb-4">
+              <span className="inline-block bg-primary-button text-white text-sm px-3 py-1 rounded-full mb-4">
                 {t('experiences.provence.badge')}
               </span>
               <h3 className="text-2xl font-bold mb-4">{t('experiences.provence.title')}</h3>
               <p className="mb-6">{t('experiences.provence.description')}</p>
               <div className="flex flex-wrap gap-4 mb-6">
                 <div className="flex items-center text-sm">
-                  <Clock className="h-4 w-4 text-[color:var(--color-redmonacair)] mr-1" />
+                  <Clock className="h-4 w-4 text-primary-button mr-1" />
                   <span>Durée: {t('experiences.provence.duration')}</span>
                 </div>
                 <div className="flex items-center text-sm">
-                  <Users className="h-4 w-4 text-[color:var(--color-redmonacair)] mr-1" />
+                  <Users className="h-4 w-4 text-primary-button mr-1" />
                   <span>{t('experiences.provence.people')}</span>
                 </div>
                 <div className="flex items-center text-sm">
-                  <Calendar className="h-4 w-4 text-[color:var(--color-redmonacair)] mr-1" />
+                  <Calendar className="h-4 w-4 text-primary-button mr-1" />
                   <span>{t('experiences.provence.date')}</span>
                 </div>
               </div>
               <Button
-                className="bg-[color:var(--color-redmonacair)] hover:bg-[color:var(--color-redmonacair)]/90 text-white"
+                className="bg-primary-button hover:bg-primary-button/90 text-white"
                 asChild
               >
                 <Link href="#booking-form">

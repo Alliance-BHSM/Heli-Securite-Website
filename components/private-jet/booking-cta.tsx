@@ -8,15 +8,15 @@ const BookingCta = () => {
   const t = useTranslations('PrivateJet.booking')
 
   return (
-    <section className="w-full py-20 bg-royalblue relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-redmonacair/20 -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-redmonacair/10 translate-x-1/3 translate-y-1/3 blur-3xl"></div>
+    <section className="w-full py-20 bg-primary relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-primary-button/20 -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-primary-button/10 translate-x-1/3 translate-y-1/3 blur-3xl"></div>
 
       <div className="container px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 mx-auto relative z-10">
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-brother font-medium text-white mb-6">
             {t.rich('title', {
-              span: (chunks) => <span className="font-caslon text-redmonacair">{chunks}</span>,
+              span: (chunks) => <span className="font-caslon text-primary-button">{chunks}</span>,
             })}
           </h2>
           <p className="text-base md:text-lg text-white/80 mb-10 font-brother">

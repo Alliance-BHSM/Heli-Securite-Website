@@ -18,7 +18,7 @@ export default function CostControl() {
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start">
-                  <CheckCircle2 className="h-5 w-5 text-[color:var(--color-redmonacair)] mr-3 mt-1 flex-shrink-0" />
+                  <CheckCircle2 className="h-5 w-5 text-primary-button mr-3 mt-1 flex-shrink-0" />
                   <p className="text-black font-brother">{benefit}</p>
                 </div>
               ))}

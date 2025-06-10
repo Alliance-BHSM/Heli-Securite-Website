@@ -19,7 +19,7 @@ export default function CTASection() {
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
-                  className="bg-[color:var(--color-redmonacair)] hover:bg-[color:var(--color-redmonacair)]/90 text-white"
+                  className="bg-primary-button hover:bg-primary-button/90 text-white"
                   asChild
                 >
                   <Link href="#booking-form">{t('book')}</Link>
@@ -31,7 +31,7 @@ export default function CTASection() {
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 bg-[color:var(--color-redmonacair)]/10 rounded-lg"></div>
+              <div className="absolute inset-0 bg-primary-button/10 rounded-lg"></div>
               <div className="relative rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src="/images/index/jet.webp"

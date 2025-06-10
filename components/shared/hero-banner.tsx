@@ -43,8 +43,8 @@ export function HeroBanner({
             <Link href={buttonHref} className="inline-block">
               <Button
                 size="lg"
-                variant="red"
-                className="font-brother bg-[color:var(--color-redmonacair)] hover:bg-[color:var(--color-redmonacair)]/90 px-8 py-3 rounded-md font-bold text-lg"
+                variant="primary"
+                className="font-brother px-8 py-3 rounded-md font-bold text-lg"
               >
                 {buttonText}
               </Button>

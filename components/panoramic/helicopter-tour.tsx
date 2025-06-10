@@ -33,9 +33,9 @@ export default function HelicopterTour({ panoramicFlight, passengers }: Helicopt
 
   const icons = useMemo(
     () => ({
-      Eye: <Eye className="w-5 h-5 text-[color:var(--color-redmonacair)]" />,
-      Shield: <Shield className="w-5 h-5 text-[color:var(--color-redmonacair)]" />,
-      Users: <Users className="w-5 h-5 text-[color:var(--color-redmonacair)]" />,
+      Eye: <Eye className="w-5 h-5 text-primary-button" />,
+      Shield: <Shield className="w-5 h-5 text-primary-button" />,
+      Users: <Users className="w-5 h-5 text-primary-button" />,
     }),
     [],
   )
@@ -204,7 +204,7 @@ export default function HelicopterTour({ panoramicFlight, passengers }: Helicopt
   if (!panoramicFlight) {
     return (
       <div className="max-w-6xl mx-auto px-4 py-12 md:py-16">
-        <h1 className="text-3xl md:text-4xl font-serif font-caslon font-bold text-[color:var(--color-royalblue)] mb-12 max-w-md">
+        <h1 className="text-3xl md:text-4xl font-serif font-caslon font-bold text-primary mb-12 max-w-md">
           {t('title')}
         </h1>
         <p className="text-center">{t('noFlightDataAvailable')}</p>
@@ -214,14 +214,14 @@ export default function HelicopterTour({ panoramicFlight, passengers }: Helicopt
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12 md:py-16">
-      <h1 className="text-3xl md:text-4xl font-serif font-caslon font-bold text-[color:var(--color-royalblue)] mb-12 max-w-md">
+      <h1 className="text-3xl md:text-4xl font-serif font-caslon font-bold text-primary mb-12 max-w-md">
         {t('title')}
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
         {featuresConfig.map((feature) => (
           <div key={feature.key} className="bg-gray-100 p-6 rounded-lg">
-            <div className="w-10 h-10 bg-[color:var(--color-redmonacair)]/10 rounded-full flex items-center justify-center mb-4">
+            <div className="w-10 h-10 bg-primary-button/10 rounded-full flex items-center justify-center mb-4">
               {icons[feature.icon]}
             </div>
             <h3 className="font-bold font-brother text-xl mb-3">{t(feature.titleKey as any)}</h3>
@@ -268,7 +268,7 @@ export default function HelicopterTour({ panoramicFlight, passengers }: Helicopt
               >
                 <Button
                   variant={'red'}
-                  className="bg-[color:var(--color-redmonacair)] hover:bg-[color:var(--color-redmonacair)]/90 text-white font-brother"
+                  className="bg-primary-button hover:bg-primary-button/90 text-white font-brother"
                 >
                   {t('cta.button')}
                 </Button>

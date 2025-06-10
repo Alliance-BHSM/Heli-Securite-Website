@@ -11,22 +11,22 @@ export default function Maintenance() {
     {
       title: 'Grimaud',
       description: 'Saint-Tropez',
-      icon: <Ship className="h-5 w-5 text-[color:var(--color-redmonacair)]" />,
+      icon: <Ship className="h-5 w-5 text-primary-button" />,
     },
     {
       title: 'Cannes',
       description: "Côte d'Azur",
-      icon: <Landmark className="h-5 w-5 text-[color:var(--color-redmonacair)]" />,
+      icon: <Landmark className="h-5 w-5 text-primary-button" />,
     },
     {
       title: 'Annecy',
       description: 'Haute-Savoie',
-      icon: <Building className="h-5 w-5 text-[color:var(--color-redmonacair)]" />,
+      icon: <Building className="h-5 w-5 text-primary-button" />,
     },
     {
       title: 'Monaco',
       description: 'Principauté',
-      icon: <Castle className="h-5 w-5 text-[color:var(--color-redmonacair)]" />,
+      icon: <Castle className="h-5 w-5 text-primary-button" />,
     },
   ]
 
@@ -36,8 +36,8 @@ export default function Maintenance() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full bg-[color:var(--color-redmonacair)]/10 flex items-center justify-center mr-4">
-                <Wrench className="h-6 w-6 text-[color:var(--color-redmonacair)]" />
+              <div className="w-12 h-12 rounded-full bg-primary-button/10 flex items-center justify-center mr-4">
+                <Wrench className="h-6 w-6 text-primary-button" />
               </div>
               <h2 className="text-3xl font-bold text-black font-brother">{t('title')}</h2>
             </div>
@@ -54,7 +54,7 @@ export default function Maintenance() {
                   <BentoGridItem
                     key={index}
                     title={
-                      <span className="text-lg font-brother text-[color:var(--color-redmonacair)]">
+                      <span className="text-lg font-brother text-primary-button">
                         {location.title}
                       </span>
                     }

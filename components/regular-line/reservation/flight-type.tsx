@@ -25,11 +25,11 @@ export default function FlightType({ flightType, setFlightType }: FlightTypeProp
         <div className="flex justify-center">
           <div className="w-full max-w-md">
             <div className="flex flex-col items-center justify-between rounded-md border-2 border-redmonacair bg-white p-4">
-              <div className="mb-3 w-12 h-12 rounded-full bg-redmonacair/10 flex items-center justify-center">
+              <div className="mb-3 w-12 h-12 rounded-full bg-primary-button/10 flex items-center justify-center">
                 {isPrivate ? (
-                  <Star className="h-6 w-6 text-redmonacair" />
+                  <Star className="h-6 w-6 text-primary-button" />
                 ) : (
-                  <Plane className="h-6 w-6 text-redmonacair" />
+                  <Plane className="h-6 w-6 text-primary-button" />
                 )}
               </div>
               <div className="text-center">

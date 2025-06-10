@@ -25,8 +25,8 @@ const JetPrive = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           <div className="bg-white rounded-xl p-6 shadow-md flex flex-col items-center text-center">
-            <div className="w-16 h-16 aspect-square bg-redmonacair/10 rounded-full flex items-center justify-center mb-4">
-              <Clock className="h-8 w-8 text-redmonacair" />
+            <div className="w-16 h-16 aspect-square bg-primary-button/10 rounded-full flex items-center justify-center mb-4">
+              <Clock className="h-8 w-8 text-primary-button" />
             </div>
             <h3 className="text-xl font-bold mb-3 font-brother">
               {t('jet-prive.personalized.title')}
@@ -35,16 +35,16 @@ const JetPrive = () => {
           </div>
 
           <div className="bg-white rounded-xl p-6 shadow-md flex flex-col items-center text-center">
-            <div className="w-16 h-16 aspect-square bg-redmonacair/10 rounded-full flex items-center justify-center mb-4">
-              <Award className="h-8 w-8 text-redmonacair" />
+            <div className="w-16 h-16 aspect-square bg-primary-button/10 rounded-full flex items-center justify-center mb-4">
+              <Award className="h-8 w-8 text-primary-button" />
             </div>
             <h3 className="text-xl font-bold mb-3 font-brother">{t('jet-prive.vip.title')}</h3>
             <p className="text-gray-600 text-sm">{t('jet-prive.vip.description')}</p>
           </div>
 
           <div className="bg-white rounded-xl p-6 shadow-md flex flex-col items-center text-center">
-            <div className="w-16 h-16 aspect-square bg-redmonacair/10 rounded-full flex items-center justify-center mb-4">
-              <Users className="h-8 w-8 text-redmonacair" />
+            <div className="w-16 h-16 aspect-square bg-primary-button/10 rounded-full flex items-center justify-center mb-4">
+              <Users className="h-8 w-8 text-primary-button" />
             </div>
             <h3 className="text-xl font-bold mb-3 font-brother">{t('jet-prive.comfort.title')}</h3>
             <p className="text-gray-600 text-sm">{t('jet-prive.comfort.description')}</p>

@@ -26,9 +26,9 @@ export const FlightTypeSelector = ({
   const hasPrivateOption = privateOption !== null
 
   return (
-    <div className="bg-[color:var(--color-royalblue)]/80 rounded-2xl p-3 sm:p-4 lg:p-5 flex-1">
+    <div className="bg-primary/80 rounded-2xl p-3 sm:p-4 lg:p-5 flex-1">
       <div className="flex items-center gap-3 mb-3 sm:mb-4 lg:mb-5">
-        <div className="bg-[color:var(--color-redmonacair)] rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-white font-bold text-sm sm:text-base">
+        <div className="bg-primary-button rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-white font-bold text-sm sm:text-base">
           1
         </div>
         <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-medium font-brother">
@@ -43,16 +43,16 @@ export const FlightTypeSelector = ({
       >
         {hasSharedOption && (
           <label
-            className={`flex items-center justify-between bg-[color:var(--color-royalblue)]/80 rounded-xl p-3 sm:p-4 cursor-pointer border ${
+            className={`flex items-center justify-between bg-primary/80 rounded-xl p-3 sm:p-4 cursor-pointer border ${
               flightType === 'shared'
-                ? 'border-[color:var(--color-redmonacair)]'
-                : 'border-[color:var(--color-royalblue)]/50'
+                ? 'border-primary-button'
+                : 'border-primary/50'
             }`}
           >
             <div className="flex items-center gap-2 sm:gap-3">
               <RadioGroupItem
                 value="shared"
-                className="border-[color:var(--color-redmonacair)] data-[state=checked]:bg-[color:var(--color-redmonacair)]"
+                className="border-primary-button data-[state=checked]:bg-primary-button"
               />
               <span className="text-white text-base sm:text-lg lg:text-xl font-brother">
                 {t('sharedTour')}
@@ -66,16 +66,16 @@ export const FlightTypeSelector = ({
 
         {hasPrivateOption && (
           <label
-            className={`flex items-center justify-between bg-[color:var(--color-royalblue)]/80 rounded-xl p-3 sm:p-4 cursor-pointer border ${
+            className={`flex items-center justify-between bg-primary/80 rounded-xl p-3 sm:p-4 cursor-pointer border ${
               flightType === 'private'
-                ? 'border-[color:var(--color-redmonacair)]'
-                : 'border-[color:var(--color-royalblue)]/50'
+                ? 'border-primary-button'
+                : 'border-primary/50'
             }`}
           >
             <div className="flex items-center gap-2 sm:gap-3">
               <RadioGroupItem
                 value="private"
-                className="border-[color:var(--color-redmonacair)] data-[state=checked]:bg-[color:var(--color-redmonacair)]"
+                className="border-primary-button data-[state=checked]:bg-primary-button"
               />
               <span className="text-white text-base sm:text-lg lg:text-xl font-brother">
                 {t('privateTour')}

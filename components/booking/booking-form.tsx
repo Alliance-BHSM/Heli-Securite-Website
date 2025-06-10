@@ -487,7 +487,7 @@ const BookingForm = ({
           <div className="lg:w-48">
             <div className="p-4 rounded-xl border-2 border-transparent hover:border-gray-200 transition-colors h-20">
               <div className="flex flex-col items-center gap-2">
-                <span className="text-sm font-medium text-red-600">
+                <span className="text-sm font-medium text-primary-button">
                   {flight.isReturn
                     ? t('booking-form.flight-type.return')
                     : t('booking-form.flight-type.one-way')}
@@ -514,7 +514,7 @@ const BookingForm = ({
               <Button
                 type="submit"
                 size="lg"
-                className="bg-red-600 hover:bg-red-700 text-white rounded-xl px-6 h-20 w-full lg:w-auto"
+                className="bg-primary-button hover:bg-primary-button text-white rounded-xl px-6 h-20 w-full lg:w-auto"
                 disabled={loading || flights.some((f) => !f.departure || !f.destination)}
               >
                 <ArrowRight className="w-5 h-5" />
@@ -525,7 +525,7 @@ const BookingForm = ({
               <button
                 type="button"
                 onClick={() => removeFlight(flight.id)}
-                className="w-full lg:w-12 h-20 bg-red-100 hover:bg-red-200 text-red-600 rounded-xl flex items-center justify-center transition-colors"
+                className="w-full lg:w-12 h-20 bg-primary-button/10 hover:bg-primary-button/20 text-primary-button rounded-xl flex items-center justify-center transition-colors"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -549,7 +549,7 @@ const BookingForm = ({
 
   return (
     <div className="py-6 relative">
-      <span className={'absolute z-50 -translate-[64vh] bg-red-500'} id={'booking-form'} />
+      <span className={'absolute z-50 -translate-[64vh] bg-primary-button'} id={'booking-form'} />
       <div className="container mx-auto px-2 sm:px-12">
         <form onSubmit={handleSubmit}>
           {flightType === 'private-flight' ? (
@@ -676,7 +676,7 @@ const BookingForm = ({
                   <div className="lg:w-48">
                     <div className="p-4 rounded-xl border-2 border-transparent hover:border-gray-200 transition-colors h-20">
                       <div className="flex flex-col items-center gap-2">
-                        <span className="text-sm font-medium text-red-600">
+                        <span className="text-sm font-medium text-primary-button">
                           {isReturn
                             ? t('booking-form.flight-type.return')
                             : t('booking-form.flight-type.one-way')}
@@ -703,7 +703,7 @@ const BookingForm = ({
                   <Button
                     type="submit"
                     size="lg"
-                    className="bg-red-600 hover:bg-red-700 text-white rounded-xl px-6 h-20 w-full lg:w-auto"
+                    className="bg-primary-button hover:bg-primary-button text-white rounded-xl px-6 h-20 w-full lg:w-auto"
                     disabled={
                       loading || !destination || (flightType !== 'panoramic-flight' && !departure)
                     }
@@ -721,14 +721,14 @@ const BookingForm = ({
               onClick={() => handleFlightTypeChange('private-flight')}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
                 flightType === 'private-flight'
-                  ? 'text-red-600 font-semibold'
-                  : 'text-gray-600 hover:text-red-600'
+                  ? 'text-primary-button font-semibold'
+                  : 'text-gray-600 hover:text-primary-button'
               }`}
             >
               <div
                 className={`w-2 h-2 rounded-full ${
                   flightType === 'private-flight'
-                    ? 'bg-red-500'
+                    ? 'bg-primary-button'
                     : 'bg-transparent border border-gray-400'
                 }`}
               />
@@ -740,14 +740,14 @@ const BookingForm = ({
               onClick={() => handleFlightTypeChange('regular-line')}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
                 flightType === 'regular-line'
-                  ? 'text-red-600 font-semibold'
-                  : 'text-gray-600 hover:text-red-600'
+                  ? 'text-primary-button font-semibold'
+                  : 'text-gray-600 hover:text-primary-button'
               }`}
             >
               <div
                 className={`w-2 h-2 rounded-full ${
                   flightType === 'regular-line'
-                    ? 'bg-red-500'
+                    ? 'bg-primary-button'
                     : 'bg-transparent border border-gray-400'
                 }`}
               />
@@ -759,14 +759,14 @@ const BookingForm = ({
               onClick={() => handleFlightTypeChange('panoramic-flight')}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-colors ${
                 flightType === 'panoramic-flight'
-                  ? 'text-red-600 font-semibold'
-                  : 'text-gray-600 hover:text-red-600'
+                  ? 'text-primary-button font-semibold'
+                  : 'text-gray-600 hover:text-primary-button'
               }`}
             >
               <div
                 className={`w-2 h-2 rounded-full ${
                   flightType === 'panoramic-flight'
-                    ? 'bg-red-500'
+                    ? 'bg-primary-button'
                     : 'bg-transparent border border-gray-400'
                 }`}
               />

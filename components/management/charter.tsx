@@ -11,22 +11,22 @@ export default function Charter() {
     {
       title: 'Sud de la France',
       description: 'Monaco, Nice, Cannes, Saint-Tropez, Marseille',
-      icon: <Palmtree className="h-6 w-6 text-[color:var(--color-redmonacair)]" />,
+      icon: <Palmtree className="h-6 w-6 text-primary-button" />,
     },
     {
       title: 'Les Alpes',
       description: "Courchevel, Megève, Val d'Isère, Chamonix",
-      icon: <Mountain className="h-6 w-6 text-[color:var(--color-redmonacair)]" />,
+      icon: <Mountain className="h-6 w-6 text-primary-button" />,
     },
     {
       title: 'Italie',
       description: 'Milan, Portofino, Sardaigne, Toscane',
-      icon: <Compass className="h-6 w-6 text-[color:var(--color-redmonacair)]" />,
+      icon: <Compass className="h-6 w-6 text-primary-button" />,
     },
     {
       title: 'Corse',
       description: 'Ajaccio, Calvi, Figari, Bastia',
-      icon: <SunSnow className="h-6 w-6 text-[color:var(--color-redmonacair)]" />,
+      icon: <SunSnow className="h-6 w-6 text-primary-button" />,
     },
   ]
 
@@ -36,8 +36,8 @@ export default function Charter() {
         <div className="flex flex-col md:flex-row-reverse items-center gap-12">
           <div className="md:w-1/2 order-2 md:order-1">
             <div className="flex items-center mb-6">
-              <div className="w-12 h-12 rounded-full bg-[color:var(--color-redmonacair)]/10 flex items-center justify-center mr-4">
-                <Plane className="h-6 w-6 text-[color:var(--color-redmonacair)]" />
+              <div className="w-12 h-12 rounded-full bg-primary-button/10 flex items-center justify-center mr-4">
+                <Plane className="h-6 w-6 text-primary-button" />
               </div>
               <h2 className="text-3xl font-bold text-black font-brother">{t('title')}</h2>
             </div>
@@ -50,7 +50,7 @@ export default function Charter() {
                   <BentoGridItem
                     key={index}
                     title={
-                      <span className="text-xl font-brother text-[color:var(--color-redmonacair)]">
+                      <span className="text-xl font-brother text-primary-button">
                         {destination.title}
                       </span>
                     }

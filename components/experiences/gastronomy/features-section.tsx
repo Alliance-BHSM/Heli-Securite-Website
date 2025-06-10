@@ -29,7 +29,7 @@ export default function FeaturesSection() {
             <div className="space-y-8">
               <div>
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-[color:var(--color-redmonacair)] rounded-full flex items-center justify-center text-white font-bold mr-4">
+                  <div className="w-10 h-10 bg-primary-button rounded-full flex items-center justify-center text-white font-bold mr-4">
                     1
                   </div>
                   <h3 className="text-xl font-bold">{t('features.items.one.title')}</h3>
@@ -39,7 +39,7 @@ export default function FeaturesSection() {
 
               <div>
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-[color:var(--color-redmonacair)] rounded-full flex items-center justify-center text-white font-bold mr-4">
+                  <div className="w-10 h-10 bg-primary-button rounded-full flex items-center justify-center text-white font-bold mr-4">
                     2
                   </div>
                   <h3 className="text-xl font-bold">{t('features.items.two.title')}</h3>
@@ -49,7 +49,7 @@ export default function FeaturesSection() {
 
               <div>
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-[color:var(--color-redmonacair)] rounded-full flex items-center justify-center text-white font-bold mr-4">
+                  <div className="w-10 h-10 bg-primary-button rounded-full flex items-center justify-center text-white font-bold mr-4">
                     3
                   </div>
                   <h3 className="text-xl font-bold">{t('features.items.three.title')}</h3>
@@ -59,7 +59,7 @@ export default function FeaturesSection() {
 
               <div>
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-[color:var(--color-redmonacair)] rounded-full flex items-center justify-center text-white font-bold mr-4">
+                  <div className="w-10 h-10 bg-primary-button rounded-full flex items-center justify-center text-white font-bold mr-4">
                     4
                   </div>
                   <h3 className="text-xl font-bold">{t('features.items.four.title')}</h3>

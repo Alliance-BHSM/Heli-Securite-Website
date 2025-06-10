@@ -148,7 +148,7 @@ export default function FleetSelection({
                   <span className="text-gray-600">
                     {t('fleet.helicopter', { defaultValue: 'Hélicoptère sélectionné' })}
                   </span>
-                  <span className="font-medium text-royalblue">
+                  <span className="font-medium text-primary">
                     {selectedFleet.priceOnDemand
                       ? t('fleet.priceOnDemand', { defaultValue: 'Prix sur demande' })
                       : selectedFleet.price

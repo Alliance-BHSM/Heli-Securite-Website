@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 const Footer = () => {
   const t = useTranslations('Footer')
   return (
-    <footer className="bg-tertiary text-secondary font-brother font-light px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 py-8 sm:py-10">
+    <footer className="bg-tertiary text-black font-brother font-light px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 py-8 sm:py-10">
       <div className="flex flex-row items-center justify-between gap-6 sm:gap-0">
         <div className="w-48 sm:w-56 md:w-64 xl:w-72">
           <Image src={Logo} alt="Logo Monacair White" width={300} className="w-full h-auto" />
@@ -24,7 +24,7 @@ const Footer = () => {
               viewBox="0,0,256,256"
             >
               <g
-                fill="#ffffff"
+                fill="#000000"
                 fillRule="nonzero"
                 stroke="none"
                 strokeWidth="1"
@@ -56,7 +56,7 @@ const Footer = () => {
               viewBox="0,0,256,256"
             >
               <g
-                fill="#ffffff"
+                fill="#000000"
                 fillRule="nonzero"
                 stroke="none"
                 strokeWidth="1"
@@ -88,7 +88,7 @@ const Footer = () => {
               viewBox="0,0,256,256"
             >
               <g
-                fill="#ffffff"
+                fill="#000000"
                 fillRule="nonzero"
                 stroke="none"
                 strokeWidth="1"

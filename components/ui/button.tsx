@@ -10,11 +10,11 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          'bg-primary-button font-brother text-white shadow-xs hover:bg-primary-button/90 cursor-pointer',
+          'bg-primary font-brother text-white shadow-xs hover:bg-primary-button/90 cursor-pointer',
         secondary:
-          'bg-white font-brother text-primary shadow-xs hover:bg-secondary-button/90 cursor-pointer',
+          'bg-secondary font-brother text-black shadow-xs hover:bg-secondary-button/75 cursor-pointer',
         black:
-          'bg-primary font-brother text-secondary shadow-xs hover:bg-primary/90 cursor-pointer',
+          'bg-primary font-brother text-white shadow-xs hover:bg-primary/90 cursor-pointer',
         white: 'bg-primary-button font-brother text-white shadow-xs hover:brightness-75 cursor-pointer',
         red: 'bg-primary-button font-brother text-white shadow-xs hover:bg-primary-button/90 cursor-pointer',
         blue: 'bg-primary-button font-brother text-white shadow-xs hover:bg-primary-button/90 cursor-pointer',

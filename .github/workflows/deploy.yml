@@ -7,7 +7,7 @@ on:
 
 env:
   DOCKER_REGISTRY: ghcr.io
-  DOCKER_REPOSITORY: ${{secrets.ORG_OWNER}}/monacair-website
+  DOCKER_REPOSITORY: ${{secrets.ORG_OWNER}}/heli-securite-website
 
 jobs:
   build-and-deploy:
@@ -90,7 +90,7 @@ jobs:
           kubectl apply -f k8s/deployment_updated.yaml
           kubectl apply -f k8s/service.yaml
           kubectl apply -f k8s/secrets_updated.yaml
-          kubectl apply -f k8s/ingress.yaml
+          kubectl apply -f k8s/loadbalancer.yaml
           
           kubectl apply -f mongodb/pvc.yaml
           kubectl apply -f mongodb/secrets_updated.yaml
@@ -104,4 +104,4 @@ jobs:
           kubectl apply -f s3/service.yaml
           kubectl apply -f s3/setup-job_updated.yaml
           
-          kubectl rollout restart deployment/monacair-website
+          kubectl rollout restart deployment/heli-securite-website

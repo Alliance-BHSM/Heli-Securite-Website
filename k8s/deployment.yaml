@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: monacair-website
+  name: heli-securite-website
   labels:
-    app: monacair-website
+    app: heli-securite-website
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: monacair-website
+      app: heli-securite-website
   template:
     metadata:
       labels:
-        app: monacair-website
+        app: heli-securite-website
     spec:
       imagePullSecrets:
         - name: github-registry-secret
       containers:
-        - name: monacair-website
+        - name: heli-securite-website
           image: ${DOCKER_REGISTRY}/${DOCKER_REPOSITORY}:${GITHUB_SHA}
           ports:
             - containerPort: 3000
@@ -47,5 +47,7 @@ spec:
                 secretKeyRef:
                   name: app-secrets
                   key: S3_SECRET_KEY
+            - name: S3_BUCKET
+              value: "heli-media"
             - name: NODE_ENV
               value: "production"

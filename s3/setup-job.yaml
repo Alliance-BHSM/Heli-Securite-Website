@@ -23,12 +23,13 @@ spec:
           command: ["/bin/sh", "-c"]
           args:
             - |
-              sleep 30
+              sleep 10
               mc alias set myminio http://minio:9000 "$S3_ACCESS_KEY" "$S3_SECRET_KEY"
               
-              if mc ls myminio | grep -q "media"; then
-                echo "Bucket media already exists"
+              if mc ls myminio | grep -q "heli-securite-media"; then
+                echo "Bucket heli-securite-media already exists"
               else
-                mc mb -p myminio/media
+                mc mb -p myminio/heli-securite-media
+                echo "Created bucket heli-securite-media"
               fi
       restartPolicy: OnFailure

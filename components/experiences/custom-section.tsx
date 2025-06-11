@@ -9,7 +9,7 @@ export default function CustomSection() {
 
   return (
     <section className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gray-900 z-0"></div>
+      <div className="absolute inset-0 bg-black z-0"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-button/20 via-gray-900 to-gray-900 z-0"></div>
 
       <div className="container mx-auto px-4 relative z-10">

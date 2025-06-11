@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: monacair-website-service
+  name: heli-securite-website-service
 spec:
   selector:
-    app: monacair-website
+    app: heli-securite-website
   ports:
     - protocol: TCP
       port: 80

@@ -105,7 +105,7 @@ export default function Navbar({
           <div className={'flex items-center justify-center gap-4'}>
             <LocaleSwitcher />
             <Link href="/contact">
-              <Button size={'sm'} variant={'primary'} className={'font-brother font-light '}>
+              <Button size={'sm'} variant={'secondary'} className={'font-brother font-light '}>
                 {t('CTA')}
               </Button>
             </Link>
@@ -125,7 +125,7 @@ export default function Navbar({
           </Link>
           <div className={'flex items-center justify-center gap-2'}>
             <Link href="/contact">
-              <Button size={'sm'} variant={'primary'} className={'font-brother font-light text-xs'}>
+              <Button size={'sm'} variant={'secondary'} className={'font-brother font-light text-xs'}>
                 {t('CTA')}
               </Button>
             </Link>

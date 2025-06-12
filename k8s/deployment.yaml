@@ -25,27 +25,27 @@ spec:
             - name: PAYLOAD_SECRET
               valueFrom:
                 secretKeyRef:
-                  name: app-secrets
+                  name: app-secrets-heli
                   key: PAYLOAD_SECRET
             - name: DATABASE_URI
               valueFrom:
                 secretKeyRef:
-                  name: app-secrets
+                  name: app-secrets-heli
                   key: DATABASE_URI
             - name: S3_ENDPOINT
               valueFrom:
                 secretKeyRef:
-                  name: app-secrets
+                  name: app-secrets-heli
                   key: S3_ENDPOINT
             - name: S3_ACCESS_KEY
               valueFrom:
                 secretKeyRef:
-                  name: app-secrets
+                  name: app-secrets-heli
                   key: S3_ACCESS_KEY
             - name: S3_SECRET_KEY
               valueFrom:
                 secretKeyRef:
-                  name: app-secrets
+                  name: app-secrets-heli
                   key: S3_SECRET_KEY
             - name: S3_BUCKET
               value: "heli-media"

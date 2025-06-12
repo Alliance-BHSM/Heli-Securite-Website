@@ -12,7 +12,7 @@ const Description = () => {
   return (
     <section
       className={
-        'bg-white grid grid-cols-1 md:grid-cols-2 gap-5 px-6 sm:px-10 md:px-20 lg:px-40 py-10 md:py-20'
+        'bg-black text-white grid grid-cols-1 md:grid-cols-2 gap-5 px-6 sm:px-10 md:px-20 lg:px-40 py-10 md:py-20'
       }
     >
       <div>

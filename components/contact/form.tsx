@@ -153,7 +153,7 @@ export default async function Form() {
             </Link>
           </div>
         </div>
-        <div className="bg-primary p-6 md:p-8 rounded-md shadow-sm text-secondary">
+        <div className="bg-black text-white p-6 md:p-8 rounded-md shadow-sm text-secondary">
           <form
             action="https://formsubmit.co/booking@monacair.mc"
             method="POST"
@@ -221,7 +221,7 @@ export default async function Form() {
             </div>
             <button
               type="submit"
-              className="w-full bg-primary-button text-white font-brother font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition-colors"
+              className="w-full bg-secondary-button text-white font-brother font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition-colors"
             >
               {t('form.submit')}
             </button>

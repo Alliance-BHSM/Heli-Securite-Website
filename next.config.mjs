@@ -3,12 +3,6 @@ import createNextIntlPlugin from 'next-intl/plugin'
 
 /** @type {import('next').NextConfig} */
 const baseConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   output: 'standalone',
   experimental: {
     serverActions: {

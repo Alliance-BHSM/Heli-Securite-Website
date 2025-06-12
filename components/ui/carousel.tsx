@@ -202,7 +202,7 @@ function CarouselPreviousNav({
       onClick={scrollPrev}
       {...props}
     >
-      <MoveLeft className={'size-8  text-black'} />
+      <MoveLeft className={'size-8  text-white'} />
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -250,7 +250,7 @@ function CarouselNextNav({
       onClick={scrollNext}
       {...props}
     >
-      <MoveRight className={'size-8 text-black'} />
+      <MoveRight className={'size-8 text-white'} />
       <span className="sr-only">Next slide</span>
     </Button>
   )

@@ -10,13 +10,13 @@ import { Link } from '@/i18n/navigation'
 const OurFlights = async () => {
   const t = await getTranslations('Index.our-flights')
   return (
-    <section className={'px-6 sm:px-10 md:px-20 lg:px-40 py-10 md:py-20 bg-white'}>
+    <section className={'px-6 sm:px-10 md:px-20 text-white lg:px-40 py-10 md:py-20 bg-black'}>
       <div className={'pb-8 md:pb-16'}>
-        <h3 className={'font-brother font-normal text-lg md:text-xl'}>{t('subtitle')}</h3>
-        <h2 className={'font-brother font-normal text-3xl md:text-5xl'}>
+        <h3 className={'font-brother font-normal text-white text-lg md:text-xl'}>{t('subtitle')}</h3>
+        <h2 className={'font-brother font-normal text-white text-3xl md:text-5xl'}>
           {t.rich('title', {
             span: (chunks) => (
-              <span className={'font-caslon text-primary-button'}>
+              <span className={'font-caslon font-extrabold text-white'}>
                 {chunks}
                 <br />
               </span>

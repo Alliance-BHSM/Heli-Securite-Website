@@ -4,6 +4,13 @@
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../../public/fonts/Montserrat.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Brother 1816';
   font-style: normal;
   font-weight: 300;
@@ -34,13 +41,12 @@
 @font-face {
   font-family: 'CaslonCP';
   font-style: normal;
-  font-weight: 300;
   src: url('../../public/fonts/CaslonCP.otf') format('truetype');
 }
 
 @theme {
-  --font-brother: 'Brother 1816';
-  --font-caslon: 'CaslonCP';
+  --font-brother: 'Montserrat';
+  --font-caslon: 'Montserrat';
 
   --color-primary: oklch(0 0 0);
   --color-secondary: oklch(1 0 0);

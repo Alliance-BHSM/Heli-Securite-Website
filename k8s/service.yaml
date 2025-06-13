@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: heli-securite-website-service
+  name: website-service
 spec:
   selector:
-    app: heli-securite-website
+    app: website
   ports:
     - protocol: TCP
       port: 80

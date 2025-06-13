@@ -70,7 +70,7 @@ export default buildConfig({
       collections: {
         media: true,
       },
-      bucket: 'heli-media',
+      bucket: 'heli-securite-media',
       config: {
         forcePathStyle: true,
         endpoint: process.env.S3_ENDPOINT || '',

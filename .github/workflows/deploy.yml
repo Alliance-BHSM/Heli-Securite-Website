@@ -56,6 +56,7 @@ jobs:
             --docker-username=${{ github.repository_owner }} \
             --docker-password=${{ secrets.GHCR_PAT }} \
             --docker-email=${{ secrets.GHCR_EMAIL }} \
+            --namespace=heli-securite \
             --dry-run=client -o yaml | kubectl apply -f -
 
       - name: Update deployment file
@@ -64,7 +65,7 @@ jobs:
           export DOCKER_REPOSITORY=${{ env.DOCKER_REPOSITORY }}
           export GITHUB_SHA=${{ github.sha }}
           export PAYLOAD_SECRET=$(echo -n "${{ secrets.PAYLOAD_SECRET }}" | base64 -w 0)
-          export DATABASE_URI=$(echo -n "mongodb://${{ secrets.MONGODB_USERNAME }}:${{ secrets.MONGODB_PASSWORD }}@mongodb:27017/${{ secrets.MONGODB_DATABASE }}" | base64 -w 0)
+          export DATABASE_URI=$(echo -n "mongodb://${{ secrets.MONGODB_USERNAME }}:${{ secrets.MONGODB_PASSWORD }}@mongodb.default.svc.cluster.local:27017/${{ secrets.MONGODB_DATABASE }}" | base64 -w 0)
           
           export MONGODB_ROOT_PASSWORD=$(echo -n "${{ secrets.MONGODB_ROOT_PASSWORD }}" | base64 -w 0)
           export MONGODB_USERNAME=$(echo -n "${{ secrets.MONGODB_USERNAME }}" | base64 -w 0)
@@ -73,35 +74,31 @@ jobs:
           
           export S3_ACCESS_KEY=$(echo -n "${{ secrets.S3_ACCESS_KEY }}" | base64 -w 0)
           export S3_SECRET_KEY=$(echo -n "${{ secrets.S3_SECRET_KEY }}" | base64 -w 0)
-          export S3_ENDPOINT=$(echo -n "http://minio:9000" | base64 -w 0)
+          export S3_ENDPOINT=$(echo -n "http://minio.default.svc.cluster.local:9000" | base64 -w 0)
           
           
           envsubst < k8s/deployment.yaml > k8s/deployment_updated.yaml
           envsubst < k8s/secrets.yaml > k8s/secrets_updated.yaml
           
           envsubst < mongodb/secrets.yaml > mongodb/secrets_updated.yaml
-          envsubst < mongodb/setup-job.yaml > mongodb/setup-job_updated.yaml
           
           envsubst < s3/secrets.yaml > s3/secrets_updated.yaml
-          envsubst < s3/setup-job.yaml > s3/setup-job_updated.yaml
 
       - name: Deploy to DigitalOcean Kubernetes
         run: |
-          kubectl apply -f k8s/deployment_updated.yaml
-          kubectl apply -f k8s/service.yaml
-          kubectl apply -f k8s/secrets_updated.yaml
-          kubectl apply -f k8s/loadbalancer.yaml
+          kubectl apply -f k8s/deployment_updated.yaml -n heli-securite
+          kubectl apply -f k8s/service.yaml -n heli-securite
+          kubectl apply -f k8s/secrets_updated.yaml -n heli-securite
+          kubectl apply -f k8s/ingress.yaml -n heli-securite
           
           kubectl apply -f mongodb/pvc.yaml
           kubectl apply -f mongodb/secrets_updated.yaml
           kubectl apply -f mongodb/statefulset.yaml
           kubectl apply -f mongodb/service.yaml
-          kubectl apply -f mongodb/setup-job_updated.yaml
           
           kubectl apply -f s3/pvc.yaml
           kubectl apply -f s3/secrets_updated.yaml
           kubectl apply -f s3/statefulset.yaml
           kubectl apply -f s3/service.yaml
-          kubectl apply -f s3/setup-job_updated.yaml
           
-          kubectl rollout restart deployment/heli-securite-website
+          kubectl rollout restart deployment/heli-securite-website -n heli-securite

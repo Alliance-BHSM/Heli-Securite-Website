@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
-import Logo from '@/public/logos/LogoOld.png'
+import Logo from '@/public/logos/LogoOld.webp'
 import { useTranslations } from 'next-intl'
 
 const Footer = () => {

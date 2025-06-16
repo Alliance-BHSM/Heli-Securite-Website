@@ -23,7 +23,7 @@ export default function CustomerSupport() {
             <div className="space-y-2">
               <div className="flex items-center text-sm">
                 <Phone className="h-4 w-4 mr-2 text-primary" />
-                <span>+377 97 97 39 00</span>
+                <span>+33 4 94 55 59 99</span>
               </div>
               <div className="flex items-center text-sm">
                 <Mail className="h-4 w-4 mr-2 text-primary" />

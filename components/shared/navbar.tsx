@@ -37,10 +37,7 @@ export default function Navbar({
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (
-        navbarRef.current &&
-        !navbarRef.current.contains(event.target as Node)
-      ) {
+      if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
         setIsDestinationsOpen(false)
         setIsEventsOpen(false)
         setIsBookingOpen(false)
@@ -78,7 +75,11 @@ export default function Navbar({
   return (
     <nav ref={navbarRef} className={'top-5 fixed left-0 right-0 z-50'}>
       {/* Desktop navbar */}
-      <div className={'bg-black text-white hidden lg:block rounded-xl top-5 shadow-md lg:mx-20 xl:mx-40 h-18'}>
+      <div
+        className={
+          'bg-black text-white hidden lg:block rounded-xl top-5 shadow-md lg:mx-20 xl:mx-40 h-18'
+        }
+      >
         <div className={'flex h-full items-center justify-between px-5'}>
           <Link href={'/'}>
             <Image src={Flamme} alt={'logo'} width={80} height={80} />
@@ -128,9 +129,9 @@ export default function Navbar({
                 {t('CTA')}
               </Button>
             </Link>
-            <a href={'https://wa.me/33614744720'} className={'font-brother flex items-center'}>
+            <a href={'https://wa.me/33670784966'} className={'font-brother flex items-center'}>
               <svg
-                fill='#ffffff'
+                fill="#ffffff"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -157,13 +158,17 @@ export default function Navbar({
           </Link>
           <div className={'flex items-center justify-center gap-2'}>
             <Link href="/contact">
-              <Button size={'sm'} variant={'secondary'} className={'font-brother font-light text-xs'}>
+              <Button
+                size={'sm'}
+                variant={'secondary'}
+                className={'font-brother font-light text-xs'}
+              >
                 {t('CTA')}
               </Button>
             </Link>
             <a href={'https://wa.me/33614744720'} className={'font-brother flex items-center'}>
               <svg
-                fill='#ffffff'
+                fill="#ffffff"
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
                 y="0px"
@@ -218,13 +223,13 @@ export default function Navbar({
                 rel="noopener noreferrer"
               >
                 <address className={'font-brother text-base not-italic font-light'}>
-                  Heliport de Monaco,
-                  <br /> Av. des Ligures,
-                  <br /> 98000 Monaco
+                  <br />
+                  195 Av. de l`Héliport,
+                  <br /> 83310 Grimaud
                 </address>
               </a>
               <div className="flex items-center mt-4 mb-3 gap-2">
-                <Link href="https://www.instagram.com/monacair/">
+                <Link href="https://www.instagram.com/helisecurite/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -256,7 +261,10 @@ export default function Navbar({
                     </g>
                   </svg>
                 </Link>
-                <Link href="https://www.facebook.com/MonacairMonacoDesk" target="_blank">
+                <Link
+                  href="https://www.facebook.com/Helisecuritehelicopterairline/?locale=fr_FR"
+                  target="_blank"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -288,7 +296,7 @@ export default function Navbar({
                     </g>
                   </svg>{' '}
                 </Link>
-                <Link href="https://www.linkedin.com/company/monacair/">
+                <Link href="https://www.linkedin.com/company/heli-securite/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -402,17 +410,20 @@ export default function Navbar({
                 {t('CTA')}
               </Link>
               <div className={'flex gap-3'}>
-                <a href={'https://www.instagram.com/monacair/'} className={'font-brother text-xs '}>
+                <a
+                  href={'https://www.instagram.com/helisecurite/'}
+                  className={'font-brother text-xs '}
+                >
                   Instagram
                 </a>
                 <a
-                  href={'https://www.facebook.com/MonacairMonacoDesk'}
+                  href={'https://www.facebook.com/Helisecuritehelicopterairline/?locale=fr_FR'}
                   className={'font-brother text-xs '}
                 >
                   Facebook
                 </a>
                 <a
-                  href={'https://www.linkedin.com/company/monacair'}
+                  href={'https://www.linkedin.com/company/heli-securite/'}
                   className={'font-brother text-xs '}
                 >
                   LinkedIn
@@ -447,17 +458,20 @@ export default function Navbar({
                 {t('CTA')}
               </Link>
               <div className={'flex gap-3'}>
-                <a href={'https://www.instagram.com/monacair/'} className={'font-brother text-xs '}>
+                <a
+                  href={'https://www.instagram.com/helisecurite/'}
+                  className={'font-brother text-xs '}
+                >
                   Instagram
                 </a>
                 <a
-                  href={'https://www.facebook.com/MonacairMonacoDesk'}
+                  href={'https://www.facebook.com/Helisecuritehelicopterairline/?locale=fr_FR'}
                   className={'font-brother text-xs '}
                 >
                   Facebook
                 </a>
                 <a
-                  href={'https://www.linkedin.com/company/monacair'}
+                  href={'https://www.linkedin.com/company/heli-securite/'}
                   className={'font-brother text-xs '}
                 >
                   LinkedIn
@@ -489,17 +503,20 @@ export default function Navbar({
                 {t('CTA')}
               </Link>
               <div className={'flex gap-3'}>
-                <a href={'https://www.instagram.com/monacair/'} className={'font-brother text-xs '}>
+                <a
+                  href={'https://www.instagram.com/helisecurite/'}
+                  className={'font-brother text-xs '}
+                >
                   Instagram
                 </a>
                 <a
-                  href={'https://www.facebook.com/MonacairMonacoDesk'}
+                  href={'https://www.facebook.com/Helisecuritehelicopterairline/?locale=fr_FR'}
                   className={'font-brother text-xs '}
                 >
                   Facebook
                 </a>
                 <a
-                  href={'https://www.linkedin.com/company/monacair'}
+                  href={'https://www.linkedin.com/company/heli-securite/'}
                   className={'font-brother text-xs '}
                 >
                   LinkedIn
@@ -525,12 +542,12 @@ const Dropdown = () => {
           {t('call')}
         </DropdownMenuLabel>
         <DropdownMenuItem>
-          <a href={'tel:+37797973900'} className={'font-brother'}>
-            +377 97 97 39 00
+          <a href={'tel:+33 4 94 55 59 99'} className={'font-brother'}>
+            +33 4 94 55 59 99
           </a>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <a href={'https://wa.me/33614744720'} className={'font-brother flex items-center'}>
+          <a href={'https://wa.me/33670784966'} className={'font-brother flex items-center'}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -541,7 +558,7 @@ const Dropdown = () => {
             >
               <path d="M 12.011719 2 C 6.5057187 2 2.0234844 6.478375 2.0214844 11.984375 C 2.0204844 13.744375 2.4814687 15.462563 3.3554688 16.976562 L 2 22 L 7.2324219 20.763672 C 8.6914219 21.559672 10.333859 21.977516 12.005859 21.978516 L 12.009766 21.978516 C 17.514766 21.978516 21.995047 17.499141 21.998047 11.994141 C 22.000047 9.3251406 20.962172 6.8157344 19.076172 4.9277344 C 17.190172 3.0407344 14.683719 2.001 12.011719 2 z M 12.009766 4 C 14.145766 4.001 16.153109 4.8337969 17.662109 6.3417969 C 19.171109 7.8517969 20.000047 9.8581875 19.998047 11.992188 C 19.996047 16.396187 16.413812 19.978516 12.007812 19.978516 C 10.674812 19.977516 9.3544062 19.642812 8.1914062 19.007812 L 7.5175781 18.640625 L 6.7734375 18.816406 L 4.8046875 19.28125 L 5.2851562 17.496094 L 5.5019531 16.695312 L 5.0878906 15.976562 C 4.3898906 14.768562 4.0204844 13.387375 4.0214844 11.984375 C 4.0234844 7.582375 7.6067656 4 12.009766 4 z M 8.4765625 7.375 C 8.3095625 7.375 8.0395469 7.4375 7.8105469 7.6875 C 7.5815469 7.9365 6.9355469 8.5395781 6.9355469 9.7675781 C 6.9355469 10.995578 7.8300781 12.182609 7.9550781 12.349609 C 8.0790781 12.515609 9.68175 15.115234 12.21875 16.115234 C 14.32675 16.946234 14.754891 16.782234 15.212891 16.740234 C 15.670891 16.699234 16.690438 16.137687 16.898438 15.554688 C 17.106437 14.971687 17.106922 14.470187 17.044922 14.367188 C 16.982922 14.263188 16.816406 14.201172 16.566406 14.076172 C 16.317406 13.951172 15.090328 13.348625 14.861328 13.265625 C 14.632328 13.182625 14.464828 13.140625 14.298828 13.390625 C 14.132828 13.640625 13.655766 14.201187 13.509766 14.367188 C 13.363766 14.534188 13.21875 14.556641 12.96875 14.431641 C 12.71875 14.305641 11.914938 14.041406 10.960938 13.191406 C 10.218937 12.530406 9.7182656 11.714844 9.5722656 11.464844 C 9.4272656 11.215844 9.5585938 11.079078 9.6835938 10.955078 C 9.7955938 10.843078 9.9316406 10.663578 10.056641 10.517578 C 10.180641 10.371578 10.223641 10.267562 10.306641 10.101562 C 10.389641 9.9355625 10.347156 9.7890625 10.285156 9.6640625 C 10.223156 9.5390625 9.737625 8.3065 9.515625 7.8125 C 9.328625 7.3975 9.131125 7.3878594 8.953125 7.3808594 C 8.808125 7.3748594 8.6425625 7.375 8.4765625 7.375 z"></path>
             </svg>
-            +33 6 14 74 47 20
+            +33 6 70 78 49 66
           </a>
         </DropdownMenuItem>
       </DropdownMenuContent>

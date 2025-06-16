@@ -832,7 +832,7 @@
         },
         "phone": {
           "title": "Téléphone",
-          "number": "+377 97 97 39 00"
+          "number": "+33 4 94 55 59 99"
         },
         "email": {
           "title": "Email",
@@ -1520,7 +1520,7 @@
           "none": "Pas de transfert"
         },
         "checkAvailability": "Vérifier la disponibilité",
-        "contactInfo": "Pour plus d'informations ou pour effectuer une réservation personnalisée, contactez-nous par téléphone au +377 97 97 39 00 ou par e-mail à booking@Héli Sécurité.mc."
+        "contactInfo": "Pour plus d'informations ou pour effectuer une réservation personnalisée, contactez-nous par téléphone au +33 4 94 55 59 99 ou par e-mail à booking@Héli Sécurité.mc."
       },
       "testimonials": {
         "title": "Ce que nos clients disent",
@@ -1781,7 +1781,7 @@
           "none": "Pas de transfert"
         },
         "checkAvailability": "Vérifier la disponibilité",
-        "contactInfo": "Pour plus d'informations ou pour effectuer une réservation personnalisée, contactez-nous par téléphone au +377 97 97 39 00 ou par e-mail à booking@Héli Sécurité.mc."
+        "contactInfo": "Pour plus d'informations ou pour effectuer une réservation personnalisée, contactez-nous par téléphone au +33 4 94 55 59 99 ou par e-mail à booking@Héli Sécurité.mc."
       },
       "testimonials": {
         "title": "Ce que nos clients disent",
@@ -2064,7 +2064,7 @@
       "title": "Identité du Responsable du Traitement",
       "companyName": "Héli Sécurité S.A.M.",
       "address": "Siège social : Héliport de Monaco, Avenue des Ligures, 98000 Monaco",
-      "phone": "Téléphone : +377 97 97 39 00",
+      "phone": "Téléphone : +33 4 94 55 59 99",
       "email": "Email : contact@Héli Sécurité.mc",
       "dpoTitle": "Délégué à la Protection des Données (DPO)",
       "dpoEmail": "Email : dpo@Héli Sécurité.mc"
@@ -2185,7 +2185,7 @@
       "title": "Éditeur du site",
       "companyName": "Héli Sécurité S.A.M.",
       "address": "Siège social : Héliport de Monaco, Avenue des Ligures, 98000 Monaco",
-      "phone": "Téléphone : +377 97 97 39 00",
+      "phone": "Téléphone : +33 4 94 55 59 99",
       "email": "E-mail : contact@Héli Sécurité.mc",
       "rcs": "RCS Monaco : 87S02334",
       "vat": "N° TVA intracommunautaire : FR62000005966",

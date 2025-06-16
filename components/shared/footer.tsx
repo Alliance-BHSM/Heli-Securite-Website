@@ -13,7 +13,7 @@ const Footer = () => {
           <Image src={Logo} alt="Logo Monacair White" width={300} className="w-full h-auto" />
         </div>
         <div className="flex items-center gap-4 sm:gap-5">
-          <Link href="https://www.instagram.com/monacair/">
+          <Link href="https://www.instagram.com/helisecurite/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -45,7 +45,10 @@ const Footer = () => {
               </g>
             </svg>
           </Link>
-          <Link href="https://www.facebook.com/MonacairMonacoDesk" target="_blank">
+          <Link
+            href="https://www.facebook.com/Helisecuritehelicopterairline/?locale=fr_FR"
+            target="_blank"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -77,7 +80,7 @@ const Footer = () => {
               </g>
             </svg>{' '}
           </Link>
-          <Link href="https://www.linkedin.com/company/monacair/">
+          <Link href="https://www.linkedin.com/company/heli-securite/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"

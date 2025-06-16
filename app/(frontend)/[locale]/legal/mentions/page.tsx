@@ -265,7 +265,7 @@ export default async function LegalMentionsPage() {
           <div className="text-center text-gray-700">
             <p className="mb-2">Pour toute question concernant ces mentions légales :</p>
             <p className="font-semibold">📧 contact@monacair.mc</p>
-            <p className="font-semibold">📞 +377 97 97 39 00</p>
+            <p className="font-semibold">📞 +33 4 94 55 59 99</p>
           </div>
         </div>
 

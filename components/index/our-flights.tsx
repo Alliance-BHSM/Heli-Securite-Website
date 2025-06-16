@@ -10,7 +10,7 @@ import { Link } from '@/i18n/navigation'
 const OurFlights = async () => {
   const t = await getTranslations('Index.our-flights')
   return (
-    <section className={'px-6 sm:px-10 md:px-20 text-white lg:px-40 py-10 md:py-20 bg-black'}>
+    <section className={'px-6 sm:px-10 md:px-20 text-white lg:px-40 py-10 md:py-20 bg-black h-full'}>
       <div className={'pb-8 md:pb-16'}>
         <h3 className={'font-brother font-normal text-white text-lg md:text-xl'}>{t('subtitle')}</h3>
         <h2 className={'font-brother font-normal text-white text-3xl md:text-5xl'}>
@@ -26,10 +26,6 @@ const OurFlights = async () => {
       </div>
       <div className={'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center gap-5'}>
         <div>
-          <h2 className={'font-brother font-bold text-2xl md:text-3xl mb-3'}>
-            {t('private.title')}
-          </h2>
-          <p className={'font-brother text-sm md:text-base'}>{t('private.description')}</p>
           <Link href={'/flights'}>
             <Image
               src={Private}
@@ -39,6 +35,10 @@ const OurFlights = async () => {
               }
             />
           </Link>
+          <h2 className={'font-brother font-bold text-2xl md:text-3xl'}>
+            {t('private.title')}
+          </h2>
+          <p className={'font-brother text-sm md:text-base'}>{t('private.description')}</p>
         </div>
         <div>
           <Link href={'/flights'}>
@@ -50,14 +50,12 @@ const OurFlights = async () => {
               }
             />
           </Link>
-          <h2 className={'font-brother font-bold text-2xl md:text-3xl my-3'}>
+          <h2 className={'font-brother font-bold text-2xl md:text-3xl'}>
             {t('regular.title')}
           </h2>
           <p className={'font-brother text-sm md:text-base'}>{t('regular.description')}</p>
         </div>
         <div>
-          <h2 className={'font-brother font-bold text-2xl md:text-3xl my-3'}>{t('pano.title')}</h2>
-          <p className={'font-brother text-sm md:text-base'}>{t('pano.description')}</p>
           <Link href={'/flights'}>
             <Image
               src={Panoramique}
@@ -67,6 +65,8 @@ const OurFlights = async () => {
               }
             />
           </Link>
+          <h2 className={'font-brother font-bold text-2xl md:text-3xl'}>{t('pano.title')}</h2>
+          <p className={'font-brother text-sm md:text-base'}>{t('pano.description')}</p>
         </div>
         <div>
           <Link href={'/private-jet'}>
@@ -78,7 +78,7 @@ const OurFlights = async () => {
               }
             />
           </Link>
-          <h2 className={'font-brother font-bold text-2xl md:text-3xl my-3'}>{t('jet.title')}</h2>
+          <h2 className={'font-brother font-bold text-2xl md:text-3xl'}>{t('jet.title')}</h2>
           <p className={'font-brother text-sm md:text-base'}>{t('jet.description')}</p>
         </div>
       </div>

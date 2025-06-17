@@ -52,7 +52,7 @@ const DetailsPage: React.FC<DestinationProps> = ({ destination }) => {
           {destination.advantages.map((advantage, index) => (
             <div
               key={advantage.id || index}
-              className="bg-primary rounded-lg p-4 sm:p-6 shadow-md flex flex-col justify-center items-center"
+              className="bg-black rounded-lg p-4 sm:p-6 shadow-md flex flex-col justify-center items-center"
             >
               <h4 className="font-brother text-secondary-button text-lg sm:text-2xl mb-2 sm:mb-3 text-center">
                 {advantage.title}

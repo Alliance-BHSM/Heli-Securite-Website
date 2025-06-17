@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { RichText } from '@payloadcms/richtext-lexical/react'
 import { Destination } from '@/payload-types'
 import { Button } from '@/components/ui/button'
+import { Link } from '@/i18n/navigation'
 
 interface DestinationProps {
   destination: Destination
@@ -19,9 +20,11 @@ const DetailsPage: React.FC<DestinationProps> = ({ destination }) => {
             data={destination.description}
             className="rich-text font-brother text-sm sm:text-base md:text-lg"
           />
-          <Button variant={'red'} size={'lg'} className={'mt-6'}>
-            {t('CTA')}
-          </Button>
+          <Link href={'/flights'}>
+            <Button variant={'red'} size={'lg'} className={'mt-6'}>
+              {t('CTA')}
+            </Button>
+          </Link>
         </div>
         {typeof destination.image === 'object' && destination.image !== null ? (
           <Image
@@ -51,7 +54,7 @@ const DetailsPage: React.FC<DestinationProps> = ({ destination }) => {
               key={advantage.id || index}
               className="bg-primary rounded-lg p-4 sm:p-6 shadow-md flex flex-col justify-center items-center"
             >
-              <h4 className="font-brother text-primary-button text-lg sm:text-2xl mb-2 sm:mb-3 text-center">
+              <h4 className="font-brother text-secondary-button text-lg sm:text-2xl mb-2 sm:mb-3 text-center">
                 {advantage.title}
               </h4>
               <p className="text-center text-white font-brother text-sm sm:text-base">

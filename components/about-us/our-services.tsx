@@ -19,13 +19,20 @@ export default function OurServices() {
               <li>{t('services-list.crew')}</li>
               <li>{t('services-list.maintenance')}</li>
             </ul>
+            <h2 className="text-3xl font-bold text-gray-800 mb-8 font-brother">{t('expertise')}</h2>
 
-            <p className="text-gray-600 font-brother">{t('fleet')}</p>
+            <p className="text-gray-600 mb-6 font-brother">{t('expertise-description')}</p>
+
+            <ul className="list-disc pl-6 mb-6 text-gray-600 space-y-2 font-brother">
+              <li>{t('expertise-list.operational')}</li>
+              <li>{t('expertise-list.regulatory')}</li>
+              <li>{t('expertise-list.aircraft')}</li>
+            </ul>
           </div>
           <div className="md:w-1/2 w-full h-[300px] md:h-[500px] relative mt-6 md:mt-0">
             <Image
               src="/images/index/regular.webp"
-              alt={t('image-alt')}
+              alt="Helicopter"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               priority

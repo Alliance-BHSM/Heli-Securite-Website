@@ -175,42 +175,45 @@
       "buttonText": "En savoir plus"
     },
     "our-history": {
-      "foundation": "Héli Sécurité a été fondée en 1988 par Stefano Casiraghi.",
-      "services-intro": "Héli Sécurité propose une large gamme de services dans le domaine de l'hélicoptère :",
+      "foundation": "Depuis plus de 25 ans, Heli Sécurité met son expertise au service d’une aviation d’excellence. Basés à Grimaud, Annecy, Courchevel et Monaco, nous opérons une flotte moderne d’hélicoptères Airbus et Bell, entretenue dans nos propres ateliers, pour offrir à nos clients des vols sûrs, réactifs et personnalisés.",
+      "services-intro": "Maintenance & ateliers PART-145",
       "services-list": {
-        "management": "Gestion d'hélicoptères, y compris le conseil, l'hébergement, les pilotes, le ravitaillement et la maintenance.",
-        "charter": "Vols charters privés vers toutes les destinations."
+        "ateliers": "Nos deux ateliers – dont Rotor Team, centre agréé EASA 145 (FR.145.0517) – réalisent :",
+        "visite": "Visites programmées, révisions générales, peinture et sellerie",
+        "management": "Modifications avioniques et options sur plus de 15 types Airbus, Bell, Robinson et Guimbal",
+        "charter": "Maintenance de ligne et stockage longue durée."
       },
-      "official-provider": "Depuis 1999, l'entreprise est Fournisseur Officiel de S.A.S. le Prince Souverain de Monaco, Albert II.",
-      "regular-service": "Le 1er janvier 2016, le Gouvernement Princier de Monaco a désigné Héli Sécurité comme seul opérateur du service de transfert régulier entre l'Aéroport Nice Côte d'Azur et Monaco.",
-      "image-alt": "Hélicoptère Héli Sécurité"
+      "official-provider": "Grâce à cette maîtrise interne, chaque appareil reste disponible et performant, quelles que soient vos opérations."
     },
     "monacair-leader": {
-      "title": "Héli Sécurité, la compagnie aérienne d'hélicoptère leader en France",
-      "operational-bases": "Héli Sécurité dispose de plusieurs bases opérationnelles et permettent de proposer à ses passagers des services d'exception : Monaco - Cannes, à Annecy pour desservir les Alpes françaises et suisses, et Grimaud, à proximité immédiate de Saint-Tropez, pour des vols privés et réguliers dédiés aux touristes et aux voyageurs d'affaires vers toutes les destinations de la Côte d'Azur, de Provence, de Corse et d'Italie.",
-      "team-goal": "Toute l'équipe de Héli Sécurité a un objectif: délivrer un service de haute qualité, quel que soit le moment du voyage.",
-      "services": "Le Groupe Héli Sécurité a déployé un panel de services pour faciliter le quotidien de ses clients, allant des simples transferts entre deux destinations aux initiations au pilotage.",
-      "maintenance": "Cette qualité de service est rendue possible par la fiabilité des hélicoptères, dont l'entretien et la maintenance sont gérés en interne dans les ateliers de sa filiale Rotor Team.",
-      "modern-fleet": "C'est en exploitant des appareils de dernières générations et dont le confort et les matériaux rivalisent avec les plus modernes que Héli Sécurité a pu fidéliser une clientèle exigeante.",
-      "trust": "Un service de niveau luxe, une réactivité exceptionnelle et des vols hautement sécurisés ont permis à Monacair et ses filiales Héli Sécurité et Rotor Team de gagner et de faire perdurer la confiance de ses clients. Cette confiance et cette fidélité sont les clefs de la pérennité d'Héli Sécurité."
+      "title": "École de pilotage",
+      "operational-bases": "Depuis trois décennies, notre centre de formation forme pilotes privés (PPL-H) et professionnels (CPL-H) au départ d’Annecy, Grimaud et Monaco. Au programme :",
+      "team-goal": "Qqualifications vol de nuit, montagne, type & IFR",
+      "services": " Instructeurs chevronnés et simulateur dernière génération.",
+      "maintenance": " Accompagnement individuel jusqu’à l’employabilité."
     },
     "our-services": {
       "title": "Nos Services",
-      "regular-line": "Depuis janvier 2016, Héli Sécurité est l'opérateur officiel et unique monégasque de la Ligne Régulière entre Monaco et l'Aéroport International Nice Côte d'Azur.",
-      "daily-flights": "La compagnie opère plus de 40 vols quotidiens, programmés toutes les 15 minutes. Basée à l'héliport de Monaco et dans tous les terminaux de l'Aéroport Nice Côte d'Azur.",
+      "regular-line": "Management d’hélicoptère",
+      "daily-flights": "Que vous envisagiez l’achat, la gestion ou la location de votre appareil",
       "services-list": {
-        "passenger": "Prise en charge des passagers, y compris l'embarquement/débarquement et la gestion des bagages.",
-        "crew": "Prise en charge de l'équipage des hélicoptères privés non basés.",
-        "maintenance": "Entretien d'hélicoptères."
+        "passenger": " étude de marché, audit & inspection pré-achat",
+        "crew": "négociation, suivi de conformité et équipage dédié",
+        "maintenance": "commercialisation de l’hélicoptère pour optimiser vos coûts lorsque vous ne volez pas"
       },
-      "fleet": "En septembre 2015, peu après que Héli Sécurité ait remporté l'appel d'offres du Gouvernement Princier de Monaco, une commande de six hélicoptères monomoteurs H130 flambant neufs, dotés de coffres élargis, a été passée. La livraison a été reçue entre décembre 2015 et fin avril 2016. Ces hélicoptères sont climatisés et sont principalement utilisés pour les transferts des lignes régulières : Monaco-Nice et Nice-Monaco.",
-      "image-alt": "Hélicoptère H130 de Héli Sécurité"
+      "expertise": "Expertise aéronautique",
+      "expertise-description": "Nos équipes pluridisciplinaires conseillent entreprises et opérateurs sur :",
+        "expertise-list": {
+            "aircraft": "Choix de flotte et plan de renouvellement",
+            "operational": "Conformité réglementaire EASA",
+            "regulatory": "Programmes de modernisation cabine & avionique"
+        }
     },
     "alliance": {
       "title": "Alliance Blade, Monacair et Héli Sécurité",
       "subtitle": "3 Entreprises renommées pour un service unique.",
       "description": {
-        "intro": "L'alliance Heli Securite Blade Héli Sécurité vous propose une expérience de vols sur-mesure, combinant flexibilité, confort et sécurité.",
+        "intro": "Sécurité, disponibilité, élégance. Chaque vol, chaque maintenance et chaque formation chez Heli Sécurité repose sur ces trois piliers essentiels. Rejoignez-nous pour vivre l’aviation légère telle qu’elle devrait toujours être : exigeante, innovante et profondément humaine.",
         "destinations": "Envolez-vous à bord de l'un de nos hélicoptères performants et de toute dernière génération pour un transfert vers ou depuis tous les aéroports français, corses, italiens, suisses mais également vers toutes vos destinations hivernales.",
         "alps": "Direction Les Alpes et ses sommets enneigés. Chaussez vos skis et profitez des plus belles pistes de ski au monde, profitez d'activités de plein air, découvrez la riche culture & la gastronomie des Alpes."
       },

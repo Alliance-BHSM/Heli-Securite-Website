@@ -48,13 +48,13 @@ const DestinationsCarousel = ({
                 />
                 <div className="absolute inset-0 bg-black/20 rounded-md" />
               </div>
+              <div className="relative p-3">
+                <h2 className="font-brother text-2xl text-white">{item.title}</h2>
+                <h3 className="font-brother text-sm text-white w-2/3">
+                  {item.carousel.carousel_subtitle}
+                </h3>
+              </div>
             </Link>
-            <div className="relative p-3">
-              <h2 className="font-brother text-2xl text-white">{item.title}</h2>
-              <h3 className="font-brother text-sm text-white w-2/3">
-                {item.carousel.carousel_subtitle}
-              </h3>
-            </div>
           </CarouselItem>
         ))}
       </CarouselContent>
@@ -98,13 +98,13 @@ const EventsCarousel = ({
                 />
                 <div className="absolute inset-0 bg-black/20 rounded-md" />
               </div>
+              <div className="relative p-3">
+                <h2 className="font-brother text-2xl text-white">{item.title}</h2>
+                <h3 className="font-brother text-sm text-white w-2/3">
+                  {item.carousel.carousel_subtitle}
+                </h3>
+              </div>
             </Link>
-            <div className="relative p-3">
-              <h2 className="font-brother text-2xl text-white">{item.title}</h2>
-              <h3 className="font-brother text-sm text-white w-2/3">
-                {item.carousel.carousel_subtitle}
-              </h3>
-            </div>
           </CarouselItem>
         ))}
       </CarouselContent>

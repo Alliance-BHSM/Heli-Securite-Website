@@ -112,12 +112,12 @@ export default async function LifestyleSection() {
                           </div>
                         )}
                     </div>
-                    <Link href="/experiences/lifestyle">
+                    <Link href={`/experiences/lifestyle#${experience.id}`}>
                       <Button
                         size="lg"
                         className="w-full bg-primary-button hover:bg-primary-button/90 text-white"
                       >
-                        {t('experiences.cta')}
+                        {t('CTA')}
                       </Button>
                     </Link>
                   </div>

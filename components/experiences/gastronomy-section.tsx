@@ -67,7 +67,7 @@ export default async function GastronomySection() {
                   {experience.name}
                 </h3>
                 <p className="mb-4 line-clamp-3">{experience.description}</p>
-                <Link href="/experiences/gastronomie">
+                <Link href={`/experiences/gastronomie#${experience.id}`}>
                   <Button
                     size="lg"
                     className="bg-primary-button hover:bg-primary-button/90 text-white"

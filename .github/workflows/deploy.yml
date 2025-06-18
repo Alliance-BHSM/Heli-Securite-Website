@@ -101,4 +101,4 @@ jobs:
           kubectl apply -f s3/statefulset.yaml
           kubectl apply -f s3/service.yaml
           
-          kubectl rollout restart deployment/heli-securite-website -n heli-securite
+          kubectl rollout restart deployment/website -n heli-securite

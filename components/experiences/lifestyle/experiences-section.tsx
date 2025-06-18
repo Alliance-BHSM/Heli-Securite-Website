@@ -42,7 +42,7 @@ export default async function ExperiencesSection() {
 
         <div className="space-y-16">
           {experiences.map((experience, index) => (
-            <div key={experience.id} className="grid md:grid-cols-2 gap-8 items-center">
+            <div id={experience.id} key={experience.id} className="grid md:grid-cols-2 gap-8 items-center">
               <div className={index % 2 === 1 ? 'order-2 md:order-1' : ''}>
                 <span className="inline-block bg-primary-button text-white text-sm px-3 py-1 rounded-full mb-4">
                   {experience.category}

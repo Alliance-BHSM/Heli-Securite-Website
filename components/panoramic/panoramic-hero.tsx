@@ -16,7 +16,7 @@ export function PanoramicHero({ imageSrc }: { imageSrc: string }) {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80" />
       </div>
 
       <div className="relative z-10 flex flex-col justify-end h-full text-white px-4 sm:px-6 pb-12 sm:pb-16">

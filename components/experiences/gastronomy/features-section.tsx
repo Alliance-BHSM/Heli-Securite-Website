@@ -17,7 +17,7 @@ export default function FeaturesSection() {
           <div>
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src={t('features.imageSrc')}
+                src={'/images/experiences/gastronomy/features.webp'}
                 alt={t('features.imageAlt')}
                 fill
                 className="object-cover"

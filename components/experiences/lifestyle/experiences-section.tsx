@@ -68,7 +68,7 @@ export default async function ExperiencesSection() {
                 </div>
 
                 <h3 className="text-2xl font-bold mb-4">{experience.name}</h3>
-                <p className="mb-6">{experience.description}</p>
+                <p className="mb-6 whitespace-pre-line">{experience.description}</p>
                 <div className="flex flex-wrap gap-4 mb-6">
                   <div className="flex items-center text-sm">
                     <Clock className="h-4 w-4 text-primary mr-1" />

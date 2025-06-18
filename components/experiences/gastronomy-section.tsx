@@ -71,7 +71,7 @@ export default async function GastronomySection() {
                   size="lg"
                   className="bg-primary-button hover:bg-primary-button/90 text-white"
                 >
-                  {t('cta')}
+                  {t('CTA')}
                 </Button>
               </div>
             </div>

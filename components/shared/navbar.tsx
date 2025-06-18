@@ -154,7 +154,7 @@ export default function Navbar({
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
           <Link href={'/'}>
-            <Image src={Logo} alt={'logo'} width={150} height={40} />
+            <Image src={Flamme} alt={'logo'} width={96} />
           </Link>
           <div className={'flex items-center justify-center gap-2'}>
             <Link href="/contact">

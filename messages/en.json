@@ -1255,7 +1255,7 @@
     "page": {
       "title": "Experiences",
       "subtitle": "Discover Monaco and the French Riviera through exclusive and unforgettable experiences",
-      "cta": "DISCOVER"
+      "cta": "EXPLORE"
     },
     "intro": {
       "title": "Exceptional moments with Héli Sécurité",
@@ -1369,7 +1369,7 @@
       "experiences": {
         "title": "Our Gastronomic Experiences",
         "description": "Discover our exclusive gastronomic experiences, designed to make you experience exceptional moments.",
-        "cta": "DISCOVER",
+        "CTA": "RESERVE",
         "first": {
           "badge": "Haute Gastronomy",
           "title": "Starred Dinner in Monaco",
@@ -1663,7 +1663,7 @@
       "experiences": {
         "title": "Our Lifestyle Experiences",
         "description": "Discover our exclusive lifestyle experiences, designed to make you experience the art of living on the French Riviera.",
-        "cta": "DISCOVER"
+        "cta": "RESERVE"
       },
       "cta": {
         "title": "Ready to Experience an Unforgettable Lifestyle Adventure?",

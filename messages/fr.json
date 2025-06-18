@@ -1241,7 +1241,7 @@
     "page": {
       "title": "Expériences",
       "subtitle": "Découvrez Monaco et la Côte d'Azur à travers des expériences exclusives et inoubliables",
-      "cta": "DÉCOUVRIR"
+      "cta": "EXPLORER"
     },
     "intro": {
       "title": "Des moments d'exception avec Héli Sécurité",
@@ -1263,6 +1263,7 @@
     },
     "gastronomy": {
       "CTA": "DÉCOUVRIR",
+      "subCTA": "RÉSERVER",
       "hero": {
         "title": "Gastronomie",
         "subtitle": "Découvrez l'excellence culinaire de Monaco et de la Côte d'Azur à travers des expériences gastronomiques exclusives.",
@@ -1355,7 +1356,7 @@
       "experiences": {
         "title": "Nos Expériences Gastronomiques",
         "description": "Découvrez nos expériences gastronomiques exclusives, conçues pour vous faire vivre des moments d'exception.",
-        "cta": "DÉCOUVRIR",
+        "CTA": "RÉSERVER",
         "first": {
           "badge": "Haute Gastronomie",
           "title": "Dîner Étoilé à Monaco",
@@ -1649,7 +1650,7 @@
       "experiences": {
         "title": "Nos Expériences Lifestyle",
         "description": "Découvrez nos expériences lifestyle exclusives, conçues pour vous faire vivre l'art de vivre de la Côte d'Azur.",
-        "cta": "DÉCOUVRIR"
+        "cta": "RÉSERVER"
       },
       "cta": {
         "title": "Prêt à Vivre une Expérience Lifestyle Inoubliable?",

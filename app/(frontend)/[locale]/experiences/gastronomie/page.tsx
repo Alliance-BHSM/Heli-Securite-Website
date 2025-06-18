@@ -35,7 +35,7 @@ export default async function GastronomieExperiencePage() {
         subtitle={t('hero.subtitle')}
         buttonText={t('hero.buttonText')}
         buttonLink="#booking-form"
-        imageSrc={t('hero.imageSrc')}
+        imageSrc={'/images/experiences/gastronomy/hero.webp'}
       />
       <IntroSection />
       <FeaturesSection />

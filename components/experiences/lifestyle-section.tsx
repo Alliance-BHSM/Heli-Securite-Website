@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { Trophy, ChevronRight, Calendar, Users, Clock } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -112,12 +112,14 @@ export default async function LifestyleSection() {
                           </div>
                         )}
                     </div>
-                    <Button
-                      size="lg"
-                      className="w-full bg-primary-button hover:bg-primary-button/90 text-white"
-                    >
-                      {t('experiences.cta')}
-                    </Button>
+                    <Link href="/experiences/lifestyle">
+                      <Button
+                        size="lg"
+                        className="w-full bg-primary-button hover:bg-primary-button/90 text-white"
+                      >
+                        {t('experiences.cta')}
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>

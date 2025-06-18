@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { getTranslations } from 'next-intl/server'
 import { Utensils, ChevronRight, Wine, Calendar } from 'lucide-react'
 import { getPayloadClient } from '@/lib/payload'
@@ -67,13 +67,14 @@ export default async function GastronomySection() {
                   {experience.name}
                 </h3>
                 <p className="mb-4 line-clamp-3">{experience.description}</p>
-                <Button
-                  href="/experiences/gastronomie"
-                  size="lg"
-                  className="bg-primary-button hover:bg-primary-button/90 text-white"
-                >
-                  {t('CTA')}
-                </Button>
+                <Link href="/experiences/gastronomie">
+                  <Button
+                    size="lg"
+                    className="bg-primary-button hover:bg-primary-button/90 text-white"
+                  >
+                    {t('CTA')}
+                  </Button>
+                </Link>
               </div>
             </div>
           ))}

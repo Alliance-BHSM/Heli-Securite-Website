@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { getTranslations } from 'next-intl/server'
 import { Landmark, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -28,9 +28,7 @@ export default async function CultureSection() {
           <div className="inline-block mb-4 bg-primary-button/10 px-4 py-2 rounded-full">
             <div className="flex items-center">
               <Landmark className="h-5 w-5 text-primary-button mr-2" />
-              <span className="text-primary-button font-medium">
-                {t('badge')}
-              </span>
+              <span className="text-primary-button font-medium">{t('badge')}</span>
             </div>
           </div>
 
@@ -70,10 +68,7 @@ export default async function CultureSection() {
                 <p className="mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {experience.description}
                 </p>
-                <Button
-                  className="bg-primary-button hover:bg-primary-button/90 text-white"
-                  asChild
-                >
+                <Button className="bg-primary-button hover:bg-primary-button/90 text-white" asChild>
                   <Link href="#booking-form">En savoir plus</Link>
                 </Button>
               </div>

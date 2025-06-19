@@ -1004,7 +1004,7 @@ export default function BookingForm({
             </form>
           ) : (
             <form
-              action="https://formsubmit.co/booking@monacair.mc"
+              action="https://formsubmit.co/contact@helisecurite.fr"
               method="POST"
               encType="multipart/form-data"
             >
@@ -1038,7 +1038,7 @@ export default function BookingForm({
                   <input
                     type="hidden"
                     name="_autoresponse"
-                    value={`Merci pour votre réservation de ${flightType === 'vol-prive' ? 'Vol Privé' : 'Ligne Régulière'} avec Monacair !`}
+                    value={`Merci pour votre réservation de ${flightType === 'vol-prive' ? 'Vol Privé' : 'Ligne Régulière'} avec Heli Securite !`}
                   />
 
                   <input

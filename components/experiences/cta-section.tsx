@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
-import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
+import { getTranslations } from 'next-intl/server'
 import { Button } from '@/components/ui/button'
 
-export default function CTASection() {
-  const t = useTranslations('Experiences.action')
+export default async function CTASection() {
+  const t = await getTranslations('Experiences.action')
 
   return (
     <section className="py-16 relative overflow-hidden">

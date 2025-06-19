@@ -20,8 +20,8 @@ export default async function CookiesPage() {
             <div>
               <h2 className="text-lg font-semibold text-blue-900 mb-2">Information importante</h2>
               <p className="text-blue-800">
-                Cette page explique comment nous utilisons les cookies sur monacair.mc et comment
-                vous pouvez gérer vos préférences.
+                Cette page explique comment nous utilisons les cookies sur helisecurite.fr et
+                comment vous pouvez gérer vos préférences.
               </p>
             </div>
           </div>

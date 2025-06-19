@@ -279,7 +279,7 @@ export default function BookingForm({
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2">
               <form
-                action="https://formsubmit.co/booking@monacair.mc"
+                action="https://formsubmit.co/contact@helisecurite.fr"
                 method="POST"
                 onSubmit={handleSubmit}
               >
@@ -359,7 +359,7 @@ export default function BookingForm({
                 <input
                   type="hidden"
                   name="_autoresponse"
-                  value="Merci pour votre réservation de Vol Panoramique avec Monacair !"
+                  value="Merci pour votre réservation de Vol Panoramique avec Heli Securite !"
                 />
 
                 <input type="hidden" name="flightType" value="Vol Panoramique" />

@@ -1,6 +1,6 @@
 import React from 'react'
 import { getTranslations } from 'next-intl/server'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 
 export default async function Form() {
   const t = await getTranslations('Contact')
@@ -156,11 +156,11 @@ export default async function Form() {
         </div>
         <div className="bg-black text-white p-6 md:p-8 rounded-md shadow-sm text-secondary">
           <form
-            action="https://formsubmit.co/booking@monacair.mc"
+            action="https://formsubmit.co/contact@helisecurite.fr"
             method="POST"
             className="space-y-4"
           >
-            <input type="hidden" name="_subject" value="Contact form submission Monacair" />
+            <input type="hidden" name="_subject" value="Contact form submission Heli Securite" />
             <input type="hidden" name="_template" value="box" />
             <div>
               <label htmlFor="name" className="block font-brother font-bold text-sm mb-2">

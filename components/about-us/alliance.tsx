@@ -1,9 +1,9 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
-export default function Alliance() {
-  const t = useTranslations('AboutUs.alliance')
+export default async function Alliance() {
+  const t = await getTranslations('AboutUs.alliance')
 
   return (
     <section className="py-16 bg-gray-50">

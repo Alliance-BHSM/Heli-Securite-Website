@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
+import { getTranslations } from 'next-intl/server'
 
-export default function CTASection() {
-  const t = useTranslations('AboutUs.cta-section')
+export default async function CTASection() {
+  const t = await getTranslations('AboutUs.cta-section')
 
   return (
     <section className="py-16 bg-primary-button text-white">

@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { Phone, Menu, X, MoveDown } from 'lucide-react'
 import Logo from '@/public/logos/LogoOld.webp'
 import Flamme from '@/public/logos/flamme.webp'
@@ -216,9 +216,7 @@ export default function Navbar({
           <div className="mt-auto pt-3 flex items-start justify-between">
             <div>
               <a
-                href={
-                  'https://www.google.com/maps/place/Monacair/@43.7256296,7.4190021,16z/data=!3m1!4b1!4m6!3m5!1s0x12cdc29460254689:0x6be885dea222f109!8m2!3d43.7256296!4d7.4190021!16s%2Fg%2F11h1kh8d4?hl=fr-FR&entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D'
-                }
+                href={'https://maps.app.goo.gl/xtwwcSQkwBmqowdY6'}
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -1,11 +1,11 @@
 import React from 'react'
-import Link from 'next/link'
-import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
+import { getTranslations } from 'next-intl/server'
 import { Users, Clock, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-export default function CustomSection() {
-  const t = useTranslations('Experiences.custom')
+export default async function CustomSection() {
+  const t = await getTranslations('Experiences.custom')
 
   return (
     <section className="py-20 relative overflow-hidden">

@@ -9,7 +9,7 @@ export default async function LegalMentionsPage() {
         {/* Header */}
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">{t('title')}</h1>
-          <p className="text-lg text-gray-600">MONACAIR S.A.M. - www.monacair.mc</p>
+          <p className="text-lg text-gray-600">Héli Sécurité - www.helisecurite.fr</p>
         </header>
 
         {/* Table of Contents */}
@@ -264,7 +264,7 @@ export default async function LegalMentionsPage() {
           <h2 className="text-xl font-bold text-gray-900 mb-4 text-center">Contact</h2>
           <div className="text-center text-gray-700">
             <p className="mb-2">Pour toute question concernant ces mentions légales :</p>
-            <p className="font-semibold">📧 contact@monacair.mc</p>
+            <p className="font-semibold">📧 contact@helisecurite.fr</p>
             <p className="font-semibold">📞 +33 4 94 55 59 99</p>
           </div>
         </div>
@@ -272,7 +272,7 @@ export default async function LegalMentionsPage() {
         {/* Footer */}
         <footer className="mt-8 text-center py-6 border-t border-gray-200">
           <p className="text-gray-600 text-sm">
-            © {new Date().getFullYear()} MONACAIR S.A.M. - Tous droits réservés
+            © {new Date().getFullYear()} Héli Sécurité - Tous droits réservés
           </p>
         </footer>
       </div>

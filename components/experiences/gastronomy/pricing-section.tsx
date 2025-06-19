@@ -1,10 +1,10 @@
 import { Check } from 'lucide-react'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 
-export default function PricingSection() {
-  const t = useTranslations('Experiences.gastronomy.pricing')
+export default async function PricingSection() {
+  const t = await getTranslations('Experiences.gastronomy.pricing')
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-12">

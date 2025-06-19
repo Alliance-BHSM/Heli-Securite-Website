@@ -152,7 +152,7 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
           <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
             <div className="p-6 sm:p-8">
               <form
-                action="https://formsubmit.co/booking@monacair.mc"
+                action="https://formsubmit.co/contact@helisecurite.fr"
                 method="POST"
                 onSubmit={handleSubmit}
                 className="space-y-6"
@@ -160,13 +160,13 @@ export const ExperienceBookingForm: React.FC<ExperienceBookingFormProps> = ({
                 <input
                   type="hidden"
                   name="_subject"
-                  value={`Nouvelle réservation d'expérience ${experienceType} - Monacair`}
+                  value={`Nouvelle réservation d'expérience ${experienceType} - Heli Securite`}
                 />
                 <input type="hidden" name="_template" value="table" />
                 <input
                   type="hidden"
                   name="_autoresponse"
-                  value={`Merci pour votre réservation d'expérience ${experienceType} avec Monacair !`}
+                  value={`Merci pour votre réservation d'expérience ${experienceType} avec Heli Securite !`}
                 />
                 <input type="hidden" name="experienceName" value={selectedExperience?.name || ''} />
                 <input type="hidden" name="experienceType" value={experienceType} />

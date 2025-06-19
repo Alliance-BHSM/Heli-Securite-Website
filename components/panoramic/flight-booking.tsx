@@ -61,7 +61,7 @@ export default function FlightBooking({
 
   return (
     <div className="container mx-auto px-4 sm:px-8 lg:px-16 xl:px-24">
-      <div className="bg-primary rounded-3xl p-3 sm:p-4 lg:p-6 flex flex-col lg:flex-row gap-3 sm:gap-4 lg:gap-6">
+      <div className="bg-black rounded-3xl p-3 sm:p-4 lg:p-6 flex flex-col lg:flex-row gap-3 sm:gap-4 lg:gap-6">
         <FlightTypeSelector
           flightType={flightType}
           onFlightTypeChange={(value) => setFlightType(value as 'shared' | 'private')}

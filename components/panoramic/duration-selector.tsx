@@ -18,7 +18,7 @@ export const DurationSelector = ({
   return (
     <div className="bg-primary/80 rounded-2xl p-3 sm:p-4 lg:p-5 flex-1">
       <div className="flex items-center gap-3 mb-3 sm:mb-4 lg:mb-5">
-        <div className="bg-black rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-white font-bold text-sm sm:text-base">
+        <div className="bg-primary rounded-full w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center text-white font-bold text-sm sm:text-base">
           2
         </div>
         <h2 className="text-white text-lg sm:text-xl lg:text-2xl font-medium font-brother">
@@ -45,7 +45,7 @@ export const DurationSelector = ({
               step={1}
               onValueChange={onDurationChange}
               disabled={availableDurations.length <= 1}
-              className="w-full [&_[data-slot=slider-range]]:bg-white [&_[data-slot=slider-thumb]]:border-white"
+              className="w-full [&_[data-slot=slider-range]]:bg-secondary [&_[data-slot=slider-thumb]]:border-white"
             />
           </div>
         )}

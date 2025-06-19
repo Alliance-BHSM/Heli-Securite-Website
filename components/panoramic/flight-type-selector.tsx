@@ -45,20 +45,20 @@ export const FlightTypeSelector = ({
           <label
             className={`flex items-center justify-between bg-primary/80 rounded-xl p-3 sm:p-4 cursor-pointer border ${
               flightType === 'shared'
-                ? 'border-primary-button'
+                ? 'border-secondary-button'
                 : 'border-primary/50'
             }`}
           >
             <div className="flex items-center gap-2 sm:gap-3">
               <RadioGroupItem
                 value="shared"
-                className="border-primary-button data-[state=checked]:bg-primary-button"
+                className="border-primary-button data-[state=checked]:brightness-125"
               />
               <span className="text-white text-base sm:text-lg lg:text-xl font-brother">
                 {t('sharedTour')}
               </span>
             </div>
-            <span className="text-gray-400 font-brother text-sm sm:text-base">
+            <span className="text-white/75 font-brother text-sm sm:text-base">
               {t('startingFrom')} {sharedOption?.minPrice}€
             </span>
           </label>
@@ -68,20 +68,20 @@ export const FlightTypeSelector = ({
           <label
             className={`flex items-center justify-between bg-primary/80 rounded-xl p-3 sm:p-4 cursor-pointer border ${
               flightType === 'private'
-                ? 'border-primary-button'
+                ? 'border-secondary-button'
                 : 'border-primary/50'
             }`}
           >
             <div className="flex items-center gap-2 sm:gap-3">
               <RadioGroupItem
                 value="private"
-                className="border-primary-button data-[state=checked]:bg-primary-button"
+                className="border-primary-button data-[state=checked]:brightness-125"
               />
               <span className="text-white text-base sm:text-lg lg:text-xl font-brother">
                 {t('privateTour')}
               </span>
             </div>
-            <span className="text-gray-400 font-brother text-sm sm:text-base">
+            <span className="text-white/75 font-brother text-sm sm:text-base">
               {t('startingFrom')} {privateOption?.minPrice}€
             </span>
           </label>

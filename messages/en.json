@@ -2022,14 +2022,27 @@
   "Management": {
     "hero": {
       "title": "Our Services",
-      "subtitle": "The management service offered by Héli Sécurité has been designed to offer you total expertise, to save you time, money and spare you hassles.",
-      "description": "Thanks to this service, you enjoy an optimal and enriching experience with your helicopter, maintained according to the strictest standards. Héli Sécurité handles all administrative and operational aspects related to helicopter ownership, allowing you to fully enjoy your asset with complete freedom and flexibility.",
-      "trustDescription": "Thanks to its neutral management, rigorous financial control and scrupulous respect for aircraft safety and maintenance standards, Héli Sécurité ensures you complete peace of mind.",
+      "subtitle": "The management service offered by Héli Sécurité has been designed to provide you with total expertise, in order to save you time, money and spare you hassles.",
+      "description": "Thanks to this service, you enjoy an optimal and enriching experience with your helicopter, maintained to the strictest standards. Héli Sécurité handles all administrative and operational aspects related to helicopter ownership, allowing you to fully enjoy your asset with complete freedom and flexibility.",
+      "trustDescription": "Thanks to its neutral management, rigorous financial control and scrupulous compliance with aircraft safety and maintenance standards, Héli Sécurité ensures complete peace of mind.",
       "CTA": "CONTACT US"
+    },
+    "Management": {
+      "hero": {
+        "title": "Management",
+        "subtitle": "Helicopter Management Service",
+        "CTA": "CONTACT US"
+      },
+      "section": {
+        "title": "Management",
+        "paragraph1": "The management service offered by Héli Sécurité has been designed to provide you with total expertise, in order to save you time, money and spare you hassles. Thanks to this service, you enjoy an optimal and enriching experience with your helicopter, maintained to the strictest standards. Héli Sécurité handles all administrative and operational aspects related to helicopter ownership, allowing you to fully enjoy your asset with complete freedom and flexibility.",
+        "paragraph2": "Thanks to its neutral management, rigorous financial control and scrupulous compliance with aircraft safety and maintenance standards, Héli Sécurité ensures complete peace of mind.",
+        "CTA": "LEARN MORE"
+      }
     },
     "costControl": {
       "title": "Cost Control",
-      "description": "Héli Sécurité ensures you 100% total financial transparency. Its operation is based on cost pass-through – you receive a copy of each invoice for expenses related to your helicopter, with personalized reports according to your needs.",
+      "description": "Héli Sécurité ensures 100% financial transparency. Its operation is based on cost rebilling – you receive a copy of every invoice for expenses related to your helicopter, with personalized reports according to your needs.",
       "benefits": [
         "Complete control of maintenance activities",
         "Tailor-made, priority service at the best rate",
@@ -2038,29 +2051,66 @@
       ]
     },
     "helicopterSales": {
-      "title": "Helicopter Purchase / Sales",
-      "buyDescription": "If you are planning to purchase a helicopter, Héli Sécurité accompanies you at every step of your process and helps you choose the aircraft perfectly adapted to your needs. Our experience of over 30 years and market expertise allow us to optimize your purchase process, by handling market research, offer selection and negotiation to guarantee you a helicopter equipped with all essential options.",
-      "inspectionDescription": "As part of our service, we perform pre-purchase controls and inspections for helicopters from brands such as Airbus Helicopter, Bell, Robinson, Guimbal... to ensure the quality of each aircraft. We negotiate the best purchase conditions for you and offer you meticulous follow-up, guaranteeing a helicopter that meets your expectations.",
-      "sellDescription": "Finally, our trading activity includes aircraft sales. If you are considering selling your helicopter, do not hesitate to contact us to benefit from our complete support and expertise to achieve a sale under the best conditions."
+      "title": "Helicopter Sales / Purchases",
+      "buyDescription": "If you are planning to purchase a helicopter, Héli Sécurité accompanies you at every stage of your process and helps you choose the aircraft perfectly suited to your needs. Our 30+ years of experience and market expertise allow us to optimize your purchasing process, taking care of market research, offer selection and negotiation to guarantee you a helicopter equipped with all the essential options.",
+      "inspectionDescription": "As part of our service, we carry out preliminary checks and inspections for helicopters from brands such as Airbus Helicopter, Bell, Robinson, Guimbal... to ensure the quality of each aircraft. We negotiate the best purchasing conditions for you and offer you meticulous follow-up, guaranteeing a helicopter that meets your expectations.",
+      "sellDescription": "Finally, our trading activity includes the sale of aircraft. If you are considering reselling your helicopter, do not hesitate to contact us to benefit from our complete support and our expertise in order to achieve a sale under the best conditions."
     },
     "crewManagement": {
       "title": "Crew Management",
-      "description": "We offer complete after-sales service, by recruiting a dedicated crew, trained and certified in our academy. We can also save you recruitment costs by offering the provision of our crews."
+      "description": "We offer a complete after-sales service, recruiting a dedicated crew, trained and certified in our academy. We can also save you recruitment costs by offering the provision of our crews."
     },
     "maintenance": {
       "title": "Maintenance",
-      "description": "We also ensure the maintenance of your aircraft in our hangars, to guarantee that it is always ready to take off safely and reliably.",
-      "certificationDescription": "Héli Sécurité offers helicopter maintenance services within our subsidiary, Rotor Team, EASA 145 certified (No. FR.145.0517).",
+      "subtitle": "We also ensure the maintenance of your aircraft in our hangars, to guarantee that it is always ready to take off in complete safety and reliability",
+      "CTA": "LEARN MORE",
+      "description": "We also ensure the maintenance of your aircraft in our hangars, to guarantee that it is always ready to take off in complete safety and reliability.",
+      "certificationDescription": "Héli Sécurité offers helicopter maintenance services within our subsidiary, Rotor Team, EASA 145 certified (n° FR.145.0517).",
       "locationsDescription": "Our facilities and workshops located in Grimaud, Saint-Tropez and Cannes, as well as in Annecy and Courchevel, offer you the flexibility you can expect."
     },
     "charter": {
-      "title": "Charter",
-      "description": "If you wish to make your investment profitable, we also offer you the possibility to manage the commercialization of your helicopter. We operate private flights year-round in Southern France and the Alps, allowing you to benefit from our client portfolio of the Alliance Blade Monacair Héli Sécurité."
+      "title": "Charter / Leasing",
+      "description": "If you wish to make your investment profitable, we also offer you the possibility of managing the marketing of your helicopter. We operate private flights year-round in the South of France and the Alps, allowing you to benefit from our client portfolio of the Monacair Blade Heli Sécurité Alliance."
     },
     "ctaSection": {
       "title": "Interested in Our Management Service?",
       "description": "Contact our team to discover how our management services can save you time and money.",
       "CTA": "CONTACT US"
+    }
+  },
+  "Handling": {
+    "hero": {
+      "title": "Handling",
+      "subtitle": "Helicopter Handling Service in Monaco and Grimaud",
+      "CTA": "CONTACT US"
+    },
+    "section": {
+      "title": "Helicopter Handling Service in Monaco and Grimaud",
+      "buyDescription": "Our helicopter handling / assistance service in Monaco and Saint Tropez - Grimaud is designed to offer complete and professional management of your aircraft, guaranteeing a smooth and hassle-free experience. Whether you are a helicopter owner, a company or an individual, our team of experts does everything possible to meet your specific needs with efficiency and discretion.",
+      "inspectionDescription": "Located at the Monaco and Saint Tropez - Grimaud heliports, our handling service manages the operational aspects of your flight, from disembarkation to boarding.",
+      "CTA": "LEARN MORE"
+    },
+    "description": {
+      "intro": "Our helicopter handling / assistance service in Monaco and Saint Tropez - Grimaud is designed to offer complete and professional management of your aircraft, guaranteeing a smooth and hassle-free experience. Whether you are a helicopter owner, a company or an individual, our team of experts does everything possible to meet your specific needs with efficiency and discretion.",
+      "location": "Located at the Monaco and Saint Tropez - Grimaud heliports, our handling service manages the operational aspects of your flight, from disembarkation to boarding.",
+      "services": "We offer personalized welcome and assistance in all stages of your flight, including ground logistics organization, fuel supply, as well as coordination of administrative formalities and security inspections.",
+      "facilities": "Our modern facilities, perfectly located, are at your disposal to guarantee fast and secure service. From the arrival of your helicopter until its takeoff, every detail is handled with particular care, so that you can travel with complete peace of mind.",
+      "team": "We also provide you with a qualified team available 7 days a week, ready to respond to all your requests, whether it's managing your time slots, coordinating with local authorities or optimizing turnaround times for your missions.",
+      "quality": "With our helicopter handling service in Monaco and Grimaud, you benefit from high-end service quality, optimal management of your air travel and valuable time savings.",
+      "logistics": "Let us take care of the logistics and details, while you fully enjoy your stopover in Monaco or Saint Tropez - Grimaud."
+    },
+    "hangar": "Thanks to more than 14,000 m² of hangar space in Annecy, Saint Tropez, Cannes and Monaco, we offer quality service to hangar your aircraft and assist you during your stay.",
+    "contact": {
+      "prefix": "For more information: contact"
+    },
+    "servicesRecap": {
+      "title": "SERVICES RECAP",
+      "hangarage": "Hangarage",
+      "fuel": "Fuel supply",
+      "technical": "Technical assistance",
+      "coordination": "PPR Assignment - Coordination with Monégasque and French civil aviation",
+      "driver": "Driver service",
+      "lounge": "Crew and passenger lounge"
     }
   },
   "privacyPolicy": {

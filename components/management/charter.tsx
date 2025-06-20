@@ -62,11 +62,6 @@ export default function Charter() {
                     }
                     className="hover:shadow-lg transition-all duration-300 border border-gray-100"
                     icon={destination.icon}
-                    header={
-                      <div className="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-bl-3xl rounded-tr-xl -mt-1 -mr-1 flex items-center justify-center">
-                        <div className="relative -top-2 -right-2">{destination.icon}</div>
-                      </div>
-                    }
                   />
                 ))}
               </BentoGrid>

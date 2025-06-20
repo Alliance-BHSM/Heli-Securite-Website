@@ -2014,6 +2014,19 @@
       "trustDescription": "Grâce à sa gestion neutre, son contrôle financier rigoureux et son respect scrupuleux des normes de sécurité et d'entretien des aéronefs, Héli Sécurité vous assure une tranquillité d'esprit totale.",
       "CTA": "NOUS CONTACTER"
     },
+    "Management": {
+      "hero": {
+        "title": "Management",
+        "subtitle": "Service de Gestion d'Hélicoptères",
+        "CTA": "CONTACTEZ-NOUS"
+      },
+      "section": {
+        "title": "Management",
+        "paragraph1": "Le service de gestion proposé par Héli Sécurité a été conçu pour vous offrir une expertise totale, afin de vous faire économiser du temps, de l’argent et vous épargner des tracas. Grâce à ce service, vous profitez d’une expérience optimale et enrichissante avec votre hélicoptère, entretenu selon les normes les plus strictes. Héli Sécurité prend en charge tous les aspects administratifs et opérationnels liés à la possession d’un hélicoptère, vous permettant ainsi de jouir pleinement de votre bien en toute liberté et flexibilité.",
+        "paragraph2": "Grâce à sa gestion neutre, son contrôle financier rigoureux et son respect scrupuleux des normes de sécurité et d’entretien des aéronefs, Héli Sécurité vous assure une tranquillité d’esprit totale.",
+        "CTA": "EN SAVOIR PLUS"
+      }
+    },
     "costControl": {
       "title": "Contrôle des coûts",
       "description": "Héli Sécurité vous assure une transparence financière totale à 100%. Son fonctionnement repose sur la refacturation des frais – vous recevez une copie de chaque facture pour les dépenses liées à votre hélicoptère, avec des rapports personnalisés selon vos besoins.",
@@ -2036,18 +2049,55 @@
     },
     "maintenance": {
       "title": "Maintenance",
+      "subtitle": "We also ensure the maintenance of your aircraft in our hangars, to guarantee that it is always ready to take off in complete safety and reliability",
+      "CTA": "EN SAVOIR PLUS",
       "description": "Nous assurons également l'entretien de votre appareil dans nos hangars, pour garantir qu'il soit toujours prêt à décoller en toute sécurité et fiabilité.",
       "certificationDescription": "Héli Sécurité propose une offre de maintenance des hélicoptères au sein de notre filiale, Rotor Team, certifiée EASA 145 (n° FR.145.0517).",
       "locationsDescription": "Nos installations et ateliers situés à Grimaud, Saint-Tropez et Cannes, ainsi qu'à Annecy et Courchevel, vous offrent la flexibilité à laquelle vous pouvez vous attendre."
     },
     "charter": {
       "title": "Charter / Affrètement",
-      "description": "Si vous souhaitez rentabiliser votre investissement, nous vous offrons également la possibilité de gérer la commercialisation de votre hélicoptère. Nous opérons des vols privés toute l'année dans le Sud de la France et les Alpes, vous permettant ainsi de bénéficier de notre portefeuille de clients de l'Alliance Blade Monacair Héli Sécurité."
+      "description": "Si vous souhaitez rentabiliser votre investissement, nous vous offrons également la possibilité de gérer la commercialisation de votre hélicoptère. Nous opérons des vols privés toute l'année dans le Sud de la France et les Alpes, vous permettant ainsi de bénéficier de notre portefeuille de clients de l'Alliance Monacair Blade Heli Sécurité."
     },
     "ctaSection": {
       "title": "Intéressé par Notre Service de Gestion?",
       "description": "Contactez notre équipe pour découvrir comment nos services de gestion peuvent vous faire économiser du temps et de l'argent.",
       "CTA": "CONTACTEZ-NOUS"
+    }
+  },
+  "Handling": {
+    "hero": {
+      "title": "Handling",
+      "subtitle": "Service de Handling Hélicoptère à Monaco et à Grimaud",
+      "CTA": "CONTACTEZ-NOUS"
+    },
+    "section": {
+      "title": "Service de Handling Hélicoptère à Monaco et à Grimaud",
+      "buyDescription": "Notre service de handling / assistance hélicoptère à Monaco et à Saint Tropez - Grimaud est conçu pour offrir une prise en charge complète et professionnelle de votre appareil, en garantissant une expérience fluide et sans tracas. Que vous soyez un propriétaire d’hélicoptère, une entreprise ou un particulier, notre équipe d'experts met tout en œuvre pour répondre à vos besoins spécifiques avec efficacité et discrétion.",
+      "inspectionDescription": "Situé sur l’héliport de Monaco et Saint Tropez - Grimaud, notre service de handling assure la gestion des aspects opérationnels de votre vol, du débarquement à l'embarquement.",
+      "CTA": "SAVOIR PLUS"
+    },
+    "description": {
+      "intro": "Notre service de handling / assistance hélicoptère à Monaco et à Saint Tropez - Grimaud est conçu pour offrir une prise en charge complète et professionnelle de votre appareil, en garantissant une expérience fluide et sans tracas. Que vous soyez un propriétaire d'hélicoptère, une entreprise ou un particulier, notre équipe d'experts met tout en œuvre pour répondre à vos besoins spécifiques avec efficacité et discrétion.",
+      "location": "Situé sur l'héliport de Monaco et Saint Tropez - Grimaud, notre service de handling assure la gestion des aspects opérationnels de votre vol, du débarquement à l'embarquement.",
+      "services": "Nous offrons un accueil personnalisé et une assistance dans toutes les étapes de votre vol, incluant l'organisation de la logistique au sol, le ravitaillement en carburant, ainsi que la coordination des formalités administratives et des inspections de sécurité.",
+      "facilities": "Nos installations modernes, parfaitement situées, sont à votre disposition pour garantir un service rapide et sécurisé. De l'arrivée de votre hélicoptère jusqu'à son décollage, chaque détail est pris en charge avec un soin particulier, pour que vous puissiez voyager en toute sérénité.",
+      "team": "Nous mettons également à votre disposition une équipe qualifiée et disponible 7j/7, prête à répondre à toutes vos demandes, qu'il s'agisse de la gestion de vos créneaux horaires, de la coordination avec les autorités locales ou de l'optimisation des temps de rotation pour vos missions.",
+      "quality": "Avec notre service de handling hélicoptère à Monaco et à Grimaud, vous bénéficiez d'une qualité de service haut de gamme, d'une gestion optimale de vos déplacements aériens et d'un gain de temps précieux.",
+      "logistics": "Laissez-nous nous occuper de la logistique et des détails, pendant que vous profitez pleinement de votre escale à Monaco ou à Saint Tropez - Grimaud."
+    },
+    "hangar": "Grace à plus de 14 000 m² de hangar à Annecy, Saint Tropez, Cannes et Monaco nous offrons une prestation de qualité pour hangarer vos appareils et vous assister durant votre séjour.",
+    "contact": {
+      "prefix": "Pour plus d'informations : contacter"
+    },
+    "servicesRecap": {
+      "title": "RECAP SERVICES",
+      "hangarage": "Hangarage",
+      "fuel": "Avitaillement fuel",
+      "technical": "Assistance technique",
+      "coordination": "Attribution PPR - Coordination avec l'aviation civile monégasque et française",
+      "driver": "Service chauffeur",
+      "lounge": "Salon équipages et passagers"
     }
   },
   "privacyPolicy": {

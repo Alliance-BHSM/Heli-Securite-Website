@@ -6,6 +6,13 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { RichText } from '@payloadcms/richtext-lexical/react'
 import { Fleet } from '@/payload-types'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/fleet/carousel'
 
 interface ExtendedFleet extends Omit<Fleet, 'range' | 'equipment'> {
   description?: any
@@ -106,28 +113,56 @@ export default function HelicopterShowcase({
   )
 
   const HelicopterImage = () => (
-    <div className="relative w-full h-auto mx-auto max-w-[90%] sm:max-w-full mb-4 sm:mb-6 md:mb-0">
+    <Carousel
+      opts={{
+        loop: true,
+      }}
+      className="relative w-[80%] h-auto mx-auto max-w-[90%] mb-4 sm:mb-6 md:mb-0"
+    >
       <div className="absolute inset-0 bg-primary-button/10 rounded-lg transform rotate-3"></div>
-      <div className="relative transform -rotate-3 rounded-lg overflow-hidden shadow-xl">
-        {typeof helicopter.image === 'object' && helicopter.image?.url ? (
-          <Image
-            src={helicopter.image.url}
-            alt={helicopter.name || 'Helicopter'}
-            width={600}
-            height={400}
-            className="w-full h-auto"
-          />
-        ) : (
-          <Image
-            src="/images/index/regular.webp"
-            alt={helicopter.name || 'Helicopter'}
-            width={600}
-            height={400}
-            className="w-full h-auto"
-          />
-        )}
-      </div>
-    </div>
+      <CarouselContent className={'flex justify-start items-center'}>
+        {helicopter.carouselImages &&
+          helicopter.carouselImages.map(
+            (image, i) =>
+              typeof image !== 'string' &&
+              image.url &&
+              image.width &&
+              image.height && (
+                <CarouselItem key={i}>
+                  <div className="relative transform rounded-lg overflow-hidden shadow-xl">
+                    <Image
+                      key={i}
+                      src={image.url}
+                      alt={image.alt}
+                      width={image.width}
+                      height={image.height}
+                      className={'w-full h-auto'}
+                    />
+                  </div>
+                </CarouselItem>
+              ),
+          )}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+      {/*typeof helicopter.image === 'object' && helicopter.image?.url ? (
+        <Image
+          src={helicopter.image.url}
+          alt={helicopter.name || 'Helicopter'}
+          width={600}
+          height={400}
+          className="w-full h-auto"
+        />
+      ) : (
+        <Image
+          src="/images/index/regular.webp"
+          alt={helicopter.name || 'Helicopter'}
+          width={600}
+          height={400}
+          className="w-full h-auto"
+        />
+      )*/}
+    </Carousel>
   )
 
   return (

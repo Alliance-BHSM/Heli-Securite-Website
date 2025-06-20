@@ -40,6 +40,7 @@ export const Fleet: CollectionConfig = {
     { name: 'passengers', type: 'text', required: true, localized: true },
     { name: 'baggage', type: 'text', required: true, localized: true },
     { name: 'image', type: 'upload', relationTo: 'media', required: false },
+    { name: 'carouselImages', type: 'upload', hasMany: true, relationTo: 'media', required: false },
     {
       name: 'description',
       type: 'richText',

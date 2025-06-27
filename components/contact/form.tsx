@@ -20,7 +20,7 @@ export default async function Form() {
           >
             <address className={'font-brother text-xl not-italic font-light mb-6'}>
               <br />
-              195 Av. de l'Héliport,
+              195 Av. de l&apos;Héliport,
               <br /> 83310 Grimaud
             </address>
           </a>

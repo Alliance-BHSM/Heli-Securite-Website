@@ -31,12 +31,14 @@ export default async function LocaleLayout({
                 destinations: await payload.find({
                   collection: 'destinations',
                   locale,
+                  sort: 'order',
                   fallbackLocale: 'fr',
                   limit: 0,
                 }),
                 events: await payload.find({
                   collection: 'Events',
                   locale,
+                  sort: 'order',
                   fallbackLocale: 'fr',
                   limit: 0,
                 }),

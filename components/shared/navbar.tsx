@@ -4,7 +4,6 @@ import React, { useState, useEffect, useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { Phone, Menu, X, MoveDown } from 'lucide-react'
-import Logo from '@/public/logos/LogoOld.webp'
 import Flamme from '@/public/logos/flamme.webp'
 import Pano from '@/public/images/index/panoramique.webp'
 import Private from '@/public/images/index/private.webp'
@@ -77,7 +76,7 @@ export default function Navbar({
       {/* Desktop navbar */}
       <div
         className={
-          'bg-black text-white hidden lg:block rounded-xl top-5 shadow-md lg:mx-20 xl:mx-40 h-18'
+          'bg-black text-white hidden lg:block rounded-xl top-5 shadow-md lg:mx-15 xl:mx-30 h-18'
         }
       >
         <div className={'flex h-full items-center justify-between px-5'}>
@@ -86,7 +85,7 @@ export default function Navbar({
           </Link>
           <menu
             className={
-              'flex gap-5 xl:gap-6 2xl:gap-7 font-brother text-sm xl:text-base 2xl:text-lg'
+              'flex gap-5 xl:gap-6 2xl:gap-7 font-brother text-sm xl:text-base'
             }
           >
             <div className="relative">

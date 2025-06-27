@@ -9,14 +9,7 @@ export default async function Form() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         <div className="mb-6 md:mb-0">
           <h1 className="font-brother font-normal text-4xl md:text-5xl mb-6">
-            {t.rich('title', {
-              span: (chunks) => (
-                <span className="font-caslon text-redmonacair">
-                  {chunks}
-                  <br />
-                </span>
-              ),
-            })}
+            {t('title')}
           </h1>
           <p className="font-brother text-sm md:text-base mb-10">{t('subtitle')}</p>
           <h3 className={'font-brother text-3xl md:text-4xl mb-6'}>{t('address')}</h3>
@@ -27,7 +20,7 @@ export default async function Form() {
           >
             <address className={'font-brother text-xl not-italic font-light mb-6'}>
               <br />
-              195 Av. de l`Héliport,
+              195 Av. de l'Héliport,
               <br /> 83310 Grimaud
             </address>
           </a>

@@ -81,10 +81,10 @@
     }
   },
   "Contact": {
-    "title": "Contactez-<span>NOUS</span>",
+    "title": "Contactez-Nous",
     "subtitle": "Nous sommes à votre disposition pour répondre à toutes vos questions et demandes de renseignements",
     "CTA": "RÉSERVER UN VOL",
-    "address": "Ou nous trouver",
+    "address": "Où nous trouver",
     "form": {
       "name": "Nom",
       "email": "Email",

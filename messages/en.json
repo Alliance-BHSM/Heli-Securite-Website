@@ -1275,6 +1275,41 @@
         }
       }
     },
+    "experience": {
+      "card": {
+        "duration": "Duration",
+        "participants": {
+          "connector": "to",
+          "label": "participants"
+        },
+        "gallery": "Gallery",
+        "price": "Per person"
+      },
+      "sidebar": {
+        "title": "Your <highlight>experience</highlight>",
+        "flights": "<highlight>Charter flights</highlight> from:",
+        "dialog": {
+          "title": "Reservation request – {experience}",
+          "reserve": "Reserve",
+          "cancel": "Cancel",
+          "submit": "Submit",
+          "fields": {
+            "fullName": "Full Name",
+            "phone": "Phone",
+            "email": "Email",
+            "date": "Desired date",
+            "participants": {
+              "label": "Number of participants",
+              "note": "Between {min} and {max} people"
+            },
+            "corporate": {
+              "checkbox": "I am booking for a company",
+              "label": "Company Name"
+            }
+          }
+        }
+      }
+    },
     "gastronomy": {
       "CTA": "DISCOVER",
       "hero": {

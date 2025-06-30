@@ -1650,7 +1650,42 @@
       "experiences": {
         "title": "Nos Expériences Lifestyle",
         "description": "Découvrez nos expériences lifestyle exclusives, conçues pour vous faire vivre l'art de vivre de la Côte d'Azur.",
-        "cta": "RÉSERVER"
+        "cta": "RÉSERVER",
+        "experience": {
+          "card": {
+            "duration": "Durée",
+            "participants": {
+              "connector": "à",
+              "label": "participants"
+            },
+            "gallery": "Galerie",
+            "price": "Par personne"
+          },
+          "sidebar": {
+            "title": "Votre <highlight>expérience</highlight>",
+            "flights": "<highlight>Vols affrétés</highlight> au départ de :",
+            "dialog": {
+              "title": "Demande de réservation – {experience}",
+              "reserve": "Réserver",
+              "cancel": "Annuler",
+              "submit": "Envoyer",
+              "fields": {
+                "fullName": "Nom complet",
+                "phone": "Téléphone",
+                "email": "Email",
+                "date": "Date souhaitée",
+                "participants": {
+                  "label": "Nombre de participants",
+                  "note": "Entre {min} et {max} personnes"
+                },
+                "corporate": {
+                  "checkbox": "Je réserve pour une entreprise",
+                  "label": "Nom de l'entreprise"
+                }
+              }
+            }
+          }
+        }
       },
       "cta": {
         "title": "Prêt à Vivre une Expérience Lifestyle Inoubliable?",

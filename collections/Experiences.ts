@@ -6,7 +6,34 @@ export const Experiences: CollectionConfig = {
     useAsTitle: 'name',
     defaultColumns: ['name', 'type', 'category'],
   },
+  hooks: {
+    beforeValidate: [
+      ({ data, operation }) => {
+        if (operation === 'create' || operation === 'update') {
+          if (data) {
+            data.slug = data.name
+              .trim()
+              .replace(/\s+/g, '-')
+              .replace(/[^\w-]+/g, '')
+              .toLowerCase()
+            return data
+          }
+        } else {
+          return data
+        }
+      },
+    ],
+  },
   fields: [
+    {
+      name: 'slug',
+      required: true,
+      type: 'text',
+      unique: true,
+      admin: {
+        hidden: true,
+      },
+    },
     {
       name: 'type',
       type: 'select',
@@ -26,16 +53,42 @@ export const Experiences: CollectionConfig = {
       name: 'name',
       type: 'text',
       required: true,
+      localized: true,
     },
     {
       name: 'category',
       type: 'text',
       required: true,
+      localized: true,
+    },
+    {
+      name: 'price',
+      type: 'number',
+      required: true,
+      label: 'Price per person',
+    },
+    {
+      name: 'location',
+      type: 'text',
+      required: true,
+    },
+    {
+      name: 'subtitle',
+      type: 'text',
+      required: true,
+      localized: true,
     },
     {
       name: 'description',
       type: 'textarea',
       required: true,
+      localized: true,
+    },
+    {
+      name: 'text',
+      type: 'richText',
+      required: true,
+      localized: true,
     },
     {
       name: 'duration',
@@ -63,43 +116,55 @@ export const Experiences: CollectionConfig = {
       ],
     },
     {
-      name: 'availability',
-      type: 'group',
-      fields: [
-        {
-          name: 'minimum',
-          type: 'date',
-          required: false,
-          admin: {
-            description: 'Minimum availability date',
-            condition: (data, siblingData) => !siblingData?.anytime,
-          },
-        },
-        {
-          name: 'maximum',
-          type: 'date',
-          required: false,
-          admin: {
-            description: 'Maximum availability date',
-            condition: (data, siblingData) => !siblingData?.anytime,
-          },
-        },
-        {
-          name: 'anytime',
-          type: 'checkbox',
-          required: false,
-          localized: true,
-          defaultValue: false,
-          label: 'Available anytime',
-        },
-      ],
-    },
-    {
       name: 'image',
       type: 'upload',
       relationTo: 'media',
       required: false,
       label: 'Experience Image',
+    },
+    {
+      name: 'gallery',
+      type: 'relationship',
+      relationTo: 'media',
+      hasMany: true,
+      required: true,
+    },
+    {
+      name: 'details',
+      type: 'array',
+      required: false,
+      fields: [
+        {
+          name: 'title',
+          type: 'text',
+          required: true,
+          localized: true,
+        },
+        {
+          name: 'description',
+          type: 'textarea',
+          required: true,
+          localized: true,
+        },
+      ],
+    },
+    {
+      name: 'departures',
+      type: 'array',
+      fields: [
+        {
+          name: 'destination',
+          type: 'relationship',
+          relationTo: 'destinations',
+          required: true,
+        },
+        {
+          name: 'price',
+          type: 'number',
+          label: 'Starting Price',
+          required: true,
+        },
+      ],
     },
   ],
 }

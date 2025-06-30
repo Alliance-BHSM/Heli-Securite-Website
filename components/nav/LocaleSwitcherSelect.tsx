@@ -38,16 +38,16 @@ export default function LocaleSwitcherSelect({ children, defaultValue, label }: 
         isPending && 'transition-opacity [&:disabled]:opacity-30',
       )}
     >
-      <p className="sr-only">{label}</p>
+      <p className="sr-only text-white">{label}</p>
       <select
-        className="inline-flex appearance-none bg-transparent py-3 pr-6"
+        className="inline-flex text-white appearance-none bg-black py-3 pr-6"
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}
       >
         {children}
       </select>
-      <span className="pointer-events-none absolute right-2 md:top-[8px]">⌄</span>
+      <span className="pointer-events-none text-white absolute right-2 md:top-[8px]">⌄</span>
     </label>
   )
 }

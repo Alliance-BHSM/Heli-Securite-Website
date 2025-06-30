@@ -1255,15 +1255,15 @@
     "page": {
       "title": "Experiences",
       "subtitle": "Discover Monaco and the French Riviera through exclusive and unforgettable experiences",
-      "cta": "EXPLORE"
+      "cta": "DISCOVER"
     },
     "intro": {
-      "title": "Exceptional moments with Héli Sécurité",
-      "description": "Héli Sécurité offers you much more than helicopter flights. Discover our exclusive experiences combining gastronomy, sport and culture for an unforgettable stay on the French Riviera.",
+      "title": "Exceptional moments with Monacair",
+      "description": "Monacair offers you much more than helicopter flights. Discover our exclusive experiences combining gastronomy, sport and culture for an unforgettable stay on the French Riviera.",
       "cards": {
         "exclusive": {
           "title": "Exclusive Experiences",
-          "description": "Unique and privileged moments, accessible only with Héli Sécurité."
+          "description": "Unique and privileged moments, accessible only with Monacair."
         },
         "memories": {
           "title": "Unforgettable Memories",
@@ -1311,6 +1311,15 @@
       }
     },
     "gastronomy": {
+      "card": {
+        "CTA": "BOOK NOW",
+        "price": "STARTING FROM: "
+      },
+      "filters": {
+        "all": "Toutes les expériences",
+        "gastronomy": "Gastronomie",
+        "lifestyle": "Lifestyle"
+      },
       "CTA": "DISCOVER",
       "hero": {
         "title": "Gastronomy",
@@ -1337,7 +1346,7 @@
         },
         "title": "An Exceptional Culinary Experience",
         "description": "Discover the unique advantages of our gastronomic experiences, designed for lovers of refined cuisine.",
-        "imageSrc": "/images/index/culture.webp",
+        "imageSrc": "/images/index/gastronomie feature.webp",
         "imageAlt": "Chef preparing a gastronomic dish",
         "items": {
           "one": {
@@ -1360,8 +1369,8 @@
       },
       "link": "See all our gastronomic experiences",
       "intro": {
-        "title": "The Art of Gastronomy with Héli Sécurité",
-        "description": "Héli Sécurité invites you to discover the culinary treasures of the French Riviera through exclusive gastronomic experiences. From haute starred cuisine to authentic local flavors, let our experts guide you on an unforgettable taste journey.",
+        "title": "The Art of Gastronomy with Monacair",
+        "description": "Monacair invites you to discover the culinary treasures of the French Riviera through exclusive gastronomic experiences. From haute starred cuisine to authentic local flavors, let our experts guide you on an unforgettable taste journey.",
         "features": {
           "starred": {
             "title": "Starred Restaurants",
@@ -1404,7 +1413,7 @@
       "experiences": {
         "title": "Our Gastronomic Experiences",
         "description": "Discover our exclusive gastronomic experiences, designed to make you experience exceptional moments.",
-        "CTA": "RESERVE",
+        "cta": "RESERVE",
         "first": {
           "badge": "Haute Gastronomy",
           "title": "Starred Dinner in Monaco",
@@ -1441,7 +1450,7 @@
       },
       "cta": {
         "title": "Ready to Experience an Unforgettable Gastronomic Adventure?",
-        "description": "Book now your exclusive gastronomic experience with Héli Sécurité and let yourself be transported to exceptional flavors.",
+        "description": "Book now your exclusive gastronomic experience with Monacair and let yourself be transported to exceptional flavors.",
         "bookButton": "Book now",
         "contactButton": "Contact us"
       },
@@ -1572,7 +1581,7 @@
           "none": "No transfer"
         },
         "checkAvailability": "Check availability",
-        "contactInfo": "For more information or to make a personalized reservation, contact us by phone at +33 4 94 55 59 99 or by email at contact@helisecurite.fr"
+        "contactInfo": "For more information or to make a personalized reservation, contact us by phone at +377 97 97 39 00 or by email at booking@monacair.mc."
       },
       "testimonials": {
         "title": "What our clients say",
@@ -1629,7 +1638,7 @@
       }
     },
     "lifestyle": {
-      "CTA": "DISCOVER",
+      "CTA": "RESERVE",
       "hero": {
         "title": "Luxury Lifestyle",
         "subtitle": "Discover the art of living on the French Riviera through exclusive and refined lifestyle experiences.",
@@ -1678,8 +1687,8 @@
       },
       "link": "See all our lifestyle experiences",
       "intro": {
-        "title": "The Art of Lifestyle with Héli Sécurité",
-        "description": "Héli Sécurité invites you to discover the art of living on the French Riviera through exclusive lifestyle experiences. From luxury shopping to private events, let our experts guide you to an exceptional lifestyle.",
+        "title": "The Art of Lifestyle with Monacair",
+        "description": "Monacair invites you to discover the art of living on the French Riviera through exclusive lifestyle experiences. From luxury shopping to private events, let our experts guide you to an exceptional lifestyle.",
         "features": {
           "luxury": {
             "title": "Luxury Shopping",
@@ -1702,7 +1711,7 @@
       },
       "cta": {
         "title": "Ready to Experience an Unforgettable Lifestyle Adventure?",
-        "description": "Book now your exclusive lifestyle experience with Héli Sécurité and let yourself be transported to an exceptional art of living.",
+        "description": "Book now your exclusive lifestyle experience with Monacair and let yourself be transported to an exceptional art of living.",
         "bookButton": "Book now",
         "contactButton": "Contact us"
       },
@@ -1833,7 +1842,7 @@
           "none": "No transfer"
         },
         "checkAvailability": "Check availability",
-        "contactInfo": "For more information or to make a personalized reservation, contact us by phone at +33 4 94 55 59 99 or by email at contact@helisecurite.fr"
+        "contactInfo": "For more information or to make a personalized reservation, contact us by phone at +377 97 97 39 00 or by email at booking@monacair.mc."
       },
       "testimonials": {
         "title": "What our clients say",

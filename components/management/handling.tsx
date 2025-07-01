@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
 import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
+import Heli from '@/public/images/index/regular.webp'
 
 export default async function Handling() {
   const t = await getTranslations('Handling.section')
@@ -10,7 +11,7 @@ export default async function Handling() {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center gap-12">
+        <div className="flex flex-col md:flex-row md:items-center gap-12">
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold text-black mb-6 font-brother">{t('title')}</h2>
 
@@ -29,7 +30,7 @@ export default async function Handling() {
           </div>
           <div className="md:w-1/2 h-[300px] md:h-[500px] relative mb-8 md:mb-0">
             <Image
-              src="/images/index/private.webp"
+              src={Heli}
               alt="Achat et vente d'hélicoptères"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

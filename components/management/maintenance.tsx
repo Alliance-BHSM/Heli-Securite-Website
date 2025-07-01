@@ -3,8 +3,7 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Wrench, MapPin, Building, Landmark, Ship, Castle, Mountain } from 'lucide-react'
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid'
-import { Button } from 'components/ui/button'
-import { Link } from '@/i18n/navigation'
+import Heli from '@/public/images/index/hero.webp'
 
 export default function Maintenance() {
   const t = useTranslations('Management.maintenance')
@@ -36,9 +35,9 @@ export default function Maintenance() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/2 w-full h-[300px] md:h-[500px] relative mb-8 md:mb-0">
+          <div className="md:w-1/2 w-full order-2 md:order-0 h-[300px] md:h-[500px] relative mb-8 md:mb-0">
             <Image
-              src="/images/index/hero.webp"
+              src={Heli}
               alt="Maintenance d'hélicoptères"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

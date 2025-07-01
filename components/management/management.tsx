@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
 import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
+import Heli from '@/public/images/index/private.webp'
 
 export default async function Management() {
   const t = await getTranslations('Management.Management.section')
@@ -26,12 +27,11 @@ export default async function Management() {
               <Button variant={'red'}>{t('CTA')}</Button>
             </Link>
           </div>
-          <div className="md:w-1/2 h-[300px] md:h-[500px] relative mb-8 md:mb-0">
+          <div className="md:w-1/2 h-[300px] md:h-[500px] mb-8 md:mb-0">
             <Image
-              src="/images/index/private.webp"
+              src={Heli}
               alt="Achat et vente d'hélicoptères"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover rounded-lg shadow-lg"
             />
           </div>

@@ -83,11 +83,7 @@ export default function Navbar({
           <Link href={'/'}>
             <Image src={Flamme} alt={'logo'} width={80} height={80} />
           </Link>
-          <menu
-            className={
-              'flex gap-5 xl:gap-6 2xl:gap-7 font-brother text-sm xl:text-base'
-            }
-          >
+          <menu className={'flex gap-5 xl:gap-6 2xl:gap-7 font-brother text-sm xl:text-base'}>
             <div className="relative">
               <button
                 onClick={toggleBooking}
@@ -225,7 +221,7 @@ export default function Navbar({
                   <br /> 83310 Grimaud
                 </address>
               </a>
-              <div className="flex items-center mt-4 mb-3 gap-2">
+              <div className="flex items-center  mt-4 mb-3 gap-2">
                 <Link href="https://www.instagram.com/helisecurite/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -233,11 +229,11 @@ export default function Navbar({
                     y="0px"
                     width="30"
                     height="30"
-                    className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9"
+                    className="w-7  h-7 sm:w-8 sm:h-8 md:w-9 md:h-9"
                     viewBox="0,0,256,256"
                   >
                     <g
-                      fill="#black"
+                      fill="#ffffff"
                       fillRule="nonzero"
                       stroke="none"
                       strokeWidth="1"
@@ -272,7 +268,7 @@ export default function Navbar({
                     viewBox="0,0,256,256"
                   >
                     <g
-                      fill="#black"
+                      fill="#ffffff"
                       fillRule="nonzero"
                       stroke="none"
                       strokeWidth="1"
@@ -304,7 +300,7 @@ export default function Navbar({
                     viewBox="0,0,256,256"
                   >
                     <g
-                      fill="#black"
+                      fill="#ffffff"
                       fillRule="nonzero"
                       stroke="none"
                       strokeWidth="1"

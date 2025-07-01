@@ -82,9 +82,6 @@ export default function Maintenance() {
                   />
                 ))}
               </BentoGrid>
-              <Link href={'/services/maintenance'}>
-                <Button>{t('CTA')}</Button>
-              </Link>
             </div>
           </div>
         </div>

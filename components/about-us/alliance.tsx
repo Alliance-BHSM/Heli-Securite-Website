@@ -25,9 +25,22 @@ export default async function Alliance() {
         </div>
 
         <div className="max-w-3xl mx-auto space-y-6 text-gray-600 font-brother">
-          <p>{t('description.intro')}</p>
-          <p>{t('description.destinations')}</p>
-          <p>{t('description.alps')}</p>
+          <p>
+            {t.rich('description.intro', {
+              b: (chunks) => <b>{chunks}</b>,
+            })}
+          </p>
+          <p>{t('description.advantages.title')}</p>
+          <ul>
+            {Array.from({ length: 4 }).map((_, i) => (
+              <li key={i}>
+                {t.rich(`description.advantages.item${i}`, {
+                  b: (chunks) => <b>{chunks}</b>,
+                })}
+              </li>
+            ))}
+          </ul>
+          <p>{t('description.outro')}</p>
         </div>
 
         <div className="mt-10">

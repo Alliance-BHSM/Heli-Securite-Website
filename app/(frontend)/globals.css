@@ -11,6 +11,27 @@
 }
 
 @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../public/fonts/Montserrat.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../public/fonts/Montserrat.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../public/fonts/Montserrat.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Brother 1816';
   font-style: normal;
   font-weight: 300;

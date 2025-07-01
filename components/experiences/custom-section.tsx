@@ -9,8 +9,8 @@ export default async function CustomSection() {
 
   return (
     <section className="py-20 relative overflow-hidden">
-      <div className="absolute inset-0 bg-black z-0"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary-button/20 via-gray-900 to-gray-900 z-0"></div>
+      <div className="absolute inset-0 bg-gray-900 z-0"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[color:var(--color-secondary-button)]/20 via-gray-900 to-gray-900 z-0"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center text-white mb-16">
@@ -25,7 +25,7 @@ export default async function CustomSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-white transform transition-transform hover:scale-105 h-full flex flex-col">
-              <div className="w-16 h-16 rounded-full bg-primary-button/20 flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 rounded-full bg-[color:var(--color-secondary-button)]/20 flex items-center justify-center mb-6 mx-auto">
                 <Users className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-center mb-4">{t('options.events.title')}</h3>
@@ -35,7 +35,7 @@ export default async function CustomSection() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-white transform transition-transform hover:scale-105 h-full flex flex-col">
-              <div className="w-16 h-16 rounded-full bg-primary-button/20 flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 rounded-full bg-[color:var(--color-secondary-button)]/20 flex items-center justify-center mb-6 mx-auto">
                 <Clock className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-center mb-4">{t('options.thematic.title')}</h3>
@@ -45,7 +45,7 @@ export default async function CustomSection() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl text-white transform transition-transform hover:scale-105 h-full flex flex-col">
-              <div className="w-16 h-16 rounded-full bg-primary-button/20 flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 rounded-full bg-[color:var(--color-secondary-button)]/20 flex items-center justify-center mb-6 mx-auto">
                 <Star className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-center mb-4">{t('options.vip.title')}</h3>
@@ -53,15 +53,16 @@ export default async function CustomSection() {
             </div>
           </div>
 
-          <div className="mt-12 text-center">
-            <Button
-              size="lg"
-              className="bg-primary-button hover:bg-primary-button/90 text-white"
-              asChild
-            >
-              <Link href="/contact">{t('cta')}</Link>
-            </Button>
-          </div>
+          <Link href={'/contact'} className={'relative'}>
+            <div className="mt-12 text-center">
+              <Button
+                size="lg"
+                className="bg-[color:var(--color-secondary-button)] hover:bg-[color:var(--color-secondary-button)]/90 text-white"
+              >
+                {t('cta')}
+              </Button>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

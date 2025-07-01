@@ -19,10 +19,10 @@ export default async function CTASection() {
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
-                  className="bg-primary-button hover:bg-primary-button/90 text-white"
+                  className="bg-[color:var(--color-primary-button)] hover:bg-[color:var(--color-primary-button)]/90 text-white"
                   asChild
                 >
-                  <Link href="#booking-form">{t('book')}</Link>
+                  <Link href="#listing">{t('book')}</Link>
                 </Button>
                 <Button size="lg" className="text-black bg-white border-white hover:bg-white/90">
                   <Link href="/contact">{t('contact')}</Link>
@@ -31,7 +31,7 @@ export default async function CTASection() {
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 bg-primary-button/10 rounded-lg"></div>
+              <div className="absolute inset-0 bg-[color:var(--color-primary-button)]/10 rounded-lg"></div>
               <div className="relative rounded-lg overflow-hidden shadow-xl">
                 <Image
                   src="/images/index/jet.webp"

@@ -8,7 +8,7 @@ const BookingCta = () => {
   const t = useTranslations('PrivateJet.booking')
 
   return (
-    <section className="w-full py-20 bg-primary relative overflow-hidden">
+    <section className="w-full py-20 bg-black text-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-primary-button/20 -translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-primary-button/10 translate-x-1/3 translate-y-1/3 blur-3xl"></div>
 
@@ -39,7 +39,7 @@ const BookingCta = () => {
               <Button
                 variant="blue"
                 size="lg"
-                className="w-full sm:w-auto text-base px-8 py-6 h-auto font-medium transition-transform hover:scale-105 border border-white/30 bg-white/10 hover:bg-white/20 uppercase"
+                className="w-full sm:w-auto text-base px-8 py-6 h-auto font-medium transition-transform hover:text-black hover:scale-105 border border-white/30 bg-secondary-button hover:bg-white uppercase"
               >
                 {t('contact_button')}
                 <Mail className="w-5 h-5" />

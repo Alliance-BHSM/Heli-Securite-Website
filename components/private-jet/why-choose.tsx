@@ -22,7 +22,7 @@ const WhyChoose = () => {
         <div className="flex flex-col items-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-brother font-medium text-black mb-6 text-center">
             {t.rich('title', {
-              span: (chunks) => <span className="font-caslon text-primary">{chunks}</span>,
+              span: (chunks) => <span className="font-caslon text-black">{chunks}</span>,
             })}
           </h2>
         </div>

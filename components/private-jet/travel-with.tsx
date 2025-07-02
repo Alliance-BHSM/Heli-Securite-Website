@@ -9,47 +9,49 @@ const TravelWith = () => {
   const t = useTranslations('PrivateJet.travelWith')
 
   return (
-    <section className="w-full py-12 sm:py-16 md:py-20 bg-gray-50">
+    <section className="w-full py-12 sm:py-16 md:py-20 bg-black text-white">
       <div className="container px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40 mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-brother font-medium text-black mb-4 sm:mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-brother font-medium  mb-4 sm:mb-6">
               {t.rich('title', {
-                span: (chunks) => <span className="font-caslon text-primary-button">{chunks}</span>,
+                span: (chunks) => (
+                  <span className="font-caslon text-secondary-button">{chunks}</span>
+                ),
               })}
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-700 font-brother mb-6 sm:mb-8">
+            <p className="text-sm sm:text-base md:text-lg  font-brother mb-6 sm:mb-8">
               {t('description')}
             </p>
 
             <div className="mb-8 sm:mb-10">
-              <h3 className="text-lg sm:text-xl font-brother font-medium mb-3 sm:mb-4 text-black">
+              <h3 className="text-lg sm:text-xl font-brother font-medium mb-3 sm:mb-4 ">
                 {t.rich('about.title', {
-                  span: (chunks) => <span className="font-caslon text-primary-button">{chunks}</span>,
+                  span: (chunks) => (
+                    <span className="font-caslon text-secondary-button">{chunks}</span>
+                  ),
                 })}
               </h3>
-              <p className="text-gray-700 font-brother mb-3 sm:mb-4 text-sm sm:text-base">
+              <p className=" font-brother mb-3 sm:mb-4 text-sm sm:text-base">
                 {t('about.description')}
               </p>
               <Link
                 href="/about"
-                className="inline-flex items-center text-primary-button font-brother hover:text-black transition-colors text-sm sm:text-base"
+                className="inline-flex items-center text-secondary-button font-brother hover:text-white transition-colors text-sm sm:text-base"
               >
                 {t('about.link')}
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </div>
 
-            <p className="text-gray-700 font-brother mb-4 sm:mb-6 text-sm sm:text-base">
-              {t('cta_text')}
-            </p>
+            <p className=" font-brother mb-4 sm:mb-6 text-sm sm:text-base">{t('cta_text')}</p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6">
               <Link href="/contact">
                 <Button
                   variant="red"
                   size="lg"
-                  className="w-full sm:w-auto uppercase text-sm sm:text-base"
+                  className="w-full sm:w-auto bg-secondary-button text-white uppercase text-sm sm:text-base"
                 >
                   {t('book_button')}
                 </Button>
@@ -59,7 +61,7 @@ const TravelWith = () => {
                 <Button
                   variant="blue"
                   size="lg"
-                  className="w-full sm:w-auto uppercase text-sm sm:text-base"
+                  className="w-full sm:w-auto hover:bg-secondary-button uppercase text-sm sm:text-base"
                 >
                   {t('contact_button')}
                 </Button>
@@ -85,10 +87,12 @@ const TravelWith = () => {
                 <div className="min-w-0">
                   <p className="text-xs sm:text-sm font-brother text-black font-medium leading-tight">
                     {t.rich('badge.title', {
-                      span: (chunks) => <span className="font-brother text-black">{chunks}</span>,
+                      span: (chunks) => (
+                        <span className="font-brother text-secondary-button">{chunks}</span>
+                      ),
                     })}
                   </p>
-                  <p className="text-xs font-brother text-gray-500 leading-tight">
+                  <p className="text-xs text-black font-brother leading-tight">
                     {t('badge.subtitle')}
                   </p>
                 </div>

@@ -12,7 +12,7 @@ const CustomJets = () => {
         <div className="flex flex-col items-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-brother font-medium text-black mb-6 text-center">
             {t.rich('title', {
-              span: (chunks) => <span className="font-caslon text-primary-button">{chunks}</span>,
+              span: (chunks) => <span className="font-caslon text-secondary-button">{chunks}</span>,
             })}
           </h2>
           <p className="text-base md:text-lg text-center max-w-3xl text-gray-700 font-brother">
@@ -23,13 +23,13 @@ const CustomJets = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Card className="p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border-primary/20 hover:border-primary group overflow-hidden">
             <div className="flex flex-col h-full">
-              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary mb-6 group-hover:bg-primary-button transition-colors">
+              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary mb-6 group-hover:bg-secondary-button transition-colors">
                 <Calendar className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-brother font-medium mb-2 text-black">
                 {t.rich('features.personalized.title', {
                   span: (chunks) => (
-                    <span className="font-caslon text-primary-button">{chunks}</span>
+                    <span className="font-caslon text-secondary-button">{chunks}</span>
                   ),
                 })}
               </h3>
@@ -41,13 +41,13 @@ const CustomJets = () => {
 
           <Card className="p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border-primary/20 hover:border-primary group overflow-hidden">
             <div className="flex flex-col h-full">
-              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary mb-6 group-hover:bg-primary-button transition-colors">
+              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary mb-6 group-hover:bg-secondary-button transition-colors">
                 <DollarSign className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-brother font-medium mb-2 text-black">
                 {t.rich('features.vip.title', {
                   span: (chunks) => (
-                    <span className="font-caslon text-primary-button">{chunks}</span>
+                    <span className="font-caslon text-secondary-button">{chunks}</span>
                   ),
                 })}
               </h3>
@@ -59,13 +59,13 @@ const CustomJets = () => {
 
           <Card className="p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border-primary/20 hover:border-primary group overflow-hidden">
             <div className="flex flex-col h-full">
-              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary mb-6 group-hover:bg-primary-button transition-colors">
+              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary mb-6 group-hover:bg-secondary-button transition-colors">
                 <Heart className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-brother font-medium mb-2 text-black">
                 {t.rich('features.comfort.title', {
                   span: (chunks) => (
-                    <span className="font-caslon text-primary-button">{chunks}</span>
+                    <span className="font-caslon text-secondary-button">{chunks}</span>
                   ),
                 })}
               </h3>
@@ -77,13 +77,13 @@ const CustomJets = () => {
 
           <Card className="p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow border-primary/20 hover:border-primary group overflow-hidden">
             <div className="flex flex-col h-full">
-              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary mb-6 group-hover:bg-primary-button transition-colors">
+              <div className="w-16 h-16 flex items-center justify-center rounded-full bg-primary mb-6 group-hover:bg-secondary-button transition-colors">
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-brother font-medium mb-2 text-black">
                 {t.rich('features.discretion.title', {
                   span: (chunks) => (
-                    <span className="font-caslon text-primary-button">{chunks}</span>
+                    <span className="font-caslon text-secondary-button">{chunks}</span>
                   ),
                 })}
               </h3>

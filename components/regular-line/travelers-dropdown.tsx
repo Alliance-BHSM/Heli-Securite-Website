@@ -151,7 +151,7 @@ export function TravelersDropdown({
                       (traveler.id === 'adults' && traveler.count <= newbornsCount)
                     }
                   >
-                    <Minus className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <Minus className="text-secondary-button h-3 w-3 sm:h-4 sm:w-4" />
                     <span className="sr-only">Decrease {traveler.label}</span>
                   </Button>
                   <span className="w-4 text-center text-sm sm:text-base">{traveler.count}</span>
@@ -167,7 +167,7 @@ export function TravelersDropdown({
                       (traveler.id === 'newborns' && traveler.count >= adultsCount)
                     }
                   >
-                    <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <Plus className="text-secondary-button h-3 w-3 sm:h-4 sm:w-4" />
                     <span className="sr-only">Increase {traveler.label}</span>
                   </Button>
                 </div>

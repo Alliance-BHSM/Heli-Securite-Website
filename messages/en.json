@@ -1283,7 +1283,7 @@
       },
       "sidebar": {
         "title": "Your <highlight>experience</highlight>",
-        "flights": "<highlight>Charter flights</highlight> from:",
+        "flights": "<highlight>Flight rates</highlight> from : (per helicopter)",
         "dialog": {
           "title": "Reservation request – {experience}",
           "reserve": "Reserve",

@@ -1269,7 +1269,7 @@
       },
       "sidebar": {
         "title": "Votre <highlight>expérience</highlight>",
-        "flights": "<highlight>Vols affrétés</highlight> au départ de :",
+        "flights": "<highlight>Tarifs vols</highlight> au départ de : (par hélicoptère)",
         "dialog": {
           "title": "Demande de réservation – {experience}",
           "reserve": "Réserver",

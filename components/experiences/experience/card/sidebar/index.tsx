@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card'
-import logo from '@/public/logos/LogoOld.webp'
+import logo from '@/public/logos/Logo.png'
 import Image from 'next/image'
 import { IContext } from '@/context/experiences/experience'
 import Dialog from './dialog'
@@ -21,7 +21,7 @@ const Sidebar = async ({
       <Card className="lg:sticky top-8 w-full">
         <CardContent className="p-0 w-full">
           <div className="text-white p-6 bg-black rounded-xl drop-shadow-xl">
-            <div className="mb-6">
+            <div className="mb-6 flex flex-row">
               <h3 className="text-lg font-semibold mb-2">
                 {t.rich('title', {
                   highlight: (chunks) => (
@@ -32,7 +32,7 @@ const Sidebar = async ({
               <Image
                 src={logo}
                 alt={'Monacair & Alliance BHSM logos'}
-                className={'h-[1.75rem] w-auto'}
+                className={'h-[1.5rem] w-auto'}
               />
             </div>
 

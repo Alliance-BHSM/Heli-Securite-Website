@@ -13,8 +13,8 @@ interface EventProps {
 const DetailsPage: React.FC<EventProps> = ({ event }) => {
   const t = useTranslations('Contact')
   return (
-    <div className="w-full h-full py-10 px-6 sm:px-10 md:px-20 lg:px-40">
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-10">
+    <div className="w-full h-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-10 py-10 px-6 sm:px-10 md:px-20 lg:px-40">
         <div>
           <p className={'font-brother text-xl font-bold'}>{event.date}</p>
           <RichText
@@ -45,20 +45,20 @@ const DetailsPage: React.FC<EventProps> = ({ event }) => {
           />
         )}
       </div>
-      <div className="mt-10 md:mt-20 flex flex-col items-center justify-center">
-        <h3 className="font-caslon text-primary-button text-3xl sm:text-4xl md:text-6xl mb-6 sm:mb-8">
+      <div className="mt-10 md:mt-20 bg-black flex flex-col items-center justify-center py-10 px-6 sm:px-10 md:px-20 lg:px-40">
+        <h3 className="font-caslon text-white text-3xl sm:text-4xl md:text-6xl mb-6 sm:mb-8">
           {event.custom_text}
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {event.advantages.map((advantage, index) => (
             <div
               key={advantage.id || index}
-              className="bg-black rounded-lg p-4 sm:p-6 shadow-md flex flex-col justify-center items-center"
+              className="bg-white rounded-lg p-4 sm:p-6 shadow-md flex flex-col justify-center items-center"
             >
               <h4 className="font-brother text-secondary-button text-lg sm:text-xl mb-2 sm:mb-3 text-center">
                 {advantage.title}
               </h4>
-              <p className="text-center text-white font-brother text-sm sm:text-base">
+              <p className="text-center text-black font-brother text-sm sm:text-base">
                 {advantage.description}
               </p>
             </div>

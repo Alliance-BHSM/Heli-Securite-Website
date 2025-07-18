@@ -5,6 +5,7 @@ import { routing } from '@/i18n/routing'
 import '../globals.css'
 import Navbar from '@/components/shared/navbar'
 import { getPayloadClient } from '@/lib/payload'
+import {GoogleAnalytics} from '@next/third-parties/google'
 
 export default async function LocaleLayout({
   children,
@@ -48,6 +49,7 @@ export default async function LocaleLayout({
           {children}
         </NextIntlClientProvider>
       </body>
+    <GoogleAnalytics gaId={'G-34DSLBHZDL'} />
     </html>
   )
 }

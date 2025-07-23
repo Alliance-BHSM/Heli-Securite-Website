@@ -17,6 +17,7 @@
     "@payloadcms/db-mongodb": "3.39.1",
     "@payloadcms/email-nodemailer": "3.39.1",
     "@payloadcms/next": "3.39.1",
+    "@payloadcms/plugin-seo": "3.39.1",
     "@payloadcms/richtext-lexical": "3.39.1",
     "@payloadcms/storage-s3": "^3.39.1",
     "@radix-ui/react-accordion": "^1.2.11",

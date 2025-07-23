@@ -98,8 +98,30 @@ export interface Config {
   db: {
     defaultIDType: string;
   };
-  globals: {};
-  globalsSelect: {};
+  globals: {
+    indexSEO: IndexSEO;
+    bookingSEO: BookingSEO;
+    destinationsSEO: DestinationsSEO;
+    eventsSEO: EventsSEO;
+    experiencesSEO: ExperiencesSEO;
+    jetSEO: JetSEO;
+    fleetSEO: FleetSEO;
+    servicesSEO: ServicesSEO;
+    aboutSEO: AboutSEO;
+    contactSEO: ContactSEO;
+  };
+  globalsSelect: {
+    indexSEO: IndexSEOSelect<false> | IndexSEOSelect<true>;
+    bookingSEO: BookingSEOSelect<false> | BookingSEOSelect<true>;
+    destinationsSEO: DestinationsSEOSelect<false> | DestinationsSEOSelect<true>;
+    eventsSEO: EventsSEOSelect<false> | EventsSEOSelect<true>;
+    experiencesSEO: ExperiencesSEOSelect<false> | ExperiencesSEOSelect<true>;
+    jetSEO: JetSEOSelect<false> | JetSEOSelect<true>;
+    fleetSEO: FleetSEOSelect<false> | FleetSEOSelect<true>;
+    servicesSEO: ServicesSEOSelect<false> | ServicesSEOSelect<true>;
+    aboutSEO: AboutSEOSelect<false> | AboutSEOSelect<true>;
+    contactSEO: ContactSEOSelect<false> | ContactSEOSelect<true>;
+  };
   locale: 'en' | 'fr';
   user: User & {
     collection: 'users';
@@ -180,6 +202,15 @@ export interface Destination {
     };
     [k: string]: unknown;
   } | null;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -267,6 +298,15 @@ export interface Event {
     };
     [k: string]: unknown;
   } | null;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -320,6 +360,15 @@ export interface Experience {
         id?: string | null;
       }[]
     | null;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
   updatedAt: string;
   createdAt: string;
 }
@@ -578,6 +627,14 @@ export interface DestinationsSelect<T extends boolean = true> {
         id?: T;
       };
   additional_content?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -609,6 +666,14 @@ export interface EventsSelect<T extends boolean = true> {
         id?: T;
       };
   additional_content?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
   updatedAt?: T;
   createdAt?: T;
 }
@@ -648,6 +713,14 @@ export interface ExperiencesSelect<T extends boolean = true> {
         destination?: T;
         price?: T;
         id?: T;
+      };
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
       };
   updatedAt?: T;
   createdAt?: T;
@@ -832,6 +905,376 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
   batch?: T;
   updatedAt?: T;
   createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "indexSEO".
+ */
+export interface IndexSEO {
+  id: string;
+  title: string;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bookingSEO".
+ */
+export interface BookingSEO {
+  id: string;
+  title: string;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "destinationsSEO".
+ */
+export interface DestinationsSEO {
+  id: string;
+  title: string;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "eventsSEO".
+ */
+export interface EventsSEO {
+  id: string;
+  title: string;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "experiencesSEO".
+ */
+export interface ExperiencesSEO {
+  id: string;
+  title: string;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "jetSEO".
+ */
+export interface JetSEO {
+  id: string;
+  title: string;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fleetSEO".
+ */
+export interface FleetSEO {
+  id: string;
+  title: string;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "servicesSEO".
+ */
+export interface ServicesSEO {
+  id: string;
+  title: string;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "aboutSEO".
+ */
+export interface AboutSEO {
+  id: string;
+  title: string;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contactSEO".
+ */
+export interface ContactSEO {
+  id: string;
+  title: string;
+  meta: {
+    title?: string | null;
+    description?: string | null;
+    /**
+     * Maximum upload file size: 12MB. Recommended file size for images is <500KB.
+     */
+    image?: (string | null) | Media;
+    keywords: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "indexSEO_select".
+ */
+export interface IndexSEOSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "bookingSEO_select".
+ */
+export interface BookingSEOSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "destinationsSEO_select".
+ */
+export interface DestinationsSEOSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "eventsSEO_select".
+ */
+export interface EventsSEOSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "experiencesSEO_select".
+ */
+export interface ExperiencesSEOSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "jetSEO_select".
+ */
+export interface JetSEOSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "fleetSEO_select".
+ */
+export interface FleetSEOSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "servicesSEO_select".
+ */
+export interface ServicesSEOSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "aboutSEO_select".
+ */
+export interface AboutSEOSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "contactSEO_select".
+ */
+export interface ContactSEOSelect<T extends boolean = true> {
+  title?: T;
+  meta?:
+    | T
+    | {
+        title?: T;
+        description?: T;
+        image?: T;
+        keywords?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

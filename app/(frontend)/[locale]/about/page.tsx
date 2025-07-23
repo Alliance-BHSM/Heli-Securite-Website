@@ -5,7 +5,36 @@ import OurServices from '@/components/about-us/our-services'
 import Alliance from '@/components/about-us/alliance'
 import CTASection from '@/components/about-us/cta-section'
 import Footer from '@/components/shared/footer'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getLocale } from 'next-intl/server'
+import { getPayloadClient } from '@/lib/payload'
+import type { Metadata } from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const payload = await getPayloadClient()
+  const locale = (await getLocale()) as 'en' | 'fr' | 'all' | undefined
+  const response = await payload.findGlobal({
+    slug: 'aboutSEO',
+    locale,
+    fallbackLocale: 'fr',
+  })
+
+  const ogImage =
+    response.meta.image && typeof response.meta.image === 'object' && response.meta.image.url
+      ? { url: response.meta.image.url }
+      : undefined
+
+  return {
+    title: response.meta.title,
+    description: response.meta.description,
+    keywords: response.meta.keywords,
+    openGraph: {
+      type: 'website',
+      title: response.meta.title || undefined,
+      description: response.meta.description || undefined,
+      images: ogImage,
+    },
+  }
+}
 
 export default async function AboutPage() {
   const t = await getTranslations('AboutUs')

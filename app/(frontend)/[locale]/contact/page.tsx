@@ -1,11 +1,40 @@
 import React from 'react'
-import { useTranslations } from 'next-intl'
+import { getTranslations, getLocale } from 'next-intl/server'
 import Hero from '@/components/shared/hero'
 import Form from '@/components/contact/form'
 import Footer from '@/components/shared/footer'
+import type { Metadata } from 'next'
+import { getPayloadClient } from '@/lib/payload'
 
-export default function ContactPage() {
-  const t = useTranslations('Contact')
+export async function generateMetadata(): Promise<Metadata> {
+  const payload = await getPayloadClient()
+  const locale = (await getLocale()) as 'en' | 'fr' | 'all' | undefined
+  const response = await payload.findGlobal({
+    slug: 'contactSEO',
+    locale,
+    fallbackLocale: 'fr',
+  })
+
+  const ogImage =
+    response.meta.image && typeof response.meta.image === 'object' && response.meta.image.url
+      ? { url: response.meta.image.url }
+      : undefined
+
+  return {
+    title: response.meta.title,
+    description: response.meta.description,
+    keywords: response.meta.keywords,
+    openGraph: {
+      type: 'website',
+      title: response.meta.title || undefined,
+      description: response.meta.description || undefined,
+      images: ogImage,
+    },
+  }
+}
+
+export default async function ContactPage() {
+  const t = await getTranslations('Contact')
   return (
     <div>
       <Hero

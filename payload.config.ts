@@ -1,6 +1,7 @@
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { s3Storage } from '@payloadcms/storage-s3'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { seoPlugin } from '@payloadcms/plugin-seo'
 import { FixedToolbarFeature } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import { buildConfig } from 'payload'
@@ -16,6 +17,16 @@ import { RegularFlights } from './collections/RegularFlights'
 import { PanoramicFlights } from './collections/PanoramicFlights'
 import { Regions } from './collections/Regions'
 import { Experiences } from './collections/Experiences'
+import { IndexPage } from '@/globals/IndexPage'
+import { DestinationsPage } from '@/globals/DestinationsPage'
+import { EventsPage } from '@/globals/EventsPage'
+import { ExperiencesPage } from '@/globals/ExperiencesPage'
+import { BookingPage } from '@/globals/BookingPage'
+import { JetPage } from '@/globals/JetPage'
+import { ServicesPage } from '@/globals/ServicesPage'
+import { FleetPage } from '@/globals/FleetPage'
+import { ContactPage } from '@/globals/ContactPage'
+import { AboutPage } from '@/globals/AboutPage'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -42,6 +53,18 @@ export default buildConfig({
     RegularFlights,
     PanoramicFlights,
     Regions,
+  ],
+  globals: [
+    IndexPage,
+    BookingPage,
+    DestinationsPage,
+    EventsPage,
+    ExperiencesPage,
+    JetPage,
+    FleetPage,
+    ServicesPage,
+    AboutPage,
+    ContactPage,
   ],
   localization: {
     locales: ['en', 'fr'],
@@ -80,6 +103,31 @@ export default buildConfig({
           secretAccessKey: process.env.S3_SECRET_KEY || '',
         },
       },
+    }),
+    seoPlugin({
+      globals: [
+        'indexSEO',
+        'bookingSEO',
+        'jetSEO',
+        'servicesSEO',
+        'contactSEO',
+        'aboutSEO',
+        'destinationsSEO',
+        'eventsSEO',
+        'experiencesSEO',
+        'fleetSEO',
+      ],
+      collections: ['destinations', 'Events', 'experiences'],
+      fields: ({ defaultFields }) => [
+        ...defaultFields,
+        {
+          name: 'keywords',
+          type: 'text',
+          localized: true,
+          required: true,
+        },
+      ],
+      uploadsCollection: 'media',
     }),
   ],
 })

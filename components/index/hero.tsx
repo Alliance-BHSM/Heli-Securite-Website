@@ -13,8 +13,8 @@ const Hero = () => {
       <video
         src={
           Math.random() < 0.5
-            ? '/api/media/file/Hero%20video%201.webm'
-            : '/api/media/file/Hero%20video%202.webm'
+            ? 'https://monacair.mc/api/media/file/Hero%20video%201.webm'
+            : 'https://monacair.mc/api/media/file/Hero%20video%202.webm'
         }
         autoPlay
         muted

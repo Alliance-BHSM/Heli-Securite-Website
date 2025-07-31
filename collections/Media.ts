@@ -3,7 +3,7 @@ import type { CollectionConfig } from 'payload'
 export const Media: CollectionConfig = {
   slug: 'media',
   access: {
-    read: () => true
+    read: () => true,
   },
   fields: [
     {
@@ -23,6 +23,6 @@ export const Media: CollectionConfig = {
       fastShrinkOnLoad: false,
     },
     focalPoint: false,
-    mimeTypes: ['image/*'],
+    mimeTypes: ['image/*', 'video/webm'],
   },
 }

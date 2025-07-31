@@ -22,7 +22,6 @@ const Hero = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full  object-cover z-0"
       />
-      <div className={'absolute top-0 left-0 w-full h-full bg-black/50 z-10'} />
       <div className="relative z-10">
         <Image src={Logo} alt={'Logo of Monacair and Alliance'} width={800} className={'pb-6'} />
         <Link href="/booking">

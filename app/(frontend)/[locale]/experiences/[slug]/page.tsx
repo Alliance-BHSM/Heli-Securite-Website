@@ -1,6 +1,7 @@
 import { ContextProvider } from '@/context/experiences/experience'
 import { redirect } from '@/i18n/navigation'
-
+import type { Metadata } from 'next'
+import { getPayloadClient } from '@/lib/payload'
 import { getExperience } from '@/app/(frontend)/[locale]/experiences/[slug]/actions'
 import { getLocale } from 'next-intl/server'
 import { Hero, Tabs } from '@/components/experiences/experience'
@@ -10,6 +11,53 @@ const Card = dynamic(() => import('@/components/experiences/experience').then((m
 const Footer = dynamic(() =>
   import('@/components/experiences/experience').then((mod) => mod.Footer),
 )
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+  const { slug } = await params
+  const payload = await getPayloadClient()
+  const locale = (await getLocale()) as 'en' | 'fr' | 'all' | undefined
+
+  const expereincesResponse = await payload.find({
+    collection: 'experiences',
+    where: {
+      slug: {
+        equals: slug,
+      },
+    },
+    locale,
+    fallbackLocale: 'fr',
+  })
+
+  const experience = expereincesResponse.docs[0]
+
+  if (!experience) {
+    return {
+      title: 'Experience Not Found',
+      description: 'The requested experience could not be found.',
+    }
+  }
+
+  const ogImage =
+    experience.meta.image && typeof experience.meta.image === 'object' && experience.meta.image.url
+      ? { url: experience.meta.image.url }
+      : undefined
+
+  return {
+    title: experience.meta.title,
+    description: experience.meta.description,
+    keywords: experience.meta.keywords,
+    openGraph: {
+      type: 'website',
+      title: experience.meta.title || undefined,
+      description: experience.meta.description || undefined,
+      images: ogImage,
+    },
+  }
+}
 
 const Experience = async ({ params }: { params: Promise<{ slug: string }> }) => {
   return await getExperience((await params).slug, (await getLocale()) as 'en' | 'fr').then((res) =>

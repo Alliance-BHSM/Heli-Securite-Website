@@ -31,7 +31,7 @@ const Experience = () => {
       <div className={'grid grid-cols-1 md:grid-cols-2 gap-5 items-center py-10 md:py-20'}>
         <WobbleCard
           containerClassName={
-            "h-[400px] sm:h-[600px] md:h-[700px] bg-[url('../../public/images/index/sport.webp')] bg-cover bg-center"
+            "h-[400px] sm:h-[600px] md:h-[700px] bg-[url('../../public/images/index/culture.webp')] bg-cover bg-center"
           }
           className={'col-span-2'}
         >
@@ -44,7 +44,7 @@ const Experience = () => {
         </WobbleCard>
         <WobbleCard
           containerClassName={
-            "h-[400px] sm:h-[600px] md:h-full bg-[url('../../public/images/index/gastronomie.webp')] bg-cover bg-center"
+            "h-[400px] sm:h-[600px] md:h-full bg-[url('../../public/images/experiences/gastronomy.webp')] bg-cover bg-center"
           }
           className={'col-span-2 md:col-span-2'}
         >

@@ -21,7 +21,7 @@ const Sidebar = async ({
       <Card className="lg:sticky top-8 w-full">
         <CardContent className="p-0 w-full">
           <div className="text-white p-6 bg-black rounded-xl drop-shadow-xl">
-            <div className="mb-6 flex flex-row">
+            <div className="mb-6 flex flex-col">
               <h3 className="text-lg font-semibold mb-2">
                 {t.rich('title', {
                   highlight: (chunks) => (

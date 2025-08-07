@@ -84,7 +84,7 @@ export default async function EventPage({ params }: { params: Promise<{ slug: st
       <Hero
         title={event.title}
         subtitle={event.carousel.carousel_subtitle}
-        buttonText="RESERVER"
+        buttonText={t('hero.CTA')}
         buttonLink="/booking"
         imageSrc={
           typeof event.heroImage === 'string'

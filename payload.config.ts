@@ -95,6 +95,18 @@ export default buildConfig({
       },
       bucket: 'heli-securite-media',
       config: {
+        requestHandler: {
+          httpAgent: {
+            maxSockets: 100,
+            keepAlive: true,
+          },
+          httpsAgent: {
+            maxSockets: 100,
+            keepAlive: true,
+          },
+          connectionTimeout: 5 * 1000,
+          requestTimeout: 5 * 1000,
+        },
         forcePathStyle: true,
         endpoint: process.env.S3_ENDPOINT || '',
         region: 'us-east-1',

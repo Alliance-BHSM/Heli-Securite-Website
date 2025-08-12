@@ -7,6 +7,10 @@ import Navbar from '@/components/shared/navbar'
 import { getPayloadClient } from '@/lib/payload'
 import {GoogleAnalytics} from '@next/third-parties/google'
 
+export const metadata = {
+  metadataBase: new URL('https://helisecurite.fr'),
+}
+
 export default async function LocaleLayout({
   children,
   params,

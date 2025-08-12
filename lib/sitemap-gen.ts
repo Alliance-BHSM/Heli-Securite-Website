@@ -1,0 +1,198 @@
+import { BasePayload } from 'payload'
+
+const sitemapGen = async (payload: BasePayload) => {
+  const baseUrl = 'https://helisecurite.fr',
+    data = await Promise.all([
+      payload.find({
+        collection: 'regular-flights',
+        select: {
+          start_point: true,
+          end_point: true,
+        },
+        limit: 0,
+      }),
+      payload.find({
+        collection: 'panoramic-flights',
+        select: {
+          start: true,
+        },
+        limit: 0,
+      }),
+      payload.find({
+        collection: 'destinations',
+        select: {
+          slug: true,
+        },
+        limit: 0,
+      }),
+      payload.find({
+        collection: 'Events',
+        select: {
+          slug: true,
+        },
+        limit: 0,
+      }),
+      payload.find({
+        collection: 'experiences',
+        select: {
+          slug: true,
+        },
+        limit: 0,
+      }),
+    ]).then((res) => ({
+      flights: {
+        private: res[2].docs.flatMap((start) =>
+          res[2].docs
+            .filter((doc) => doc.id !== start.id)
+            .map((dest) => ({
+              start: start.slug,
+              end: dest.slug,
+            })),
+        ),
+        regular: res[0].docs.flatMap((doc) => [
+          {
+            start: typeof doc.start_point !== 'string' ? doc.start_point.slug : doc.start_point,
+            end: typeof doc.end_point !== 'string' ? doc.end_point.slug : doc.end_point,
+          },
+          {
+            start: typeof doc.end_point !== 'string' ? doc.end_point.slug : doc.end_point,
+            end: typeof doc.start_point !== 'string' ? doc.start_point.slug : doc.start_point,
+          },
+        ]),
+        panoramic: res[1].docs.map((doc) => ({
+          slug: typeof doc.start !== 'string' ? doc.start.slug : doc.start,
+        })),
+      },
+      destinations: res[2].docs.map((doc) => ({
+        slug: doc.slug,
+      })),
+      events: res[2].docs.map((doc) => ({
+        slug: doc.slug,
+      })),
+      experiences: res[2].docs.map((doc) => ({
+        slug: doc.slug,
+      })),
+    })),
+    internationalize = (
+      params: string,
+    ): string => `<xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/en/${params}"></xhtml:link>
+<xhtml:link rel="alternate" hreflang="fr" href="${baseUrl}/fr/${params}"></xhtml:link>`,
+    date = new Date().toISOString(),
+    sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${data.flights.regular
+      .map(
+        (flight) => `<url>
+<loc>${baseUrl}/flights/regular/${flight.start}/${flight.end}</loc>
+${internationalize(`flights/regular/${flight.start}/${flight.end}`)}
+<lastmod>${date}</lastmod>
+</url>`,
+      )
+      .join('\n')}
+${data.flights.panoramic
+      .map(
+        (flight) => `<url>
+<loc>${baseUrl}/flights/panoramic/${flight.slug}</loc>
+${internationalize(`flights/panoramic/${flight.slug}`)}
+<lastmod>${date}</lastmod>
+</url>`,
+      )
+      .join('\n')}
+${data.flights.private
+      .map(
+        (flight) => `<url>
+<loc>${baseUrl}/booking/private/${flight.start}/${flight.end}</loc>
+${internationalize(`booking/private/${flight.start}/${flight.end}`)}
+<lastmod>${date}</lastmod>
+</url>`,
+      )
+      .join('\n')}
+${data.flights.regular
+      .map(
+        (flight) => `<url>
+<loc>${baseUrl}/booking/regular/${flight.start}/${flight.end}</loc>
+${internationalize(`booking/regular/${flight.start}/${flight.end}`)}
+<lastmod>${date}</lastmod>
+</url>`,
+      )
+      .join('\n')}
+${data.flights.panoramic
+      .map(
+        (flight) => `<url>
+<loc>${baseUrl}/booking/panoramic/${flight.slug}</loc>
+${internationalize(`booking/panoramic/${flight.slug}`)}
+<lastmod>${date}</lastmod>
+</url>`,
+      )
+      .join('\n')}
+${data.destinations
+      .map(
+        (destination) => `<url>
+<loc>${baseUrl}/destinations/${destination.slug}</loc>
+${internationalize(`destinations/${destination.slug}`)}
+<lastmod>${date}</lastmod>
+</url>`,
+      )
+      .join('\n')}
+${data.events
+      .map(
+        (event) => `<url>
+<loc>${baseUrl}/events/${event.slug}</loc>
+${internationalize(`events/${event.slug}`)}
+<lastmod>${date}</lastmod>
+</url>`,
+      )
+      .join('\n')}
+${data.experiences
+      .map(
+        (experience) => `<url>
+<loc>${baseUrl}/experiences/${experience.slug}</loc>
+${internationalize(`events/${experience.slug}`)}
+<lastmod>${date}</lastmod>
+</url>`,
+      )
+      .join('\n')}
+</urlset>`,
+    buffer = Buffer.from(sitemap, 'utf8'),
+    file = {
+      data: buffer,
+      mimetype: 'application/xml',
+      name: 'dynamic-sitemap.xml',
+      size: buffer.length,
+    }
+
+  await payload
+    .find({
+      collection: 'media',
+      where: {
+        filename: {
+          equals: 'dynamic-sitemap.xml',
+        },
+      },
+    })
+    .then(async ({ docs }) => {
+      if (docs.length > 0) {
+        await payload.update({
+          collection: 'media',
+          id: docs[0].id,
+          data: {
+            alt: 'Dynamic Sitemap (do not delete, autogenerated)',
+          },
+          file,
+          overwriteExistingFiles: true,
+        })
+      } else {
+        await payload.create({
+          collection: 'media',
+          data: {
+            alt: 'Dynamic Sitemap (do not delete, autogenerated)',
+          },
+          file,
+        })
+      }
+    })
+
+  return
+}
+
+export default sitemapGen

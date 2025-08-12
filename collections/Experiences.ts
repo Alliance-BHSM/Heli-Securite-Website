@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import Sitemap from '@/hooks/Sitemap'
 
 export const Experiences: CollectionConfig = {
   slug: 'experiences',
@@ -23,6 +24,7 @@ export const Experiences: CollectionConfig = {
         }
       },
     ],
+    afterChange: [Sitemap],
   },
   fields: [
     {

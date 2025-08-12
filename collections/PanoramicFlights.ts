@@ -1,10 +1,14 @@
 import type { CollectionConfig } from 'payload'
+import Sitemap from '@/hooks/Sitemap'
 
 export const PanoramicFlights: CollectionConfig = {
   slug: 'panoramic-flights',
   admin: {
     useAsTitle: 'hero',
     defaultColumns: ['hero', 'routes'],
+  },
+  hooks: {
+    afterChange: [Sitemap],
   },
   fields: [
     {

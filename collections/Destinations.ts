@@ -1,9 +1,13 @@
 import type { CollectionConfig } from 'payload'
+import Sitemap from '@/hooks/Sitemap'
 
 export const Destinations: CollectionConfig = {
   slug: 'destinations',
   admin: {
     useAsTitle: 'title',
+  },
+  hooks: {
+    afterChange: [Sitemap],
   },
   fields: [
     {

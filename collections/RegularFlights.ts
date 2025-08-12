@@ -1,10 +1,14 @@
 import type { CollectionConfig } from 'payload'
+import Sitemap from '@/hooks/Sitemap'
 
 export const RegularFlights: CollectionConfig = {
   slug: 'regular-flights',
   admin: {
     useAsTitle: 'start_point',
     defaultColumns: ['start_point', 'end_point'],
+  },
+  hooks: {
+    afterChange: [Sitemap],
   },
   fields: [
     {

@@ -28,6 +28,8 @@ import { FleetPage } from '@/globals/FleetPage'
 import { ContactPage } from '@/globals/ContactPage'
 import { AboutPage } from '@/globals/AboutPage'
 
+import sitemapGen from '@/lib/sitemap-gen'
+
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
@@ -88,6 +90,7 @@ export default buildConfig({
       fileSize: 10 * 1024 * 1024,
     },
   },
+  onInit: async (payload) => await sitemapGen(payload),
   plugins: [
     s3Storage({
       collections: {

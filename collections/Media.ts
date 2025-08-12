@@ -23,6 +23,6 @@ export const Media: CollectionConfig = {
       fastShrinkOnLoad: false,
     },
     focalPoint: false,
-    mimeTypes: ['image/*', 'video/webm'],
+    mimeTypes: ['image/*', 'video/webm', 'application/xml'],
   },
 }

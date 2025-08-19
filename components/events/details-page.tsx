@@ -65,7 +65,7 @@ const DetailsPage: React.FC<EventProps> = ({ event }) => {
           ))}
         </div>
       </div>
-      <div className="mt-10 md:mt-20">
+      <div className="mt-10 md:mt-20 px-6 sm:px-10 md:px-20 lg:px-40">
         {event.additional_content ? (
           <RichText
             data={event.additional_content}

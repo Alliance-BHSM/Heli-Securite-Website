@@ -64,7 +64,7 @@ const DetailsPage: React.FC<DestinationProps> = ({ destination }) => {
           ))}
         </div>
       </div>
-      <div className="mt-10 md:mt-20 flex flex-col items-center justify-center">
+      <div className="mt-10 md:mt-20 flex flex-col items-center justify-center px-6 sm:px-10 md:px-20 lg:px-40">
         {destination.additional_content ? (
           <RichText
             data={destination.additional_content}

@@ -11,17 +11,52 @@ export default async function Alliance() {
         <h2 className="text-3xl font-bold text-gray-800 mb-4 font-brother">{t('title')}</h2>
         <p className="text-xl font-semibold text-gray-700 mb-8 font-brother">{t('subtitle')}</p>
 
-        <div className="flex justify-center mb-10">
-          <div className="w-80 h-24 sm:w-96 sm:h-36 md:w-128 md:h-48 relative">
+        <div className="flex flex-col justify-center items-center mb-10">
+          <a
+            href={'https://blade.com'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-80 h-24 sm:w-96 sm:h-36 md:w-128 md:h-48 relative"
+          >
             <Image
-              src="/logos/primary.png"
-              alt={t('logo-alt')}
+              src="/logos/logo-blade.png"
+              alt={'Logo of Blade'}
               fill
               sizes="(max-width: 640px) 256px, (max-width: 768px) 384px, 512px"
               priority
               className="object-contain"
             />
-          </div>
+          </a>
+          <a
+            href={'https://monacair.mc'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-80 h-24 sm:w-96 sm:h-36 md:w-128 md:h-48 relative"
+          >
+            <Image
+              src="/logos/monacair.png"
+              alt={'Logo of Monacair'}
+              fill
+              sizes="(max-width: 640px) 256px, (max-width: 768px) 384px, 512px"
+              priority
+              className="object-contain"
+            />
+          </a>
+          <a
+            href={'https://helisecurite.fr'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-80 h-24 sm:w-96 sm:h-36 md:w-128 md:h-48 relative"
+          >
+            <Image
+              src="/logos/LogoOld.webp"
+              alt={'Logo of Heli Securite'}
+              fill
+              sizes="(max-width: 640px) 256px, (max-width: 768px) 384px, 512px"
+              priority
+              className="object-contain filter invert"
+            />
+          </a>
         </div>
 
         <div className="max-w-3xl mx-auto space-y-6 text-gray-600 font-brother">
@@ -41,15 +76,6 @@ export default async function Alliance() {
             ))}
           </ul>
           <p>{t('description.outro')}</p>
-        </div>
-
-        <div className="mt-10">
-          <Link
-            href="/"
-            className="bg-primary-button hover:bg-primary-button text-white px-8 py-3 rounded-md font-bold text-lg transition-colors font-brother"
-          >
-            {t('cta')}
-          </Link>
         </div>
       </div>
     </section>

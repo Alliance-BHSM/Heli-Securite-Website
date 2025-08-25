@@ -161,7 +161,7 @@ export default function Navbar({
                 {t('CTA')}
               </Button>
             </Link>
-            <a href={'https://wa.me/33614744720'} className={'font-brother flex items-center'}>
+            <a href={'https://wa.me/33670784966'} className={'font-brother flex items-center'}>
               <svg
                 fill="#ffffff"
                 xmlns="http://www.w3.org/2000/svg"

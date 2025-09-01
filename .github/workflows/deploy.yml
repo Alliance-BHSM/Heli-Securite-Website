@@ -79,10 +79,6 @@ jobs:
           
           envsubst < k8s/deployment.yaml > k8s/deployment_updated.yaml
           envsubst < k8s/secrets.yaml > k8s/secrets_updated.yaml
-          
-          envsubst < mongodb/secrets.yaml > mongodb/secrets_updated.yaml
-          
-          envsubst < s3/secrets.yaml > s3/secrets_updated.yaml
 
       - name: Deploy to DigitalOcean Kubernetes
         run: |
@@ -90,15 +86,5 @@ jobs:
           kubectl apply -f k8s/service.yaml -n heli-securite
           kubectl apply -f k8s/secrets_updated.yaml -n heli-securite
           kubectl apply -f k8s/ingress.yaml -n heli-securite
-          
-          kubectl apply -f mongodb/pvc.yaml
-          kubectl apply -f mongodb/secrets_updated.yaml
-          kubectl apply -f mongodb/statefulset.yaml
-          kubectl apply -f mongodb/service.yaml
-          
-          kubectl apply -f s3/pvc.yaml
-          kubectl apply -f s3/secrets_updated.yaml
-          kubectl apply -f s3/statefulset.yaml
-          kubectl apply -f s3/service.yaml
           
           kubectl rollout restart deployment/website -n heli-securite

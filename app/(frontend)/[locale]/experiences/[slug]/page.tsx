@@ -50,6 +50,13 @@ export async function generateMetadata({
     title: experience.meta.title,
     description: experience.meta.description,
     keywords: experience.meta.keywords,
+    alternates: {
+      canonical: `https://helisecurite.fr/fr/experiences/${slug}`,
+      languages: {
+        en: `https://helisecurite.fr/en/experiences/${slug}`,
+        fr: `https://helisecurite.fr/fr/experiences/${slug}`,
+      },
+    },
     openGraph: {
       type: 'website',
       title: experience.meta.title || undefined,

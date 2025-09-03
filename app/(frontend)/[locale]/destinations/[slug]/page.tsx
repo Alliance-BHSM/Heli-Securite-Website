@@ -50,6 +50,13 @@ export async function generateMetadata({
     title: destination.meta.title,
     description: destination.meta.description,
     keywords: destination.meta.keywords,
+    alternates: {
+      canonical: `https://helisecurite.fr/fr/destinations/${slug}`,
+      languages: {
+        en: `https://helisecurite.fr/en/destinations/${slug}`,
+        fr: `https://helisecurite.fr/fr/destinations/${slug}`,
+      },
+    },
     openGraph: {
       type: 'website',
       title: destination.meta.title || undefined,

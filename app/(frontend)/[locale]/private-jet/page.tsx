@@ -29,6 +29,13 @@ export async function generateMetadata(): Promise<Metadata> {
     title: response.meta.title,
     description: response.meta.description,
     keywords: response.meta.keywords,
+    alternates: {
+      canonical: 'https://helisecurite.fr/fr/private-jet',
+      languages: {
+        en: 'https://helisecurite.fr/en/private-jet',
+        fr: 'https://helisecurite.fr/fr/private-jet',
+      },
+    },
     openGraph: {
       type: 'website',
       title: response.meta.title || undefined,

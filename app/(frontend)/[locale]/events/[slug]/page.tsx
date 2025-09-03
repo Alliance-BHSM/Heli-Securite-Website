@@ -48,6 +48,13 @@ export async function generateMetadata({
     title: event.meta.title,
     description: event.meta.description,
     keywords: event.meta.keywords,
+    alternates: {
+      canonical: `https://helisecurite.fr/fr/events/${slug}`,
+      languages: {
+        en: `https://helisecurite.fr/en/events/${slug}`,
+        fr: `https://helisecurite.fr/fr/events/${slug}`,
+      },
+    },
     openGraph: {
       type: 'website',
       title: event.meta.title || undefined,

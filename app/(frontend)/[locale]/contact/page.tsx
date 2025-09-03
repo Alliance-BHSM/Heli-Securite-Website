@@ -24,6 +24,13 @@ export async function generateMetadata(): Promise<Metadata> {
     title: response.meta.title,
     description: response.meta.description,
     keywords: response.meta.keywords,
+    alternates: {
+      canonical: 'https://helisecurite.fr/fr/contact',
+      languages: {
+        en: 'https://helisecurite.fr/en/contact',
+        fr: 'https://helisecurite.fr/fr/contact',
+      },
+    },
     openGraph: {
       type: 'website',
       title: response.meta.title || undefined,

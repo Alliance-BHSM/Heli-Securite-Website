@@ -66,10 +66,10 @@ const sitemapGen = async (payload: BasePayload) => {
       destinations: res[2].docs.map((doc) => ({
         slug: doc.slug,
       })),
-      events: res[2].docs.map((doc) => ({
+      events: res[3].docs.map((doc) => ({
         slug: doc.slug,
       })),
-      experiences: res[2].docs.map((doc) => ({
+      experiences: res[4].docs.map((doc) => ({
         slug: doc.slug,
       })),
     })),
@@ -81,77 +81,77 @@ const sitemapGen = async (payload: BasePayload) => {
     sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${data.flights.regular
-      .map(
-        (flight) => `<url>
+  .map(
+    (flight) => `<url>
 <loc>${baseUrl}/flights/regular/${flight.start}/${flight.end}</loc>
 ${internationalize(`flights/regular/${flight.start}/${flight.end}`)}
 <lastmod>${date}</lastmod>
 </url>`,
-      )
-      .join('\n')}
+  )
+  .join('\n')}
 ${data.flights.panoramic
-      .map(
-        (flight) => `<url>
+  .map(
+    (flight) => `<url>
 <loc>${baseUrl}/flights/panoramic/${flight.slug}</loc>
 ${internationalize(`flights/panoramic/${flight.slug}`)}
 <lastmod>${date}</lastmod>
 </url>`,
-      )
-      .join('\n')}
+  )
+  .join('\n')}
 ${data.flights.private
-      .map(
-        (flight) => `<url>
+  .map(
+    (flight) => `<url>
 <loc>${baseUrl}/booking/private/${flight.start}/${flight.end}</loc>
 ${internationalize(`booking/private/${flight.start}/${flight.end}`)}
 <lastmod>${date}</lastmod>
 </url>`,
-      )
-      .join('\n')}
+  )
+  .join('\n')}
 ${data.flights.regular
-      .map(
-        (flight) => `<url>
+  .map(
+    (flight) => `<url>
 <loc>${baseUrl}/booking/regular/${flight.start}/${flight.end}</loc>
 ${internationalize(`booking/regular/${flight.start}/${flight.end}`)}
 <lastmod>${date}</lastmod>
 </url>`,
-      )
-      .join('\n')}
+  )
+  .join('\n')}
 ${data.flights.panoramic
-      .map(
-        (flight) => `<url>
+  .map(
+    (flight) => `<url>
 <loc>${baseUrl}/booking/panoramic/${flight.slug}</loc>
 ${internationalize(`booking/panoramic/${flight.slug}`)}
 <lastmod>${date}</lastmod>
 </url>`,
-      )
-      .join('\n')}
+  )
+  .join('\n')}
 ${data.destinations
-      .map(
-        (destination) => `<url>
+  .map(
+    (destination) => `<url>
 <loc>${baseUrl}/destinations/${destination.slug}</loc>
 ${internationalize(`destinations/${destination.slug}`)}
 <lastmod>${date}</lastmod>
 </url>`,
-      )
-      .join('\n')}
+  )
+  .join('\n')}
 ${data.events
-      .map(
-        (event) => `<url>
+  .map(
+    (event) => `<url>
 <loc>${baseUrl}/events/${event.slug}</loc>
 ${internationalize(`events/${event.slug}`)}
 <lastmod>${date}</lastmod>
 </url>`,
-      )
-      .join('\n')}
+  )
+  .join('\n')}
 ${data.experiences
-      .map(
-        (experience) => `<url>
+  .map(
+    (experience) => `<url>
 <loc>${baseUrl}/experiences/${experience.slug}</loc>
-${internationalize(`events/${experience.slug}`)}
+${internationalize(`experiences/${experience.slug}`)}
 <lastmod>${date}</lastmod>
 </url>`,
-      )
-      .join('\n')}
+  )
+  .join('\n')}
 </urlset>`,
     buffer = Buffer.from(sitemap, 'utf8'),
     file = {

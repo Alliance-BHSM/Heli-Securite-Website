@@ -49,10 +49,11 @@ export async function generateMetadata({
     description: event.meta.description,
     keywords: event.meta.keywords,
     alternates: {
-      canonical: `https://helisecurite.fr/fr/events/${slug}`,
+      canonical: `https://helisecurite.fr/events/${slug}`,
       languages: {
         en: `https://helisecurite.fr/en/events/${slug}`,
         fr: `https://helisecurite.fr/fr/events/${slug}`,
+        'x-default': `https://helisecurite.fr/fr/events/${slug}`,
       },
     },
     openGraph: {

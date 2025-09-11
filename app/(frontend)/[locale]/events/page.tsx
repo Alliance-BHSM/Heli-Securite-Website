@@ -27,10 +27,11 @@ export async function generateMetadata(): Promise<Metadata> {
     description: response.meta.description,
     keywords: response.meta.keywords,
     alternates: {
-      canonical: 'https://helisecurite.fr/fr/events',
+      canonical: 'https://helisecurite.fr/events',
       languages: {
         en: 'https://helisecurite.fr/en/events',
         fr: 'https://helisecurite.fr/fr/events',
+        'x-default': 'https://helisecurite.fr/fr/events',
       },
     },
     openGraph: {

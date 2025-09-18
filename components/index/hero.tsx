@@ -11,11 +11,7 @@ const Hero = () => {
   return (
     <div className="px-10 lg:px-40 h-screen flex items-center relative overflow-hidden">
       <video
-        src={
-          Math.random() < 0.5
-            ? 'https://monacair.mc/api/media/file/Hero%20video%201.webm'
-            : 'https://monacair.mc/api/media/file/Hero%20video%202.webm'
-        }
+        src={'/images/index/hero-video.webm'}
         autoPlay
         muted
         loop

@@ -18,6 +18,7 @@ const DestinationsCarousel = async () => {
   const payload = await getPayloadClient()
   const destinations = await payload.find({
     collection: 'destinations',
+    sort: 'order',
     locale,
     fallbackLocale: 'fr',
   })

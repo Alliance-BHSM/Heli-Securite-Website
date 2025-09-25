@@ -54,9 +54,11 @@ export default async function Home() {
     <main>
       <Hero />
       <BookingForm
-        initialAllDestinations={(await payload.find({ collection: 'destinations' })).docs}
-        initialRoutes={(await payload.find({ collection: 'regular-flights' })).docs}
-        initialPanoramicFlights={(await payload.find({ collection: 'panoramic-flights' })).docs}
+        initialAllDestinations={(await payload.find({ collection: 'destinations', limit: 0 })).docs}
+        initialRoutes={(await payload.find({ collection: 'regular-flights', limit: 0 })).docs}
+        initialPanoramicFlights={
+          (await payload.find({ collection: 'panoramic-flights', limit: 0 })).docs
+        }
       />
       <OurFlights />
       <Destinations />

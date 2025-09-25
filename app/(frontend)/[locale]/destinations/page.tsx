@@ -63,7 +63,7 @@ export default async function DestinationsPage() {
           ),
         })}
         buttonText={t('hero.CTA')}
-        buttonLink={'/'}
+        buttonLink={'/flights'}
         imageSrc={'/images/destinations/hero.webp'}
       />
       <BookingForm

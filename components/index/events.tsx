@@ -11,6 +11,7 @@ const EventCard = async () => {
   const payload = await getPayloadClient()
   const events = await payload.find({
     collection: 'Events',
+    sort: 'order',
     locale,
     limit: 3,
     fallbackLocale: 'fr',
@@ -38,9 +39,9 @@ const EventCard = async () => {
           <div>
             <h2 className={'text-sm sm:text-lg font-brother pb-2'}>{event.city}</h2>
             <Link href={`/events/${event.slug}`}>
-            <Button className={'text-xs sm:text-sm'} size={'sm'} variant={'blue'}>
-              {t('CTA')}
-            </Button>
+              <Button className={'text-xs sm:text-sm'} size={'sm'} variant={'blue'}>
+                {t('CTA')}
+              </Button>
             </Link>
           </div>
         </div>

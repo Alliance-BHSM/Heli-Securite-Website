@@ -20,11 +20,6 @@ const DetailsPage: React.FC<DestinationProps> = ({ destination }) => {
             data={destination.description}
             className="rich-text font-brother text-sm sm:text-base md:text-lg"
           />
-          <Link href={'/flights'}>
-            <Button variant={'red'} size={'lg'} className={'mt-6'}>
-              {t('CTA')}
-            </Button>
-          </Link>
         </div>
       </div>
       <div className="mt-10 md:mt-20 bg-black flex flex-col items-center justify-center py-10 px-6 sm:px-10 md:px-20 lg:px-40">
@@ -46,6 +41,11 @@ const DetailsPage: React.FC<DestinationProps> = ({ destination }) => {
             </div>
           ))}
         </div>
+        <Link href={'/flights'}>
+          <Button variant={'red'} size={'lg'} className={'mt-6'}>
+            {t('CTA')}
+          </Button>
+        </Link>
       </div>
       <div className="mt-10 md:mt-20 flex flex-col items-center justify-center px-6 sm:px-10 md:px-20 lg:px-40">
         {destination.additional_content ? (

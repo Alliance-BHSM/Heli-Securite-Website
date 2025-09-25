@@ -14,7 +14,7 @@ const DetailsPage: React.FC<DestinationProps> = ({ destination }) => {
   const t = useTranslations('Contact')
   return (
     <div className="w-full h-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center items-center gap-10 py-10 px-6 sm:px-10 md:px-20 lg:px-40">
+      <div className="grid grid-cols-1 justify-items-center items-center py-10 px-6 sm:px-10 md:px-20 lg:px-40">
         <div>
           <RichText
             data={destination.description}
@@ -26,23 +26,6 @@ const DetailsPage: React.FC<DestinationProps> = ({ destination }) => {
             </Button>
           </Link>
         </div>
-        {typeof destination.image === 'object' && destination.image !== null ? (
-          <Image
-            src={destination.image?.url || '/images/placeholder.png'}
-            alt={destination.image?.alt || 'Image'}
-            width={destination.image?.width || 800}
-            height={destination.image?.height || 600}
-            className="object-center object-cover h-[30vh] sm:h-[40vh] md:h-[50vh] w-full rounded-lg"
-          />
-        ) : (
-          <Image
-            src="/images/placeholder.png"
-            alt="Placeholder"
-            width={800}
-            height={600}
-            className="object-center object-cover h-[30vh] sm:h-[40vh] md:h-[50vh] w-full rounded-lg"
-          />
-        )}
       </div>
       <div className="mt-10 md:mt-20 bg-black flex flex-col items-center justify-center py-10 px-6 sm:px-10 md:px-20 lg:px-40">
         <h3 className="font-caslon text-white text-3xl sm:text-4xl md:text-6xl mb-6 sm:mb-8">
